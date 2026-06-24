@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    background-image: linear-gradient(to bottom, darkgreen, green, chartreuse);
 }
 
 #container {
@@ -35,10 +36,32 @@ html, body {
 }
 
 .station-item {
-    padding: 5px;
+    padding: 10px 20px;
     cursor: pointer;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    border: 3px solid white;
+    margin-top: 5px;
+
 }
 
 .station-item:hover {
-    background: #eee;
+    background: rgba(0, 160, 0, 0.5);
+}
+
+#infobox {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    width: 320px;
+    background: linear-gradient(to bottom, darkgreen, green, chartreuse);
+    padding: 15px;
+    z-index: 1000;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 5px solid black;
+    box-shadow: 0 2px 8px rgba(0,0,0,.25);
+    color: white;
+
 }

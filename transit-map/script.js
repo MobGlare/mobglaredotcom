@@ -14,10 +14,13 @@ const stationMap = {};
 const stationMarkers = {};
 const renderedLines = {};
 
+let infoboxData = {};
+
 // Sidebar elements
 const lineList = document.getElementById("line-list");
 const stationList = document.getElementById("station-list");
 const searchInput = document.getElementById("search");
+const lineInfo = document.getElementById("infobox");
 
 // Show one line and hide others
 function showOnlyLine(selectedName) {
@@ -84,26 +87,16 @@ function showStations(line) {
 
 }
 
-// Select a line
-function selectLine(line) {
-
-    showOnlyLine(line.name);
-
-    showStations(line);
-
-    const polyline = renderedLines[line.name];
-
-    map.fitBounds(
-        polyline.getBounds(),
-        { padding: [50, 50] }
-    );
-
-}
-
 // Load JSON
-fetch("data.json")
-    .then(response => response.json())
-    .then(data => {
+
+Promise.all([
+    fetch("data.json").then(r => r.json()),
+    fetch("infobox.json").then(r => r.json())
+    ])
+    //.then(response => response.json())
+    .then(([data, loadedInfoboxData]) => {
+
+        infoboxData = loadedInfoboxData;
 
         // Stations
         data.stations.forEach(station => {
@@ -149,8 +142,8 @@ fetch("data.json")
                 "line-button"
             );
 
-            button.style.borderLeft =
-                `8px solid ${line.color}`;
+            button.style.backgroundColor =
+                `${line.color}`;
 
             button.addEventListener(
                 "click",
@@ -177,6 +170,85 @@ fetch("data.json")
             error
         );
     });
+
+function updateInfoBox(line) {
+
+    const info =
+        infoboxData[line.name];
+
+    if (!info) {
+
+        lineInfo.innerHTML =
+            "<p>No information available.</p>";
+
+        return;
+    }
+
+    const notesHtml =
+        info.notes
+            .map(note => `<li>${note}</li>`)
+            .join("");
+
+    const sourcesHtml =
+        info.sources
+            .map(source => `<li><a href="${source}" target="_blank">${source}</a></li>`)
+            .join("");
+
+    lineInfo.innerHTML = `
+
+        <h2>${info.name}</h2>
+
+        <p>
+            <strong>Operator:</strong>
+            ${info.operator}
+        </p>
+
+        <p>
+            <strong>Years:</strong>
+            ${info.startYear}–${info.endYear}
+        </p>
+
+        <p>
+            <strong>Stations:</strong>
+            ${info.stationCount}
+        </p>
+
+        <p>
+            <strong>Notes:</strong>
+        </p>
+
+        <ul>
+            ${notesHtml}
+        </ul>
+
+        <p>
+            <strong>Sources:</strong>
+        </p>
+
+        <ul>
+            ${sourcesHtml}
+        </ul>
+
+    `;
+}
+
+// Select a line
+function selectLine(line) {
+
+    showOnlyLine(line.name);
+
+    showStations(line);
+
+    updateInfoBox(line)
+
+    const polyline = renderedLines[line.name];
+
+    map.fitBounds(
+        polyline.getBounds(),
+        { padding: [50, 50] }
+    );
+
+}
 
 // Search
 searchInput.addEventListener(

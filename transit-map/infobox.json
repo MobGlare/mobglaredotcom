@@ -1,0 +1,77 @@
+{
+    "Tram 2 (1911-1941)": {
+        "name": "Tram 2",
+
+        "startYear": 1911,
+        "endYear": 1941,
+
+        "operator": "BSZK",
+
+        "stationCount": 12,
+
+        "notes": [
+            "Some station locations are approximate.",
+            "Several street names have changed since the line operated."
+        ],
+
+        "sources": [
+            "https://hampage.hu/trams/2-es/",
+            "https://hu.wikipedia.org/wiki/2-es_villamos_(Budapest,_1911%E2%80%931941)"
+        ]
+    },
+    "Tram 2A (1973-2013)": {
+        "name": "Tram 2A",
+
+        "startYear": 1973,
+        "endYear": 2013,
+
+        "operator": "BKV",
+
+        "stationCount": 10,
+
+        "notes": [
+            "Szalay utca is now called Országház, látogatóközpont."
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/2A_villamos_(Budapest)"
+        ]
+    },
+    "Tram 3 (1945-1982)": {
+        "name": "Tram 3",
+
+        "startYear": 1945,
+        "endYear": 1982,
+
+        "operator": "BKV",
+
+        "stationCount": 15,
+
+        "notes": [
+            "Some station locations are approximate.",
+            "Several street names have changed since the line operated."
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/3-as_villamos_(Budapest,_1945%E2%80%931982)"
+        ]
+    },
+    "Tram 4A (1963-1972)": {
+        "name": "Tram 4A",
+
+        "startYear": 1963,
+        "endYear": 1972,
+
+        "operator": "BKV",
+
+        "stationCount": 19,
+
+        "notes": [
+            "Several station names have changed since the line operated."
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/4A_villamos_(Budapest)"
+        ]
+    }
+}
