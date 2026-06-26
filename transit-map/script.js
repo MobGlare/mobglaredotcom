@@ -14,13 +14,105 @@ const stationMap = {};
 const stationMarkers = {};
 const renderedLines = {};
 
+const stationGroupMap = {};
+const stationGroupMarkers = {};
+
 let infoboxData = {};
+let selectedLine = null;
+let selectedYear = null;
+
+let transitData = null;
 
 // Sidebar elements
-const lineList = document.getElementById("line-list");
 const stationList = document.getElementById("station-list");
-const searchInput = document.getElementById("search");
-const lineInfo = document.getElementById("infobox");
+const searchInput = document.getElementById("search-desktop");
+const lineList = document.getElementById("line-list");
+const closeInfobox = document.getElementById("deselect-line");
+const lineInfo = document.getElementById("infobox-content");
+
+
+const mobileSearch = document.getElementById("search-bar-mobile");
+const results = document.getElementById("search-results");
+const mobileHandle = document.getElementById("mobile-handle");
+const mobileInfo = document.getElementById("mobile-infocontent");
+
+mobileSearch.addEventListener("focus", () => {
+    results.style.display = "block";
+    lineList.style.display = "none";
+});
+
+mobileSearch.addEventListener("input", () => {
+    const query = mobileSearch.value.toLowerCase();
+    results.style.display = "block";
+    document.querySelectorAll(".search-result").forEach(item => {
+        const searchableName = item.textContent
+            .replace(/\s*\(.*\)/, "")
+            .toLowerCase();
+        item.style.display =
+            searchableName.includes(query)
+            ? ""
+            : "none";
+    });
+});
+
+document.addEventListener("click", event => {
+    if (!mobileSearch.contains(event.target) && !results.contains(event.target)) {
+        results.style.display = "none";
+    }
+});
+
+searchInput.addEventListener("focus", () => {
+    lineList.style.display = "flex";
+    results.style.display = "none";
+});
+
+searchInput.addEventListener("input", () => {
+    const query = searchInput.value.toLowerCase();
+    lineList.style.display = "flex";
+    results.style.display = "none";
+    document.querySelectorAll(".line-button").forEach(item => {
+        const searchableName = item.textContent
+            .replace(/\s*\(.*\)/, "")
+            .toLowerCase();
+        item.style.display =
+            searchableName.includes(query)
+            ? ""
+            : "none";
+    });
+});
+
+document.addEventListener("click", event => {
+    if (!searchInput.contains(event.target) && !lineList.contains(event.target)) {
+        lineList.style.display = "none";
+    }
+});
+
+function getStationName(station, year) {
+
+    // Determine which year to use for name lookup. Prefer the explicit
+    // `year` argument, then the currently selected line year, then the
+    // current calendar year.
+    const y = (typeof year !== "undefined" && year !== null)
+        ? year
+        : (typeof selectedYear !== "undefined" && selectedYear !== null)
+            ? selectedYear
+            : new Date().getFullYear();
+
+    if (!station.names) {
+        return station.name || "Unknown";
+    }
+
+    const entry = station.names.find(name => {
+
+        const startsBefore = name.startYear === null || y >= name.startYear;
+        const endsAfter = name.endYear === null || y <= name.endYear;
+
+        return startsBefore && endsAfter;
+
+    });
+
+    return entry ? entry.name : (station.name || "Unknown");
+}
 
 // Show one line and hide others
 function showOnlyLine(selectedName) {
@@ -41,22 +133,7 @@ function showOnlyLine(selectedName) {
 // Show station list
 function showStations(line) {
 
-
     stationList.innerHTML = "";
-
-    // Show markers only for stations on the selected line,
-    // hide all other station markers.
-    const visibleIds = new Set(line.stations);
-
-    Object.entries(stationMarkers).forEach(([id, marker]) => {
-        if (visibleIds.has(id)) {
-            map.addLayer(marker);
-        } else {
-            if (map.hasLayer(marker)) {
-                map.removeLayer(marker);
-            }
-        }
-    });
 
     // Populate station list in the order defined by the line
     line.stations.forEach(id => {
@@ -65,7 +142,7 @@ function showStations(line) {
 
         const div = document.createElement("div");
 
-        div.textContent = station.name;
+        div.textContent = getStationName(station, selectedYear);
         div.classList.add("station-item");
 
         div.addEventListener("click", () => {
@@ -74,7 +151,7 @@ function showStations(line) {
 
             map.setView(
                 [station.lat, station.lng],
-                14
+                16
             );
 
             marker.openPopup();
@@ -86,6 +163,130 @@ function showStations(line) {
     });
 
 }
+
+function showStationGroups() {
+
+    Object.values(stationGroupMarkers).forEach(marker => {map.addLayer(marker)});
+
+}
+
+function hideStationGroups() {
+
+    Object.values(stationGroupMarkers).forEach(marker => {map.removeLayer(marker)});
+
+}
+
+function getLinesAtGroup(group) {
+
+    const lines = [];
+
+    transitData.lines.forEach(line => {
+        const stopsHere = line.stations.some(stationId => group.stations.includes(stationId));
+        if (stopsHere) {
+            lines.push(line);
+        }
+    });
+
+    return lines;
+
+}
+
+function getStationGroupName(group) {
+    if (!group.names || group.names.length === 0) {
+        return group.name || "Station Group";
+    }
+
+    const year = (selectedYear !== null && selectedYear !== undefined)
+        ? selectedYear
+        : new Date().getFullYear();
+
+    const entry = group.names.find(name => {
+        const startsBefore = name.startYear === null || year >= name.startYear;
+        const endsAfter = name.endYear === null || year <= name.endYear;
+        return startsBefore && endsAfter;
+    });
+
+    return entry ? entry.name : group.names[0].name;
+}
+
+function showStationGroup(group) {
+
+    const lines = getLinesAtGroup(group);
+
+    let html = `
+        <h2>${getStationGroupName(group)}</h2>
+    `;
+
+    mobileInfo.innerHTML = html;
+    lineInfo.innerHTML = html;
+
+    lines.forEach(line => {
+
+        const button = document.createElement("button");
+
+        button.textContent = line.name;
+
+        button.classList.add("group-line-button");
+
+        button.style.backgroundColor = line.color;
+
+        button.addEventListener("click", () => {
+            selectLine(line);
+        });
+
+        if (window.innerWidth <= 768) {
+            mobileInfo.appendChild(button);
+        }
+        else {
+            lineInfo.appendChild(button);
+        }
+
+    });
+
+}
+
+function updateStationMarkers(line) {
+
+    const visibleIds = new Set(line.stations);
+
+    const firstStation = line.stations[0];
+    const lastStation = line.stations[line.stations.length-1];
+
+    Object.entries(stationMarkers).forEach(
+        ([id, marker]) => {
+
+            const isTerminus =
+                id === firstStation ||
+                id === lastStation;
+
+            if (
+                visibleIds.has(id) &&
+                (
+                    isTerminus ||
+                    map.getZoom() >= 15
+                )
+            ) {
+
+                map.addLayer(marker);
+
+            } else {
+
+                map.removeLayer(marker);
+
+            }
+
+        }
+    );
+
+}
+
+map.on("zoomend", () => {
+
+    if (selectedLine) {
+        updateStationMarkers(selectedLine);
+    }
+
+});
 
 // Load JSON
 
@@ -107,10 +308,37 @@ Promise.all([
                 station.lat,
                 station.lng
             ])
-            .addTo(map)
-            .bindPopup(station.name);
+            // create an initially-empty popup and update it when opened so
+            // the popup reflects the currently selected year
+            .bindPopup("");
+
+            marker.on("popupopen", () => {
+                const popup = marker.getPopup();
+                if (popup) {
+                    popup.setContent(getStationName(station));
+                }
+            });
 
             stationMarkers[station.id] = marker;
+
+        });
+
+        // Station Groups
+        data.station_groups.forEach(group => {
+            
+            stationGroupMap[group.id] = group;
+
+            const locationStation = stationMap[group.stations[0]];
+            
+            const marker = L.marker([
+                locationStation.lat,
+                locationStation.lng
+            ])
+            .bindPopup(group.names[0].name);
+
+            marker.addEventListener("click", () => { showStationGroup(group); })
+
+            stationGroupMarkers[group.id] = marker;
 
         });
 
@@ -125,7 +353,7 @@ Promise.all([
                 }
             );
 
-            polyline.addTo(map);
+            //polyline.addTo(map);
 
             renderedLines[line.name] =
                 polyline;
@@ -155,13 +383,34 @@ Promise.all([
             );
 
         });
+        data.lines.forEach(line => {
 
-        // Show first line by default
-        if (data.lines.length > 0) {
-            selectLine(
-                data.lines[0]
-            );
-        }
+            const item = document.createElement("div");
+
+            item.textContent = line.name;
+
+            item.classList.add("search-result");
+
+            item.addEventListener("click", () => {
+                selectLine(line);
+                results.style.display = "none";
+                mobileSearch.value = "";
+            });
+
+            results.appendChild(item);
+
+        });
+
+        // // Show first line by default
+        // if (data.lines.length > 0) {
+        //     selectLine(
+        //         data.lines[0]
+        //     );
+        // }
+
+        transitData = data;
+
+        showStationGroups();
 
     })
     .catch(error => {
@@ -194,8 +443,7 @@ function updateInfoBox(line) {
             .map(source => `<li><a href="${source}" target="_blank">${source}</a></li>`)
             .join("");
 
-    lineInfo.innerHTML = `
-
+    const html = `
         <h2>${info.name}</h2>
 
         <p>
@@ -212,34 +460,31 @@ function updateInfoBox(line) {
             <strong>Stations:</strong>
             ${info.stationCount}
         </p>
-
-        <p>
-            <strong>Notes:</strong>
-        </p>
-
-        <ul>
-            ${notesHtml}
-        </ul>
-
-        <p>
-            <strong>Sources:</strong>
-        </p>
-
-        <ul>
-            ${sourcesHtml}
-        </ul>
-
     `;
+    lineInfo.innerHTML = html;
+    mobileInfo.innerHTML = html;
 }
 
 // Select a line
 function selectLine(line) {
 
+    selectedLine = line;
+
+    selectedYear = infoboxData[line.name].endYear;
+
+    hideStationGroups();
+
     showOnlyLine(line.name);
 
     showStations(line);
 
-    updateInfoBox(line)
+    updateInfoBox(line);
+
+    updateStationMarkers(line);
+
+    stationList.style.display = "block";
+    lineList.style.display = "none";
+    searchInput.value = "";
 
     const polyline = renderedLines[line.name];
 
@@ -250,29 +495,51 @@ function selectLine(line) {
 
 }
 
-// Search
-searchInput.addEventListener(
-    "input",
-    () => {
+function deselectLine() {
 
-        const query =
-            searchInput.value
-                .toLowerCase();
+    selectedLine = null;
 
-        document
-            .querySelectorAll(
-                ".line-button"
-            )
-            .forEach(button => {
+    showStationGroups();
 
-                button.style.display =
-                    button.textContent
-                        .toLowerCase()
-                        .includes(query)
-                    ? ""
-                    : "none";
+    // Hide all lines
+    Object.values(renderedLines)
+        .forEach(polyline => {
+            map.removeLayer(polyline);
+        });
 
-            });
+    // Hide all stations
+    Object.values(stationMarkers)
+        .forEach(marker => {
+            map.removeLayer(marker);
+        });
 
-    }
+    // Clear station list
+    stationList.innerHTML = "";
+
+    // Reset infobox
+    lineInfo.innerHTML = `
+        <h2>Historical Budapest Transit</h2>
+        <p>Select a line to begin.</p>
+    `;
+
+    mobileSearch.value = "";
+
+    results.style.display = "none";
+
+    stationList.style.display = "none";
+
+    mobileInfo.innerHTML = `
+        <center><p>Select a line from the search bar.</p></center>
+    `;
+
+}
+
+mobileHandle.addEventListener(
+    "click",
+    deselectLine
+);
+
+closeInfobox.addEventListener(
+    "click",
+    deselectLine
 );

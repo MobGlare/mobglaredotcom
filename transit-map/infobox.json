@@ -37,6 +37,24 @@
             "https://hu.wikipedia.org/wiki/2A_villamos_(Budapest)"
         ]
     },
+    "Tram 2A (2015)": {
+        "name": "Tram 2A",
+
+        "startYear": 2015,
+        "endYear": 2015,
+
+        "operator": "BKV",
+
+        "stationCount": 7,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/2A_villamos_(Budapest)"
+        ]
+    },
     "Tram 3 (1945-1982)": {
         "name": "Tram 3",
 
@@ -72,6 +90,24 @@
 
         "sources": [
             "https://hu.wikipedia.org/wiki/4A_villamos_(Budapest)"
+        ]
+    },
+    "Tram 9 (1946-1986)": {
+        "name": "Tram 9",
+
+        "startYear": 1946,
+        "endYear": 1986,
+
+        "operator": "BKV",
+
+        "stationCount": 22,
+
+        "notes": [
+            "Several station names have changed since the line operated."
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/9-es_villamos_(Budapest)"
         ]
     }
 }
