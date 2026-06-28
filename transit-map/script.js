@@ -1,5 +1,5 @@
 // Create map
-const map = L.map("map").setView([47.1625, 19.5033], 7);
+const map = L.map("map").setView([47.4983610112664, 19.04045507237725], 12);
 
 // OpenStreetMap tiles
 L.tileLayer(
@@ -9,6 +9,26 @@ L.tileLayer(
     }
 ).addTo(map);
 
+// Local storage
+const settings = {
+    networkView: false,
+    showStationGroupsSetting: true,
+    showAllStations: false
+};
+
+const savedSettings = localStorage.getItem("settings");
+if (savedSettings) {
+    Object.assign(settings, JSON.parse(savedSettings));
+}
+
+function saveSettings() {
+    localStorage.setItem("settings", JSON.stringify(settings));
+}
+
+document.getElementById("network-view-toggle").checked = settings.networkView;
+document.getElementById("station-groups-toggle").checked = settings.showStationGroupsSetting;
+document.getElementById("all-stations-toggle").checked = settings.showAllStations;
+
 // Data storage
 const stationMap = {};
 const stationMarkers = {};
@@ -16,6 +36,7 @@ const renderedLines = {};
 
 const stationGroupMap = {};
 const stationGroupMarkers = {};
+const groupedStations = {};
 
 let infoboxData = {};
 let selectedLine = null;
@@ -29,6 +50,7 @@ const searchInput = document.getElementById("search-desktop");
 const lineList = document.getElementById("line-list");
 const closeInfobox = document.getElementById("deselect-line");
 const lineInfo = document.getElementById("infobox-content");
+const mapSettings = document.getElementById("settings");
 
 
 const mobileSearch = document.getElementById("search-bar-mobile");
@@ -86,6 +108,55 @@ document.addEventListener("click", event => {
         lineList.style.display = "none";
     }
 });
+
+function updateMap() {
+    const shouldShowGroups = settings.showStationGroupsSetting || settings.showAllStations;
+    //Station Groups
+    Object.values(stationGroupMarkers).forEach(marker => {
+        if (
+            shouldShowGroups &&
+            !selectedLine
+        ) {
+            map.addLayer(marker);
+        }
+        else {
+            map.removeLayer(marker);
+        }
+    });
+    //All Stations
+    if (settings.showAllStations && !selectedLine) {
+        Object.entries(stationMarkers).forEach(([id, marker]) => {
+            if (groupedStations[id]) {
+                map.removeLayer(marker);
+                return;
+            }
+            if (map.getZoom() >= 15) {
+                map.addLayer(marker);
+            }
+            else {
+                map.removeLayer(marker);
+            }
+});
+    }
+    else if (!selectedLine) {
+        Object.values(stationMarkers).forEach(marker => {
+            map.removeLayer(marker);
+        });
+    }
+    //Network View
+    Object.values(renderedLines).forEach(line => {
+        if (
+            settings.networkView &&
+            !selectedLine
+        ) {
+            map.addLayer(line);
+        }
+        else if (!selectedLine) {
+            map.removeLayer(line);
+        }
+    });
+
+}
 
 function getStationName(station, year) {
 
@@ -166,7 +237,14 @@ function showStations(line) {
 
 function showStationGroups() {
 
-    Object.values(stationGroupMarkers).forEach(marker => {map.addLayer(marker)});
+    Object.values(stationGroupMarkers).forEach(marker => {
+        if (settings.showStationGroupsSetting && !selectedLine) {
+            map.addLayer(marker);
+        }
+        else {
+            map.removeLayer(marker);
+        }
+    });
 
 }
 
@@ -285,6 +363,9 @@ map.on("zoomend", () => {
     if (selectedLine) {
         updateStationMarkers(selectedLine);
     }
+    else {
+        updateMap();
+    }
 
 });
 
@@ -339,6 +420,8 @@ Promise.all([
             marker.addEventListener("click", () => { showStationGroup(group); })
 
             stationGroupMarkers[group.id] = marker;
+
+            group.stations.forEach(id => {groupedStations[id] = true});
 
         });
 
@@ -401,6 +484,8 @@ Promise.all([
 
         });
 
+        updateMap();
+
         // // Show first line by default
         // if (data.lines.length > 0) {
         //     selectLine(
@@ -443,6 +528,11 @@ function updateInfoBox(line) {
             .map(source => `<li><a href="${source}" target="_blank">${source}</a></li>`)
             .join("");
 
+    const years = 
+        info.endYear === null
+        ? `${info.startYear}–Present`
+        : `${info.startYear}–${info.endYear}`;
+
     const html = `
         <h2>${info.name}</h2>
 
@@ -453,13 +543,19 @@ function updateInfoBox(line) {
 
         <p>
             <strong>Years:</strong>
-            ${info.startYear}–${info.endYear}
+            ${years}
         </p>
 
         <p>
             <strong>Stations:</strong>
             ${info.stationCount}
         </p>
+
+        <details>
+            <summary>Sources:</summary>
+            ${sourcesHtml}
+        </details>
+
     `;
     lineInfo.innerHTML = html;
     mobileInfo.innerHTML = html;
@@ -483,6 +579,7 @@ function selectLine(line) {
     updateStationMarkers(line);
 
     stationList.style.display = "block";
+    mapSettings.style.display = "none";
     lineList.style.display = "none";
     searchInput.value = "";
 
@@ -501,24 +598,27 @@ function deselectLine() {
 
     showStationGroups();
 
-    // Hide all lines
-    Object.values(renderedLines)
-        .forEach(polyline => {
-            map.removeLayer(polyline);
-        });
+    updateMap();
 
-    // Hide all stations
-    Object.values(stationMarkers)
-        .forEach(marker => {
-            map.removeLayer(marker);
-        });
+    mapSettings.style.display = "block";
+
+    // // Hide all lines
+    // Object.values(renderedLines)
+    //     .forEach(polyline => {
+    //         map.removeLayer(polyline);
+    //     });
+
+    // // Hide all stations
+    // Object.values(stationMarkers)
+    //     .forEach(marker => {
+    //         map.removeLayer(marker);
+    //     });
 
     // Clear station list
     stationList.innerHTML = "";
 
     // Reset infobox
     lineInfo.innerHTML = `
-        <h2>Historical Budapest Transit</h2>
         <p>Select a line to begin.</p>
     `;
 
@@ -543,3 +643,25 @@ closeInfobox.addEventListener(
     "click",
     deselectLine
 );
+
+document
+    .getElementById("network-view-toggle")
+    .addEventListener("change", function () {
+        settings.networkView = this.checked;
+        saveSettings();
+        updateMap();
+    });
+document
+    .getElementById("station-groups-toggle")
+    .addEventListener("change", function () {
+        settings.showStationGroupsSetting = this.checked;
+        saveSettings();
+        updateMap();
+    });
+document
+    .getElementById("all-stations-toggle")
+    .addEventListener("change", function () {
+        settings.showAllStations = this.checked;
+        saveSettings();
+        updateMap();
+    });

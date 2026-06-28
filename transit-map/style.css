@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-image: linear-gradient(to bottom, darkgreen, green, chartreuse);
+    background-image: linear-gradient(to bottom, #0b3d1a, #146c2e);
 }
 
 #container {
@@ -16,11 +16,18 @@ html, body {
     flex: 1;
 }
 
+#infobox button {
+    background-color: #f2cd00;
+    border-radius: 6px;
+}
+
 #sidebar {
     width: 300px;
     overflow-y: auto;
     border-left: 1px solid #444;
     padding: 10px;
+    border-left: 2px solid black;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
 }
 
 #line-list {
@@ -33,6 +40,7 @@ html, body {
     text-align: left;
     padding: 8px;
     cursor: pointer;
+    border-radius: 6px;
 }
 
 .station-item {
@@ -43,6 +51,7 @@ html, body {
     color: white;
     border: 3px solid white;
     margin-top: 5px;
+    border-radius: 6px;
 
 }
 
@@ -55,14 +64,15 @@ html, body {
     left: 25px;
     bottom: 25px;
     width: 320px;
-    background: linear-gradient(to bottom, darkgreen, green, chartreuse);
+    background: linear-gradient(to bottom, #0b3d1a, #146c2e);
     padding: 15px;
     z-index: 1000;
     max-height: 300px;
     overflow-y: auto;
-    border: 5px solid black;
-    box-shadow: 0 2px 8px rgba(0,0,0,.25);
+    border: 2px solid black;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
     color: white;
+    border-radius: 6px;
 
 }
 
@@ -71,6 +81,63 @@ html, body {
     box-sizing: border-box;
     font-size: 24px;
 
+}
+
+#settings {
+    color: white;
+}
+
+.switch-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 12px 0;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+}
+
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #555;
+    transition: .2s;
+    border-radius: 6px;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background: black;
+    transition: .2s;
+    border-radius: 6px;
+}
+
+.switch input:checked + .slider {
+    background: #f2cd00;
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(22px);
 }
 
 @media (min-width: 769px) {
@@ -117,6 +184,7 @@ html, body {
         left: 15px;
         right: 15px;
         z-index: 1000;
+        border-radius: 6px;
     }
 
     #search-results {
@@ -127,23 +195,30 @@ html, body {
         right: 15px;
         max-height: 50vh;
         overflow-y: auto;
-        background: white;
-        border-radius: 15px;
+        background: linear-gradient(to right, #0b3d1a, #146c2e);
+        color: white;
         z-index: 1000;
+        border-radius: 6px;
     }
     .search-result {
         padding: 15px;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+        
     }
 
     #search-bar-mobile {
         width: 100%;
         box-sizing: border-box;
         padding: 12px 16px;
-        border: none;
-        border-radius: 25px;
+        border: 4px solid black;
         font-size: 16px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+        background-image: linear-gradient(to right, #0b3d1a, #146c2e);
+        color: white;
+        border-radius: 6px;
     }
 
 
@@ -153,8 +228,10 @@ html, body {
         left: 0;
         right: 0;
         min-height: 120px;
-        background: white;
-        border-radius: 20px 20px 0 0;
+        background-image: linear-gradient(to bottom, #0b3d1a, #146c2e);
+        border: 4px solid black;
+        color: white;
+        border-radius: 6px 6px 0 0;
         z-index: 1000;
         padding: 15px;
         box-shadow: 0 -2px 12px rgba(0,0,0,.2);
@@ -165,7 +242,7 @@ html, body {
         width: 40px;
         height: 5px;
         background: #ccc;
-        border-radius: 10px;
+        border-radius: 6px;
         margin: 0 auto 15px auto;
     }
 

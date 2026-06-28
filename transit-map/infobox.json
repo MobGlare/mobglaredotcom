@@ -19,6 +19,24 @@
             "https://hu.wikipedia.org/wiki/2-es_villamos_(Budapest,_1911%E2%80%931941)"
         ]
     },
+    "Tram 2 (1945-)": {
+        "name": "Tram 2",
+
+        "startYear": 1945,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 13,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/2-es_villamos_(Budapest)"
+        ]
+    },
     "Tram 2A (1973-2013)": {
         "name": "Tram 2A",
 
@@ -101,6 +119,60 @@
         "operator": "BKV",
 
         "stationCount": 22,
+
+        "notes": [
+            "Several station names have changed since the line operated."
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/9-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 18 (2008-2016)": {
+        "name": "Tram 18",
+
+        "startYear": 2008,
+        "endYear": 2016,
+
+        "operator": "BKV",
+
+        "stationCount": 22,
+
+        "notes": [
+            "Several station names have changed since the line operated."
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/9-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 43 (1963-1983)": {
+        "name": "Tram 43",
+
+        "startYear": 1963,
+        "endYear": 1983,
+
+        "operator": "BKV",
+
+        "stationCount": 11,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hampage.hu/trams/43-as/index2.html"
+        ]
+    },
+    "Tram 47 (1960-)": {
+        "name": "Tram 47",
+
+        "startYear": 1960,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 21,
 
         "notes": [
             "Several station names have changed since the line operated."

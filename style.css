@@ -3,7 +3,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to bottom, darkgreen, green, chartreuse);
+    background-image: linear-gradient(to bottom, #0b3d1a, #146c2e);
     background-attachment: fixed;
 }
 

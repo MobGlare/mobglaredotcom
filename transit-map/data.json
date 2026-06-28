@@ -99,6 +99,47 @@
             ]
         },
         {
+            "id": "szent_gellert_ter_muegyetem_v",
+            "lat": 47.48351129016306,
+            "lng": 19.05331212245634,
+
+            "names": [
+                {
+                    "name": "Szent Gellért tér - Műegyetem M",
+                    "startYear": 2019,
+                    "endYear": null
+                },
+                {
+                    "name": "Szent Gellért tér M",
+                    "startYear": 2014,
+                    "endYear": 2019
+                },
+                {
+                    "name": "Szent Gellért tér",
+                    "startYear": null,
+                    "endYear": 2013
+                }
+            ]
+        },
+        {
+            "id": "moricz_zsigmond_korter_v17-41-47-48-56",
+            "lat": 47.47709031411544, 
+            "lng": 19.047268280499065,
+
+            "names": [
+                {
+                    "name": "Móricz Zsigmond körtér M",
+                    "startYear": 2014,
+                    "endYear": null
+                },
+                {
+                    "name": "Móricz Zsigmond körtér",
+                    "startYear": null,
+                    "endYear": 2013
+                }
+            ]
+        },
+        {
             "id": "keleti_palyaudvar_v",
             "lat": 47.49924375861616,
             "lng": 19.08255340470799,
@@ -136,6 +177,199 @@
             ]
             
         },
+        {
+            "id": "ujbuda_kozpont_v4",
+            "lat": 47.47403142091902,
+            "lng": 19.046968055808453,
+
+            "names": [
+                {
+                    "name": "Újbuda Központ M",
+                    "startYear": 2014,
+                    "endYear": null
+                },
+                {
+                    "name": "Újbuda Központ",
+                    "startYear": 2011,
+                    "endYear": 2013
+                },
+                {
+                    "name": "Fehérvári út",
+                    "startYear": 1990,
+                    "endYear": 2010
+                },
+                {
+                    "name": "Lágymányosi lakótelep",
+                    "startYear": null,
+                    "endYear": 1989
+                }
+            ]
+        },
+        {
+            "id": "ujbuda_kozpont_v17-41-47-48-56",
+            "lat": 47.47457808989032, 
+            "lng": 19.04654302097827,
+
+            "names": [
+                {
+                    "name": "Újbuda Központ M",
+                    "startYear": 2014,
+                    "endYear": null
+                },
+                {
+                    "name": "Újbuda Központ",
+                    "startYear": 2011,
+                    "endYear": 2013
+                },
+                {
+                    "name": "Bocskai út",
+                    "startYear": null,
+                    "endYear": 2010
+                }
+            ]
+        },
+        {
+            "id":"fovam_ter_v2-23",
+            "lat": 47.48671390538733,
+            "lng": 19.056812386912917,
+
+            "names": [
+                {
+                    "name": "Fővám tér M",
+                    "startYear": 2014,
+                    "endYear": null
+                },
+                {
+                    "name": "Fővám tér",
+                    "startYear": 1992,
+                    "endYear": 2013
+                },
+                {
+                    "name": "Dimitrov tér",
+                    "startYear": 1949,
+                    "endYear": 1991
+                }
+            ]
+        },
+        {
+            "id": "fovam_ter_v47-48-49",
+            "lat": 47.48700455658901,
+            "lng": 19.05738040597933,
+
+            "names": [
+                {
+                    "name": "Fővám tér M",
+                    "startYear": 2014,
+                    "endYear": null
+                },
+                {
+                    "name": "Fővám tér",
+                    "startYear": 1992,
+                    "endYear": 2013
+                },
+                {
+                    "name": "Dimitrov tér",
+                    "startYear": 1949,
+                    "endYear": 1991
+                }
+            ]
+        },
+        {
+            "id": "kalvin_ter_v",
+            "lat": 47.48952447656083, 
+            "lng": 19.061485206021523,
+
+            "names": [
+                {
+                    "name": "Kálvin tér M",
+                    "startYear": 2013,
+                    "endYear": null
+                },
+                {
+                    "name": "Kálvin tér",
+                    "startYear": null,
+                    "endYear": 2012
+                }
+            ]
+        },
+        {
+            "id": "astoria_v",
+            "lat": 47.494683709303, 
+            "lng": 19.059727466500107,
+
+            "names": [
+                {
+                    "name": "Astoria M",
+                    "startYear": 2013,
+                    "endYear": null
+                },
+                {
+                    "name": "Astoria",
+                    "startYear": null,
+                    "endYear": 2012
+                }
+            ]
+        },
+        {
+            "id": "deak_ferenc_ter_v",
+            "lat": 47.49742957412341, 
+            "lng": 19.05532598539334,
+
+            "names": [
+                {
+                    "name": "Deák Ferenc tér M",
+                    "startYear": 2013,
+                    "endYear": null
+                },
+                {
+                    "name": "Deák Ferenc tér",
+                    "startYear": null,
+                    "endYear": 2012
+                }
+            ]
+        },
+        {
+            "id": "szell_kalman_ter_v56-59-61",
+            "lat": 47.50679729035225, 
+            "lng": 19.02424609993912,
+
+            "names": [
+                {
+                    "name": "Széll Kálmán tér M",
+                    "startYear": 2012,
+                    "endYear": null
+                },
+                {
+                    "name": "Moszkva tér",
+                    "startYear": 1951,
+                    "endYear": 2011
+                },
+                {
+                    "name": "Széll Kálmán tér",
+                    "startYear": null,
+                    "endYear": 1950
+                }
+            ]
+        },
+        {
+            "id": "deli_palyaudvar_v56",
+            "lat": 47.500893306214024, 
+            "lng": 19.024959975981655,
+
+            "names": [
+                {
+                    "name": "Déli pályaudvar M",
+                    "startYear": 2013,
+                    "endYear": null
+                },
+                {
+                    "name": "Déli pályaudvar",
+                    "startYear": null,
+                    "endYear": 2012
+                }
+            ]
+        },
+
         {
             "id": "mosonyi_utca_old_v",
             "lat": 47.498490994272565,
@@ -417,29 +651,6 @@
             ]
         },
         {
-            "id":"fovam_ter_v",
-            "lat": 47.48671390538733,
-            "lng": 19.056812386912917,
-
-            "names": [
-                {
-                    "name": "Fővám tér M",
-                    "startYear": 2014,
-                    "endYear": null
-                },
-                {
-                    "name": "Fővám tér",
-                    "startYear": 1992,
-                    "endYear": 2013
-                },
-                {
-                    "name": "Dimitrov tér",
-                    "startYear": 1949,
-                    "endYear": 1991
-                }
-            ]
-        },
-        {
             "id":"zsil_utca_v",
             "lat": 47.482949709020126, 
             "lng": 19.06262787771686,
@@ -664,34 +875,6 @@
                     "name": "Újpest, Fóti út",
                     "startYear": null,
                     "endYear": null
-                }
-            ]
-        },
-        {
-            "id": "ujbuda_kozpont_v4",
-            "lat": 47.47403142091902,
-            "lng": 19.046968055808453,
-
-            "names": [
-                {
-                    "name": "Újbuda Központ M",
-                    "startYear": 2014,
-                    "endYear": null
-                },
-                {
-                    "name": "Újbuda Központ",
-                    "startYear": 2011,
-                    "endYear": 2013
-                },
-                {
-                    "name": "Fehérvári út",
-                    "startYear": 1990,
-                    "endYear": 2010
-                },
-                {
-                    "name": "Lágymányosi lakótelep",
-                    "startYear": null,
-                    "endYear": 1989
                 }
             ]
         },
@@ -1028,6 +1211,474 @@
                     "endYear": 2012
                 }
             ]
+        },
+        {
+            "id": "halasz_utca_v",
+            "lat": 47.501759346640696, 
+            "lng": 19.04000360708688,
+
+            "names": [
+                {
+                    "name": "Halász utca",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "lanchid_v",
+            "lat": 47.49931197993846, 
+            "lng": 19.04080172208658,
+
+            "names": [
+                {
+                    "name": "Clark Ádám tér(Jégverem utca)",
+                    "startYear": 2013,
+                    "endYear": null
+                },
+                {
+                    "name": "Lánchíd",
+                    "startYear": null,
+                    "endYear": 2012
+                }
+            ]
+        },
+        {
+            "id": "varkert_bazar_v",
+            "lat": 47.49352709078206, 
+            "lng": 19.044141547145205,
+
+            "names": [
+                {
+                    "name": "Várkert Bazár",
+                    "startYear": 2013,
+                    "endYear": null
+                },
+                {
+                    "name": "Ybl Miklós tér",
+                    "startYear": null,
+                    "endYear": 2012
+                }
+            ]
+        },
+        {
+            "id": "dobrentei_ter_old_v",
+            "lat": 47.49177453986635, 
+            "lng": 19.04560548571924,
+
+            "names": [
+                {
+                    "name": "Döbrentei tér",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "gardonyi_ter_v",
+            "lat": 47.48028830474468, 
+            "lng": 19.051703602970854,
+
+            "names": [
+                {
+                    "name": "Gárdonyi tér",
+                    "startYear": 1989,
+                    "endYear": null
+                },
+                {
+                    "name": "Bertalan Lajos utca",
+                    "startYear": null,
+                    "endYear": 1989
+                }
+            ]
+        },
+        {
+            "id": "csonka_janos_ter_v",
+            "lat": 47.470098701451825, 
+            "lng": 19.044977271863033,
+
+            "names": [
+                {
+                    "name": "Csonka János tér",
+                    "startYear": 1989,
+                    "endYear": null
+                },
+                {
+                    "name": "Fővárosi Művelődési Ház",
+                    "startYear": null,
+                    "endYear": 1989
+                }
+            ]
+        },
+        {
+            "id": "hauszmann_alajos_utca_v",
+            "lat": 47.46750193248941,
+            "lng": 19.044039719805546,
+
+            "names": [
+                {
+                    "name": "Hauszmann Alajos utca",
+                    "startYear": 1989,
+                    "endYear": null
+                },
+                {
+                    "name": "Bártfai utca",
+                    "startYear": null,
+                    "endYear": 1989
+                }
+            ]
+        },
+        {
+            "id": "etele_ut_v17-41-47-48-56",
+            "lat": 47.46320009422119, 
+            "lng": 19.04248608603698,
+
+            "names": [
+                {
+                    "name": "Etele út/Fehérvári út",
+                    "startYear": 1989,
+                    "endYear": null
+                },
+                {
+                    "name": "Szakasits Árpád út",
+                    "startYear": null,
+                    "endYear": 1989
+                }
+            ]
+        },
+        {
+            "id": "kalotaszeg_utca_v",
+            "lat": 47.458828394970105, 
+            "lng": 19.040914015022206,
+
+            "names": [
+                {
+                    "name": "Kalotaszeg utca",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "andor_utca_v",
+            "lat": 47.45611993179173, 
+            "lng": 19.03994826414702,
+
+            "names": [
+                {
+                    "name": "Andor utca",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "albertfalva_kitero_v",
+            "lat": 47.45254661296951, 
+            "lng": 19.03866588175613,
+
+            "names": [
+                {
+                    "name": "Albertfalva kitérő",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "albertfalva_utca_v",
+            "lat": 47.44785223692863, 
+            "lng": 19.037486984343364,
+
+            "names": [
+                {
+                    "name": "Albertfalva utca",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "fonyod_utca_v",
+            "lat": 47.443657972946774, 
+            "lng": 19.036814213502506,
+
+            "names": [
+                {
+                    "name": "Fonyód utca",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "budafok_kocsiszin_v",
+            "lat": 47.44140160060628, 
+            "lng": 19.03643206400739,
+
+            "names": [
+                {
+                    "name": "Budafok kocsiszín",
+                    "startYear": 2013,
+                    "endYear": null
+                },
+                {
+                    "name": "Budafok, forgalmi telep",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "budafoki_elagazas_v47-56",
+            "lat": 47.43544770157429, 
+            "lng": 19.03635027096408,
+
+            "names": [
+                {
+                    "name": "Budafoki elágazás",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "leanyka_utcai_lakotelep_v",
+            "lat": 47.43249930773618, 
+            "lng": 19.037226026226804,
+
+            "names": [
+                {
+                    "name": "Leányka utcai lakótelep",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "savoyai_jeno_ter_v",
+            "lat": 47.429609870721386, 
+            "lng": 19.037825526869238,
+
+            "names": [
+                {
+                    "name": "Savoyai Jenő tér",
+                    "startYear": 1990,
+                    "endYear": null
+                },
+                {
+                    "name": "Budafoki tér",
+                    "startYear": null,
+                    "endYear": 1989
+                }
+            ]
+        },
+        {
+            "id": "varoshaz_ter_v",
+            "lat": 47.42708121767073, 
+            "lng": 19.039147634322376,
+
+            "names": [
+                {
+                    "name": "Városház tér",
+                    "startYear": 1990,
+                    "endYear": null
+                },
+                {
+                    "name": "Varga Jenő tér",
+                    "startYear": 1968,
+                    "endYear": 1989
+                },
+                {
+                    "name": "Dózsa György tér",
+                    "startYear": 1946,
+                    "endYear": 1967
+                },
+                {
+                    "name": "Városház tér",
+                    "startYear": null,
+                    "endYear": 1945
+                }
+            ]
+        },
+        {
+            "id": "toth_jozsef_utca_old_v",
+            "lat": 47.42177385438402, 
+            "lng": 19.0415939761824,
+
+            "names": [
+                {
+                    "name": "Tóth József utca",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "vagohid_utca_old_v",
+            "lat": 47.41422232447615, 
+            "lng": 19.03849119467207,
+
+            "names": [
+                {
+                    "name": "Vágóhíd utca",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "haros_vasutallomas_old_v",
+            "lat": 47.412452434132156, 
+            "lng": 19.034050384081763,
+
+            "names": [
+                {
+                    "name": "Háros vasútállomás",
+                    "startYear": 1990,
+                    "endYear": null
+                },
+                {
+                    "name": "József Attila utca",
+                    "startYear": null,
+                    "endYear": 1989
+                }
+            ]
+        },
+        {
+            "id": "haros_utca_old_v",
+            "lat": 47.41126536138093, 
+            "lng": 19.02591071112548,
+
+            "names": [
+                {
+                    "name": "Háros utca",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "jokai_mor_utca_old_v",
+            "lat": 47.4100253211441, 
+            "lng": 19.020670158133917,
+
+            "names": [
+                {
+                    "name": "Jókai Mór utca",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "lepcsos_utca_old_v",
+            "lat": 47.40828536141273, 
+            "lng": 19.016502366420614,
+
+            "names": [
+                {
+                    "name": "Lépcsős utca",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "orhaz_old_v",
+            "lat": 47.402327889715465, 
+            "lng": 19.012531351141455,
+
+            "names": [
+                {
+                    "name": "Őrház",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "nagyteteny_dozsa_gyorgy_ut_old_v",
+            "lat": 47.39989565943264, 
+            "lng": 19.00509712672047,
+
+            "names": [
+                {
+                    "name": "Dózsa György út",
+                    "startYear": null,
+                    "endYear": 1989
+                },
+                {
+                    "name": "Braoss Gábor telep",
+                    "startYear": 1990,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "bartok_bela_ut_old_v",
+            "lat": 47.39509833342236, 
+            "lng": 18.993810739954224,
+
+            "names": [
+                {
+                    "name": "Bartók Béla út/Vegyszer utca",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "nagyteteny_old_v",
+            "lat": 47.392622674213975, 
+            "lng": 18.986349156215404,
+
+            "names": [
+                {
+                    "name": "Nagytétény",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "miko_utca_v",
+            "lat": 47.49828431332441, 
+            "lng": 19.02907960152621,
+
+            "names": [
+                {
+                    "name": "Mikó utca",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "krisztina_ter_v",
+            "lat": 47.496607378287074, 
+            "lng": 19.032820552565195,
+
+            "names": [
+                {
+                    "name": "Krisztina tér",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "dozsa_gyorgy_ter_v",
+            "lat": 47.49387601395073, 
+            "lng": 19.03809061552459,
+
+            "names": [
+                {
+                    "name": "Dózsa György tér",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
         }
     ],
 
@@ -1083,10 +1734,253 @@
                     "endYear": 2012
                 }
             ]
+        },
+        {
+            "id": "szent_gellert_ter_muegyetem",
+            "stations": [
+                "szent_gellert_ter_muegyetem_v"
+            ],
+            "names": [
+                {
+                    "name": "Szent Gellért tér - Műegyetem M",
+                    "startYear": 2019,
+                    "endYear": null
+                },
+                {
+                    "name": "Szent Gellért tér M",
+                    "startYear": 2014,
+                    "endYear": 2019
+                },
+                {
+                    "name": "Szent Gellért tér",
+                    "startYear": null,
+                    "endYear": 2013
+                }
+            ]
+        },
+        {
+            "id": "moricz_zsigmond_korter",
+            "stations": [
+                "moricz_zsigmond_korter_v17-41-47-48-56"
+            ],
+            "names": [
+                {
+                    "name": "Móricz Zsigmond körtér M",
+                    "startYear": 2014,
+                    "endYear": null
+                },
+                {
+                    "name": "Móricz Zsigmond körtér",
+                    "startYear": null,
+                    "endYear": 2013
+                }
+            ]
+        },
+        {
+            "id": "keleti_palyaudvar",
+            "stations": [
+                "keleti_palyaudvar_v"
+            ],
+            "names": [
+                {
+                    "name": "Keleti pályaudvar",
+                    "startYear": null,
+                    "endYear": 2012
+                },
+                {
+                    "name": "Keleti pályaudvar M",
+                    "startYear": 2013,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "kossuth_lajos_ter",
+            "stations":  [
+                "kossuth_ter_v",
+                "kossuth_ter_old_v"                
+            ],
+            "names": [
+                {
+                    "name": "Kossuth Lajos tér M",
+                    "startYear": 2013,
+                    "endYear": null
+                },
+                {
+                    "name": "Kossuth Lajos tér",
+                    "startYear": 1927,
+                    "endYear": 2012
+                },
+                {
+                    "name": "Országház tér",
+                    "startYear": 1898,
+                    "endYear": 1926
+                }
+                
+            ]
+        },
+        {
+            "id": "ujbuda_kozpont",
+            "stations": [
+                "ujbuda_kozpont_v17-41-47-48-56",
+                "ujbuda_kozpont_v4"
+            ],
+            "names": [
+                {
+                    "name": "Újbuda Központ M",
+                    "startYear": 2014,
+                    "endYear": null
+                },
+                {
+                    "name": "Újbuda Központ",
+                    "startYear": 2011,
+                    "endYear": 2013
+                },
+                {
+                    "name": "Bocskai út",
+                    "startYear": null,
+                    "endYear": 2010
+                }
+            ]
+        },
+        {
+            "id": "fovam_ter",
+            "stations": [
+                "fovam_ter_v47-48-49",
+                "fovam_ter_v2-23"
+            ],
+            "names": [
+                {
+                    "name": "Fővám tér M",
+                    "startYear": 2014,
+                    "endYear": null
+                },
+                {
+                    "name": "Fővám tér",
+                    "startYear": 1992,
+                    "endYear": 2013
+                },
+                {
+                    "name": "Dimitrov tér",
+                    "startYear": 1949,
+                    "endYear": 1991
+                }
+            ]
+        },
+        {
+            "id": "deak_ferenc_ter",
+            "stations": [
+                "deak_ferenc_ter_v"
+            ],
+            "names": [
+                {
+                    "name": "Deák Ferenc tér M",
+                    "startYear": 2013,
+                    "endYear": null
+                },
+                {
+                    "name": "Deák Ferenc tér",
+                    "startYear": null,
+                    "endYear": 2012
+                }
+            ]
+        },
+        {
+            "id": "szell_kalman_ter",
+            "stations": [
+                "szell_kalman_ter_v56-59-61"
+            ],
+            "names": [
+                {
+                    "name": "Széll Kálmán tér M",
+                    "startYear": 2012,
+                    "endYear": null
+                },
+                {
+                    "name": "Moszkva tér",
+                    "startYear": 1951,
+                    "endYear": 2011
+                },
+                {
+                    "name": "Széll Kálmán tér",
+                    "startYear": null,
+                    "endYear": 1950
+                }
+            ]
+        },
+        {
+            "id": "deli_palyaudvar",
+            "stations": [
+                "deli_palyaudvar_v56"
+            ],
+            "names": [
+                {
+                    "name": "Déli pályaudvar M",
+                    "startYear": 2013,
+                    "endYear": null
+                },
+                {
+                    "name": "Déli pályaudvar",
+                    "startYear": null,
+                    "endYear": 2012
+                }
+            ]
         }
     ],
 
     "lines": [
+    {
+        "name": "Tram 2 (1945-)",
+        "color": "#f2cd00",
+
+        "route": [
+            [47.51283946649043, 19.04793865488573],
+            [47.51214381578642, 19.047555039624836],
+            [47.51000649855797, 19.04682665814675],
+            [47.50859138329386, 19.046590230696005],
+            [47.508514872142136, 19.04784440063132],
+            [47.50580111376754, 19.047946088903007],
+            [47.50567408591799, 19.04604241796804],
+            [47.50485187972661, 19.046044622469612],
+            [47.504760885623504, 19.0450333916623],
+            [47.50083346944184, 19.045969307883027],
+            [47.49957496883532, 19.04685610486352],
+            [47.49775484312507, 19.047100054981563],
+            [47.49570621726892, 19.04825784903171],
+            [47.4923369639119, 19.0506433039943],
+            [47.49196170881779, 19.05075109604224],
+            [47.49037092359319, 19.052004397545346],
+            [47.48671390538733, 19.056812386912917],
+            [47.485018217852186, 19.058621480260328],
+            [47.484417877986786, 19.060499504675224],
+            [47.48176217053589, 19.064299382698227],
+            [47.47972910993653, 19.066301038145],
+            [47.47904590512094, 19.067370183977307],
+            [47.479010839951926, 19.067503576503167],
+            [47.47882949217234, 19.067912617838612],
+            [47.478404738778174, 19.06829972923174],
+            [47.47593648094756, 19.06922021701556],
+            [47.47538883606292, 19.069550446637493],
+            [47.4711391999903, 19.073078877549744],
+            [47.46780592492728, 19.075668543816818]
+        ],
+
+        "stations": [
+            "jaszai_mari_ter_v2",
+            "orszaghaz_latogatokozpont_v",
+            "kossuth_ter_v",
+            "szechenyi_ter_v",
+            "eotvos_ter_v",
+            "vigadoter_v",
+            "marcius_15_ter_v",
+            "fovam_ter_v2-23",
+            "zsil_utca_v",
+            "boraros_ter_v2-23",
+            "haller_utca_v",
+            "mupa_nemzeti_szinhaz_v",
+            "kozvagohid_v2-24"
+        ]
+    },
     {
         "name": "Tram 2 (1911-1941)",
         "color": "#f2cd00",
@@ -1108,7 +2002,10 @@
             [47.50580657889826, 19.047961563526215],
             [47.50852950476571, 19.04784556784739],
             [47.5086037538739, 19.046629273418834],
-            [47.512841384027105, 19.047850665071024],
+            [47.50859138329386, 19.046590230696005],
+            [47.51000649855797, 19.04682665814675],
+            [47.51214381578642, 19.047555039624836],
+            [47.51283946649043, 19.04793865488573],
             [47.518647016723044, 19.051713015307776],
             [47.52301735187236, 19.053974294214907],
             [47.5232849558665, 19.0530131186798],
@@ -1139,6 +2036,8 @@
 
         "route": [
             [47.51283946649043, 19.04793865488573],
+            [47.51214381578642, 19.047555039624836],
+            [47.51000649855797, 19.04682665814675],
             [47.50859138329386, 19.046590230696005],
             [47.508514872142136, 19.04784440063132],
             [47.50580111376754, 19.047946088903007],
@@ -1167,7 +2066,7 @@
             "eotvos_ter_v",
             "vigadoter_v",
             "marcius_15_ter_v",
-            "fovam_ter_v",
+            "fovam_ter_v2-23",
             "zsil_utca_v",
             "boraros_ter_v2a"
         ]
@@ -1197,7 +2096,7 @@
 
         "stations": [
             "marcius_15_ter_v",
-            "fovam_ter_v",
+            "fovam_ter_v2-23",
             "zsil_utca_v",
             "boraros_ter_v2-23",
             "haller_utca_v",
@@ -1302,11 +2201,211 @@
         "color": "#f2cd00",
 
         "route": [
-            [47.505875227677556, 19.039394123453036]
+            [47.505875227677556, 19.039394123453036],
+            [47.50384331841716, 19.0396218308702],
+            [47.501759346640696, 19.04000360708688],
+            [47.50058071346592, 19.040323658121935],
+            [47.49931197993846, 19.04080172208658],
+            [47.49888462519849, 19.04095560498065],
+            [47.49854272919155, 19.04040959712329],
+            [47.49836193184472, 19.040390390276844],
+            [47.498223089507185, 19.040752603327192],
+            [47.49814398403793, 19.04128409188054],
+            [47.495467176408894, 19.042706636999565],
+            [47.49352709078206, 19.044141547145205],
+            [47.49177453986635, 19.04560548571924],
+            [47.48532938452194, 19.052362177359775],
+            [47.48464242807765, 19.052839143795044],
+            [47.4841041389668, 19.05352735392023],
+            [47.48372247457515, 19.053545231584394],
+            [47.48351129016306, 19.05331212245634],
+            [47.48299983665287, 19.05296982783684],
+            [47.4810018328653, 19.052157347675458],
+            [47.48028830474468, 19.051703602970854],
+            [47.479414592703584, 19.050898557282686],
+            [47.478638784076736, 19.04960230782735],
+            [47.477751733987276, 19.047392007005698],
+            [47.47709031411544, 19.047268280499065],
+            [47.475895159937934, 19.04700323212559],
+            [47.47457808989032, 19.04654302097827],
+            [47.470098701451825, 19.044977271863033],
+            [47.46750193248941, 19.044039719805546],
+            [47.46320009422119, 19.04248608603698],
+            [47.458828394970105, 19.040914015022206],
+            [47.45611993179173, 19.03994826414702],
+            [47.45254661296951, 19.03866588175613],
+            [47.45164156175843, 19.03816255574909],
+            [47.44785223692863, 19.037486984343364],
+            [47.443657972946774, 19.036814213502506],
+            [47.44140160060628, 19.03643206400739],
+            [47.43915984356688, 19.03622436523836],
+            [47.43686629315751, 19.037370495869094],
+            [47.43635157491063, 19.03723834212893],
+            [47.43544770157429, 19.03635027096408],
+            [47.43515790406111, 19.036327315730926],
+            [47.43394500025145, 19.036830283289426],
+            [47.43354832123764, 19.03710544939816],
+            [47.43249930773618, 19.037226026226804],
+            [47.43065688496492, 19.037535263987277],
+            [47.429609870721386, 19.037825526869238],
+            [47.42899380567782, 19.038007323400144],
+            [47.42708121767073, 19.039147634322376]
         ],
 
         "stations": [
-            "batthyany_ter_v"
+            "batthyany_ter_v",
+            "halasz_utca_v",
+            "lanchid_v",
+            "varkert_bazar_v",
+            "dobrentei_ter_old_v",
+            "szent_gellert_ter_muegyetem_v",
+            "gardonyi_ter_v",
+            "moricz_zsigmond_korter_v17-41-47-48-56",
+            "ujbuda_kozpont_v17-41-47-48-56",
+            "csonka_janos_ter_v",
+            "hauszmann_alajos_utca_v",
+            "etele_ut_v17-41-47-48-56",
+            "kalotaszeg_utca_v",
+            "andor_utca_v",
+            "albertfalva_kitero_v",
+            "albertfalva_utca_v",
+            "fonyod_utca_v",
+            "budafok_kocsiszin_v",
+            "budafoki_elagazas_v47-56",
+            "leanyka_utcai_lakotelep_v",
+            "savoyai_jeno_ter_v",
+            "varoshaz_ter_v"
+        ]
+    },
+    
+    {
+        "name": "Tram 43 (1963-1983)",
+        "color": "#f2cd00",
+
+        "route": [
+            [47.42708121767073, 19.039147634322376],
+            [47.423636903922066, 19.041083357904586],
+            [47.42299878246683, 19.04139451392041],
+            [47.42177385438402, 19.0415939761824],
+            [47.417611487376135, 19.04184493444163],
+            [47.41657719408616, 19.041553337148418],
+            [47.41616324504515, 19.041262203927843],
+            [47.4154550355118, 19.04044408271669],
+            [47.41422232447615, 19.03849119467207],
+            [47.412452434132156, 19.034050384081763],
+            [47.41174211747622, 19.029943815271185],
+            [47.41126536138093, 19.02591071112548],
+            [47.41104847009751, 19.023958415992556],
+            [47.4100253211441, 19.020670158133917],
+            [47.409008600121886, 19.01795142568012],
+            [47.40828536141273, 19.016502366420614],
+            [47.40480952253672, 19.012551693600717],
+            [47.404101166888246, 19.012083038386926],
+            [47.40358350229734, 19.012226449993264],
+            [47.40346862194177, 19.01234681394132],
+            [47.40274983800678, 19.01250478590307],
+            [47.402327889715465, 19.012531351141455],
+            [47.4019538715954, 19.011890800532935],
+            [47.40171928544908, 19.011013791839883],
+            [47.40166473778614, 19.009166169028447],
+            [47.40142697586491, 19.008307557429923],
+            [47.39989565943264, 19.00509712672047],
+            [47.39509833342236, 18.993810739954224],
+            [47.393323590576195, 18.989631302067796],
+            [47.39259044014263, 18.987356497560473],
+            [47.392524580346105, 18.986806273971574],
+            [47.392622674213975, 18.986349156215404]
+        ],
+
+        "stations": [
+            "varoshaz_ter_v",
+            "toth_jozsef_utca_old_v",
+            "vagohid_utca_old_v",
+            "haros_vasutallomas_old_v",
+            "haros_utca_old_v",
+            "jokai_mor_utca_old_v",
+            "lepcsos_utca_old_v",
+            "orhaz_old_v",
+            "nagyteteny_dozsa_gyorgy_ut_old_v",
+            "bartok_bela_ut_old_v",
+            "nagyteteny_old_v"
+        ]
+    },
+    {
+        "name": "Tram 47 (1960-)",
+        "color": "#f2cd00",
+
+        "route": [
+            [47.49742957412341, 19.05532598539334],
+            [47.49575209312277, 19.058890216221382],
+            [47.494683709303, 19.059727466500107],
+            [47.49151924678007, 19.061493308565048],
+            [47.49004126437601, 19.061754598547985],
+            [47.48952447656083, 19.061485206021523],
+            [47.48878476444036, 19.060801806165923],
+            [47.48700455658901, 19.05738040597933],
+            [47.4848176752206, 19.053132897200857],
+            [47.484625624761385, 19.052959226789394],
+            [47.48449759071983, 19.05300659144238],
+            [47.484115010986415, 19.05350730353777],
+            [47.48389247328605, 19.053638120211346],
+            [47.48372247457515, 19.053545231584394],
+            [47.48351129016306, 19.05331212245634],
+            [47.48299983665287, 19.05296982783684],
+            [47.4810018328653, 19.052157347675458],
+            [47.48028830474468, 19.051703602970854],
+            [47.479414592703584, 19.050898557282686],
+            [47.478638784076736, 19.04960230782735],
+            [47.477751733987276, 19.047392007005698],
+            [47.47709031411544, 19.047268280499065],
+            [47.475895159937934, 19.04700323212559],
+            [47.47457808989032, 19.04654302097827],
+            [47.470098701451825, 19.044977271863033],
+            [47.46750193248941, 19.044039719805546],
+            [47.46320009422119, 19.04248608603698],
+            [47.458828394970105, 19.040914015022206],
+            [47.45611993179173, 19.03994826414702],
+            [47.45254661296951, 19.03866588175613],
+            [47.45164156175843, 19.03816255574909],
+            [47.44785223692863, 19.037486984343364],
+            [47.443657972946774, 19.036814213502506],
+            [47.44140160060628, 19.03643206400739],
+            [47.43915984356688, 19.03622436523836],
+            [47.43686629315751, 19.037370495869094],
+            [47.43635157491063, 19.03723834212893],
+            [47.43544770157429, 19.03635027096408],
+            [47.43515790406111, 19.036327315730926],
+            [47.43394500025145, 19.036830283289426],
+            [47.43354832123764, 19.03710544939816],
+            [47.43249930773618, 19.037226026226804],
+            [47.43065688496492, 19.037535263987277],
+            [47.429609870721386, 19.037825526869238],
+            [47.42899380567782, 19.038007323400144],
+            [47.42708121767073, 19.039147634322376]
+        ],
+
+        "stations": [
+            "deak_ferenc_ter_v",
+            "astoria_v",
+            "kalvin_ter_v",
+            "fovam_ter_v47-48-49",
+            "szent_gellert_ter_muegyetem_v",
+            "gardonyi_ter_v",
+            "moricz_zsigmond_korter_v17-41-47-48-56",
+            "ujbuda_kozpont_v17-41-47-48-56",
+            "csonka_janos_ter_v",
+            "hauszmann_alajos_utca_v",
+            "etele_ut_v17-41-47-48-56",
+            "kalotaszeg_utca_v",
+            "andor_utca_v",
+            "albertfalva_kitero_v",
+            "albertfalva_utca_v",
+            "fonyod_utca_v",
+            "budafok_kocsiszin_v",
+            "budafoki_elagazas_v47-56",
+            "leanyka_utcai_lakotelep_v",
+            "savoyai_jeno_ter_v",
+            "varoshaz_ter_v"
         ]
     }
   ]

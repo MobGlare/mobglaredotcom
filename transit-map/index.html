@@ -10,6 +10,7 @@
           href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
 
@@ -31,7 +32,9 @@
 
         <div id="infobox">
             <div id="deselect-line"><button>X</button></div>
-            <div id="infobox-content"></div>
+            <div id="infobox-content">
+                <p>Select a line to begin.</p>
+            </div>
         </div>
 
         <div id="sidebar">
@@ -46,6 +49,34 @@
             <hr>
 
             <div id="station-list"></div>
+
+            <hr>
+
+            <div id="settings">
+                <h3>Map Settings</h3>
+
+                <label class="switch-row">
+                    <span>Network view</span>
+                    <label class="switch">
+                        <input type="checkbox" id="network-view-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </label>
+                <label class="switch-row">
+                    <span>Show Station Groups</span>
+                    <label class="switch">
+                        <input type="checkbox" id="station-groups-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </label>
+                <label class="switch-row">
+                    <span>Show All Stations</span>
+                    <label class="switch">
+                        <input type="checkbox" id="all-stations-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </label>
+            </div>
 
         </div>
 
