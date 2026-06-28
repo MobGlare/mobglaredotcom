@@ -139,11 +139,29 @@
         "stationCount": 22,
 
         "notes": [
-            "Several station names have changed since the line operated."
+            ""
         ],
 
         "sources": [
-            "https://hu.wikipedia.org/wiki/9-es_villamos_(Budapest)"
+            "https://hu.wikipedia.org/wiki/18-as_villamos_(Budapest)"
+        ]
+    },
+    "Tram 18A (2002)": {
+        "name": "Tram 18A",
+
+        "startYear": 2002,
+        "endYear": 2002,
+
+        "operator": "BKV",
+
+        "stationCount": 9,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/18A_villamos_(Budapest)"
         ]
     },
     "Tram 43 (1963-1983)": {
@@ -157,11 +175,11 @@
         "stationCount": 11,
 
         "notes": [
-            ""
+            "Most station locations are approximate."
         ],
 
         "sources": [
-            "https://hampage.hu/trams/43-as/index2.html"
+            "https://hampage.hu/trams/43-as"
         ]
     },
     "Tram 47 (1960-)": {
@@ -175,11 +193,47 @@
         "stationCount": 21,
 
         "notes": [
-            "Several station names have changed since the line operated."
+            ""
         ],
 
         "sources": [
-            "https://hu.wikipedia.org/wiki/9-es_villamos_(Budapest)"
+            "https://hu.wikipedia.org/wiki/47-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 48 (2014-)": {
+        "name": "Tram 48",
+
+        "startYear": 2014,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 18,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/48-as_villamos_(Budapest)"
+        ]
+    },
+    "Tram 118 (2003-2007)": {
+        "name": "Tram 118",
+
+        "startYear": 2003,
+        "endYear": 2007,
+
+        "operator": "BKV",
+
+        "stationCount": 21,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/118-as_villamos_(Budapest)"
         ]
     }
 }
