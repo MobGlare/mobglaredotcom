@@ -110,6 +110,42 @@
             "https://hu.wikipedia.org/wiki/4A_villamos_(Budapest)"
         ]
     },
+    "Tram 4 (1972-)": {
+        "name": "Tram 4",
+
+        "startYear": 1972,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 19,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/4-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 6 (1959-)": {
+        "name": "Tram 6",
+
+        "startYear": 1959,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 19,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/6-os_villamos_(Budapest)"
+        ]
+    },
     "Tram 9 (1946-1986)": {
         "name": "Tram 9",
 
@@ -216,6 +252,24 @@
 
         "sources": [
             "https://hu.wikipedia.org/wiki/48-as_villamos_(Budapest)"
+        ]
+    },
+    "Tram 56 (2016-)": {
+        "name": "Tram 56",
+
+        "startYear": 2016,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 37,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/56-os_villamos_(Budapest)"
         ]
     },
     "Tram 118 (2003-2007)": {

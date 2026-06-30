@@ -9,11 +9,14 @@ L.tileLayer(
     }
 ).addTo(map);
 
+
+
 // Local storage
 const settings = {
     networkView: false,
     showStationGroupsSetting: true,
-    showAllStations: false
+    showAllStations: false,
+    ignoreYear: false
 };
 
 const savedSettings = localStorage.getItem("settings");
@@ -28,6 +31,7 @@ function saveSettings() {
 document.getElementById("network-view-toggle").checked = settings.networkView;
 document.getElementById("station-groups-toggle").checked = settings.showStationGroupsSetting;
 document.getElementById("all-stations-toggle").checked = settings.showAllStations;
+document.getElementById("year-toggle").checked = settings.ignoreYear;
 
 // Data storage
 const stationMap = {};
@@ -40,9 +44,50 @@ const groupedStations = {};
 
 let infoboxData = {};
 let selectedLine = null;
-let selectedYear = null;
+let selectedYear = new Date().getFullYear();
 
 let transitData = null;
+
+// Year selector
+const yearSlider = document.getElementById("year-slider");
+const yearLabel = document.getElementById("year-label");
+
+yearSlider.addEventListener("input", () => {
+    selectedYear = Number(yearSlider.value);
+    yearLabel.value = selectedYear;
+    updateStationMarkers();
+    updateMap();
+});
+yearLabel.addEventListener("change", () => {
+    selectedYear = Number(yearLabel.value);
+    yearSlider.value = selectedYear;
+    updateStationMarkers();
+    updateMap();
+});
+
+function lineExists(line) {
+    
+    if (!line || typeof line !== "object") {
+        return false;
+    }
+
+    if (settings.ignoreYear) {
+        return true;
+    }
+
+    const lineInfo = infoboxData?.[line.name];
+    const startYear = line.startYear ?? lineInfo?.startYear ?? null;
+    const endYear = line.endYear ?? lineInfo?.endYear ?? null;
+
+    if (startYear === null) {
+        return endYear === null || endYear >= selectedYear;
+    }
+
+    return (
+        startYear <= selectedYear &&
+        (endYear === null || endYear >= selectedYear)
+    );
+}
 
 // Sidebar elements
 const stationList = document.getElementById("station-list");
@@ -52,7 +97,7 @@ const closeInfobox = document.getElementById("deselect-line");
 const lineInfo = document.getElementById("infobox-content");
 const mapSettings = document.getElementById("settings");
 
-
+// Mobile
 const mobileSearch = document.getElementById("search-bar-mobile");
 const results = document.getElementById("search-results");
 const mobileHandle = document.getElementById("mobile-handle");
@@ -145,14 +190,17 @@ function updateMap() {
     }
     //Network View
     Object.values(renderedLines).forEach(line => {
+        const lineData = line?.data;
+
         if (
             settings.networkView &&
-            !selectedLine
+            !selectedLine &&
+            lineExists(lineData)
         ) {
-            map.addLayer(line);
+            map.addLayer(line.polyline);
         }
         else if (!selectedLine) {
-            map.removeLayer(line);
+            map.removeLayer(line.polyline);
         }
     });
 
@@ -189,7 +237,12 @@ function getStationName(station, year) {
 function showOnlyLine(selectedName) {
 
     Object.entries(renderedLines).forEach(
-        ([name, polyline]) => {
+        ([name, entry]) => {
+            const polyline = entry?.polyline;
+
+            if (!polyline) {
+                return;
+            }
 
             if (name === selectedName) {
                 map.addLayer(polyline);
@@ -325,10 +378,12 @@ function showStationGroup(group) {
 
 function updateStationMarkers(line) {
 
-    const visibleIds = new Set(line.stations);
+    const visibleIds = line
+        ? new Set(line.stations)
+        : new Set();
 
-    const firstStation = line.stations[0];
-    const lastStation = line.stations[line.stations.length-1];
+    const firstStation = line ? line.stations[0] : null;
+    const lastStation = line ? line.stations[line.stations.length-1] : null;
 
     Object.entries(stationMarkers).forEach(
         ([id, marker]) => {
@@ -337,24 +392,35 @@ function updateStationMarkers(line) {
                 id === firstStation ||
                 id === lastStation;
 
-            if (
-                visibleIds.has(id) &&
-                (
-                    isTerminus ||
-                    map.getZoom() >= 15
-                )
-            ) {
+            const station = stationMap[id];
+            marker.setPopupContent(getStationName(station));
 
-                map.addLayer(marker);
+            if (line) {
+                if (
+                    visibleIds.has(id) &&
+                    (
+                        isTerminus ||
+                        map.getZoom() >= 15
+                    )
+                ) {
 
-            } else {
+                    map.addLayer(marker);
 
-                map.removeLayer(marker);
+                } else {
 
+                    map.removeLayer(marker);
+                }
             }
+            
 
         }
     );
+    Object.entries(stationGroupMarkers).forEach(([id, marker]) => {
+        const group = stationGroupMap[id];
+        marker.setPopupContent(
+            getStationGroupName(group)
+        );
+    });
 
 }
 
@@ -415,7 +481,7 @@ Promise.all([
                 locationStation.lat,
                 locationStation.lng
             ])
-            .bindPopup(group.names[0].name);
+            .bindPopup(getStationGroupName(group));
 
             marker.addEventListener("click", () => { showStationGroup(group); })
 
@@ -433,13 +499,16 @@ Promise.all([
                 {
                     color: line.color,
                     weight: 5
-                }
+                },
+            
             );
 
             //polyline.addTo(map);
 
-            renderedLines[line.name] =
-                polyline;
+            renderedLines[line.name] = {
+                polyline: polyline,
+                data: line
+            }
 
             const button =
                 document.createElement(
@@ -566,7 +635,8 @@ function selectLine(line) {
 
     selectedLine = line;
 
-    selectedYear = infoboxData[line.name].endYear;
+    const lineInfo = infoboxData?.[line.name];
+    selectedYear = lineInfo?.endYear ?? selectedYear;
 
     hideStationGroups();
 
@@ -583,12 +653,14 @@ function selectLine(line) {
     lineList.style.display = "none";
     searchInput.value = "";
 
-    const polyline = renderedLines[line.name];
+    const polyline = renderedLines[line.name]?.polyline;
 
-    map.fitBounds(
-        polyline.getBounds(),
-        { padding: [50, 50] }
-    );
+    if (polyline) {
+        map.fitBounds(
+            polyline.getBounds(),
+            { padding: [50, 50] }
+        );
+    }
 
 }
 
@@ -634,6 +706,20 @@ function deselectLine() {
 
 }
 
+// First non AI function lol
+function toggleYearSelector() {
+
+    const yearSelector = document.getElementById("year-slider-container");
+
+    if (settings.ignoreYear) {
+        yearSelector.style.display = "none"
+    }
+    else {
+        yearSelector.style.display = "block"
+    }
+
+}
+
 mobileHandle.addEventListener(
     "click",
     deselectLine
@@ -662,6 +748,14 @@ document
     .getElementById("all-stations-toggle")
     .addEventListener("change", function () {
         settings.showAllStations = this.checked;
+        saveSettings();
+        updateMap();
+    });
+document
+    .getElementById("year-toggle")
+    .addEventListener("change", function () {
+        settings.ignoreYear = this.checked;
+        toggleYearSelector();
         saveSettings();
         updateMap();
     });

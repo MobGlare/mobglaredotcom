@@ -140,6 +140,28 @@ html, body {
     transform: translateX(22px);
 }
 
+#year-slider-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 16px;
+    background-image: linear-gradient(to bottom, #0b3d1a, #146c2e);
+    border: 2px solid black;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    color: white;
+}
+#year-slider {
+    width: 250px;
+    accent-color: #f2cd00;
+    cursor: pointer;
+}
+
 @media (min-width: 769px) {
 
     #infobox-mobile {
@@ -197,7 +219,7 @@ html, body {
         overflow-y: auto;
         background: linear-gradient(to right, #0b3d1a, #146c2e);
         color: white;
-        z-index: 1000;
+        z-index: 1500;
         border-radius: 6px;
     }
     .search-result {
@@ -244,6 +266,19 @@ html, body {
         background: #ccc;
         border-radius: 6px;
         margin: 0 auto 15px auto;
+    }
+
+    #year-slider-container {
+        width: calc(100% - 55px);
+        top: 70px;
+        bottom: auto;
+        padding: 10px;
+        z-index: 1000;
+    }
+
+    #year-slider {
+        flex: 1;
+        width: auto;
     }
 
 }

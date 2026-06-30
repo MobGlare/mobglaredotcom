@@ -37,6 +37,11 @@
             </div>
         </div>
 
+        <div id="year-slider-container">
+            <input id="year-label" type="number" min="1866" max="2026" value="2026">
+            <input id="year-slider" type="range" min="1866" max="2026" value="2026">
+        </div>
+
         <div id="sidebar">
 
             <input
@@ -73,6 +78,13 @@
                     <span>Show All Stations</span>
                     <label class="switch">
                         <input type="checkbox" id="all-stations-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </label>
+                <label class="switch-row">
+                    <span>Ignore Year</span>
+                    <label class="switch">
+                        <input type="checkbox" id="year-toggle">
                         <span class="slider"></span>
                     </label>
                 </label>
