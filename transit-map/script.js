@@ -28,6 +28,24 @@ function saveSettings() {
     localStorage.setItem("settings", JSON.stringify(settings));
 }
 
+const mobileSettingsData = [
+    {
+        label: "Network View",
+        property: "networkView"
+    },
+    {
+        label: "Show Station Groups",
+        property: "showStationGroupsSetting"
+    },
+    {
+        label: "Show All Stations",
+        property: "showAllStations"
+    },
+    {
+        label: "Ignore Year",
+        property: "ignoreYear"
+    }
+];
 document.getElementById("network-view-toggle").checked = settings.networkView;
 document.getElementById("station-groups-toggle").checked = settings.showStationGroupsSetting;
 document.getElementById("all-stations-toggle").checked = settings.showAllStations;
@@ -37,6 +55,7 @@ document.getElementById("year-toggle").checked = settings.ignoreYear;
 const stationMap = {};
 const stationMarkers = {};
 const renderedLines = {};
+let stationToLines = {};
 
 const stationGroupMap = {};
 const stationGroupMarkers = {};
@@ -47,6 +66,27 @@ let selectedLine = null;
 let selectedYear = new Date().getFullYear();
 
 let transitData = null;
+
+const tramIcon = L.icon({
+        iconUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Logo_tramway-budapest.svg/960px-Logo_tramway-budapest.svg.png",
+        iconSize: [24, 24],
+        iconAnchor: [12, 12]
+    });
+const metroIcon = L.icon({
+        iconUrl: "https://cdn-icons-png.flaticon.com/512/50/50471.png",
+        iconSize: [24, 24],
+        iconAnchor: [12, 12]
+    });
+const busIcon = L.icon({
+        iconUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/BKV_busz_symbol.svg/500px-BKV_busz_symbol.svg.png?_=20160213204542",
+        iconSize: [24, 24],
+        iconAnchor: [12, 12]
+    });
+const defaultIcon = L.icon({
+        iconUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Circle_-_black_simple.svg?utm_source=hu.wiktionary.org&utm_campaign=index&utm_content=original",
+        iconSize: [24, 24],
+        iconAnchor: [12, 12]
+    });
 
 // Year selector
 const yearSlider = document.getElementById("year-slider");
@@ -99,12 +139,15 @@ const mapSettings = document.getElementById("settings");
 
 // Mobile
 const mobileSearch = document.getElementById("search-bar-mobile");
+const mobileSettings = document.getElementById("settings-mobile");
 const results = document.getElementById("search-results");
+const settingsResults = document.getElementById("settings-results");
 const mobileHandle = document.getElementById("mobile-handle");
 const mobileInfo = document.getElementById("mobile-infocontent");
 
 mobileSearch.addEventListener("focus", () => {
     results.style.display = "block";
+    settingsResults.style.display = "none";
     lineList.style.display = "none";
 });
 
@@ -123,8 +166,14 @@ mobileSearch.addEventListener("input", () => {
 });
 
 document.addEventListener("click", event => {
-    if (!mobileSearch.contains(event.target) && !results.contains(event.target)) {
+    if (
+        !mobileSearch.contains(event.target) &&
+        !results.contains(event.target) &&
+        !settingsResults.contains(event.target) &&
+        !mobileSettings.contains(event.target)
+    ) {
         results.style.display = "none";
+        settingsResults.style.display = "none";
     }
 });
 
@@ -152,6 +201,14 @@ document.addEventListener("click", event => {
     if (!searchInput.contains(event.target) && !lineList.contains(event.target)) {
         lineList.style.display = "none";
     }
+});
+
+mobileSettings.addEventListener("click", event => {
+    event.preventDefault();
+    event.stopPropagation();
+    results.style.display = "none";
+    settingsResults.style.display = "block";
+    mobileSettingResults();
 });
 
 function updateMap() {
@@ -446,15 +503,25 @@ Promise.all([
 
         infoboxData = loadedInfoboxData;
 
+        data.lines.forEach(line => {
+            line.stations.forEach(stationId => {
+                if (!stationToLines[stationId]) {
+                    stationToLines[stationId] = [];
+                }
+                stationToLines[stationId].push(line);
+            });
+        });
+
         // Stations
         data.stations.forEach(station => {
 
             stationMap[station.id] = station;
 
+            const icon = getStationIcon(station.id);
             const marker = L.marker([
                 station.lat,
-                station.lng
-            ])
+                station.lng,
+            ], { icon })
             // create an initially-empty popup and update it when opened so
             // the popup reflects the currently selected year
             .bindPopup("");
@@ -573,6 +640,84 @@ Promise.all([
             error
         );
     });
+
+function getStationType(stationId) {
+
+    const lines = stationToLines[stationId];
+
+    if (!lines || lines.length === 0)
+        return "unknown";
+
+    const types = new Set(lines.map(l => l.type));
+
+    if (types.size === 1) {
+        return [...types][0]; // all same type → tram/metro/bus
+    }
+
+    
+
+    return "mixed";
+}
+
+function getStationIcon(stationId) {
+
+    const type = getStationType(stationId);
+
+    if (type === "tram") {
+        return tramIcon;
+    }
+
+    if (type === "metro") {
+        return metroIcon;
+    }
+
+    if (type === "bus") {
+        return busIcon;
+    }
+
+    return defaultIcon;
+}
+
+function mobileSettingResults() {
+    settingsResults.innerHTML = "";
+    settingsResults.style.display = "block";
+
+    mobileSettingsData.forEach(setting => {
+
+        const row = document.createElement("label");
+        row.className = "switch-row";
+
+        const text = document.createElement("span");
+        text.textContent = setting.label;
+
+        const wrapper = document.createElement("label");
+        wrapper.className = "switch";
+
+        const input = document.createElement("input");
+        input.type = "checkbox";
+        input.checked = setting.checked;
+
+        const slider = document.createElement("span");
+        slider.className = "slider";
+
+        wrapper.appendChild(input);
+        wrapper.appendChild(slider);
+
+        row.appendChild(text);
+        row.appendChild(wrapper);
+
+        settingsResults.appendChild(row);
+
+        input.checked = settings[setting.property];
+        input.addEventListener("change", () => {
+            settings[setting.property] = input.checked;
+            updateMap();
+        });
+
+    });
+    
+
+}
 
 function updateInfoBox(line) {
 

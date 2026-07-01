@@ -3,34 +3,42 @@ const minute = document.querySelector(".minute");
 const second = document.querySelector(".second");
 const clock = document.getElementById("clock");
 
+const clockItButton = document.getElementById("clock-button");
+
 let lastAngle = null;
 
 let clockMode = "real";
+let clockAnimating = false;
 
 let currentSecond = 0;
 let currentMinute = 0;
 let currentHour = 0;
 
-const numerals = ["XII", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI"];
-numerals.forEach((text, i) => {
-    const number = document.createElement("div");
-    number.className = "number";
-    number.textContent = text;
+const defaultNumerals = ["XII", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI"];
 
-    const angle = (i * 30 - 90) * Math.PI / 180;
-    const rect = clock.getBoundingClientRect();
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-    const size = clock.getBoundingClientRect().width;
-    const radius = size *0.42 //Math.min(rect.width, rect.height) * 0.42;
+function displayNumerals(labels = defaultNumerals) {
+    clock.querySelectorAll(".number").forEach((number) => number.remove());
 
-    number.style.left = `${centerX + Math.cos(angle) * radius}px`;
-    number.style.top  = `${centerY + Math.sin(angle) * radius}px`;
+    labels.forEach((text, i) => {
+        const number = document.createElement("div");
+        number.className = "number";
+        number.textContent = text;
 
-    number.style.fontSize = `${size * 0.07}px`;
+        const angle = (i * 30 - 90) * Math.PI / 180;
+        const rect = clock.getBoundingClientRect();
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const size = clock.getBoundingClientRect().width;
+        const radius = size * 0.42;
 
-    clock.appendChild(number);
-});
+        number.style.left = `${centerX + Math.cos(angle) * radius}px`;
+        number.style.top = `${centerY + Math.sin(angle) * radius}px`;
+        number.style.fontSize = `${size * 0.07}px`;
+
+        clock.appendChild(number);
+    });
+}
+displayNumerals();
 
 function getClockSize() {
     return clock.getBoundingClientRect().width;
@@ -84,6 +92,9 @@ hour.addEventListener("mousedown", () => {
 document.addEventListener("mousemove", (e) => {
 
     if (!dragMode)
+        return;
+
+    if (clockAnimating)
         return;
 
     const rect = clock.getBoundingClientRect();
@@ -141,3 +152,88 @@ clock.addEventListener("dblclick", () => {
 
 updateClock();
 setInterval(updateClock, 1000);    
+
+function animateClock(callback) {
+
+    clockAnimating = true;
+
+    const start = performance.now();
+    const duration = 2000;
+
+    const startHour = currentHour;
+    const startMinute = currentMinute;
+    const startSecond = currentSecond;
+
+    function frame(now) {
+
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = 0.5 - Math.cos(progress *Math.PI) / 2;
+
+        const spins = 10;
+
+        currentSecond =
+            (startSecond + eased * spins * 60) % 60;
+
+        currentMinute =
+            (startMinute + eased * spins * 60) % 60;
+
+        currentHour =
+            (startHour + eased * spins * 12) % 12;
+
+        renderClock();
+
+        if (progress < 1) {
+            requestAnimationFrame(frame);
+        }
+        else {
+
+            currentHour = startHour;
+            currentMinute = startMinute;
+            currentSecond = startSecond;
+
+            renderClock();
+
+            clockAnimating = false;
+
+            callback();
+
+        }
+
+    }
+
+    requestAnimationFrame(frame);
+
+}
+
+function equationMode() {
+    const equations = [
+        "10+2",
+        "5-4",
+        "2x1",
+        "9÷3",
+        "2²",
+        "√25",
+        "5+1",
+        "9-2",
+        "2x4",
+        "27÷3",
+        "10¹",
+        "√121"
+    ];
+
+    displayNumerals(equations);
+}
+
+function runClockFeature() {
+
+    if (currentHour === 3 && currentMinute === 57) {
+        equationMode();
+    }
+    console.log(currentHour, currentMinute)
+
+}
+
+clockItButton.addEventListener("click", () => {
+    animateClock(runClockFeature);
+    clockMode = "real";
+})
