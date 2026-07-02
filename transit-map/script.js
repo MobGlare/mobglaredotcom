@@ -95,12 +95,14 @@ const yearLabel = document.getElementById("year-label");
 yearSlider.addEventListener("input", () => {
     selectedYear = Number(yearSlider.value);
     yearLabel.value = selectedYear;
+    refreshSearchResults();
     updateStationMarkers();
     updateMap();
 });
 yearLabel.addEventListener("change", () => {
     selectedYear = Number(yearLabel.value);
     yearSlider.value = selectedYear;
+    refreshSearchResults();
     updateStationMarkers();
     updateMap();
 });
@@ -260,6 +262,42 @@ function updateMap() {
             map.removeLayer(line.polyline);
         }
     });
+
+}
+
+function resolveLineGroups(lines, lineGroups) {
+
+    const visible = [...lines];
+
+    lineGroups.forEach(group => {
+
+        // Find every line from this group that's currently visible
+        const present = group.lines.filter(name =>
+            visible.some(line => line.name === name)
+        );
+
+        // 0 or 1 line -> nothing to do
+        if (present.length <= 1)
+            return;
+
+        // Keep the first (newest)
+        const keep = present[0];
+
+        // Remove the rest
+        for (let i = visible.length - 1; i >= 0; i--) {
+
+            if (
+                group.lines.includes(visible[i].name) &&
+                visible[i].name !== keep
+            ) {
+                visible.splice(i, 1);
+            }
+
+        }
+
+    });
+
+    return visible;
 
 }
 
@@ -502,6 +540,7 @@ Promise.all([
     .then(([data, loadedInfoboxData]) => {
 
         infoboxData = loadedInfoboxData;
+        transitData = data;
 
         data.lines.forEach(line => {
             line.stations.forEach(stationId => {
@@ -577,6 +616,58 @@ Promise.all([
                 data: line
             }
 
+        });
+        
+        refreshSearchResults();
+
+        updateMap();
+
+        // // Show first line by default
+        // if (data.lines.length > 0) {
+        //     selectLine(
+        //         data.lines[0]
+        //     );
+        // }
+
+        
+
+        showStationGroups();
+
+    })
+    .catch(error => {
+        console.error(
+            "Failed to load JSON:",
+            error
+        );
+    });
+
+function refreshSearchResults() {
+        results.innerHTML = "";
+        lineList.innerHTML = "";
+        let searchableLines = transitData.lines.filter(lineExists);
+        if (settings.ignoreYear) {
+            searchableLines = resolveLineGroups(
+                searchableLines,
+                transitData.line_groups
+            );
+        }
+
+        searchableLines.forEach(line => {
+
+            const item = document.createElement("div");
+
+            item.textContent = line.name;
+
+            item.classList.add("search-result");
+
+            item.addEventListener("click", () => {
+                selectLine(line);
+                results.style.display = "none";
+                mobileSearch.value = "";
+            });
+
+            results.appendChild(item);
+
             const button =
                 document.createElement(
                     "button"
@@ -602,44 +693,7 @@ Promise.all([
             );
 
         });
-        data.lines.forEach(line => {
-
-            const item = document.createElement("div");
-
-            item.textContent = line.name;
-
-            item.classList.add("search-result");
-
-            item.addEventListener("click", () => {
-                selectLine(line);
-                results.style.display = "none";
-                mobileSearch.value = "";
-            });
-
-            results.appendChild(item);
-
-        });
-
-        updateMap();
-
-        // // Show first line by default
-        // if (data.lines.length > 0) {
-        //     selectLine(
-        //         data.lines[0]
-        //     );
-        // }
-
-        transitData = data;
-
-        showStationGroups();
-
-    })
-    .catch(error => {
-        console.error(
-            "Failed to load JSON:",
-            error
-        );
-    });
+}
 
 function getStationType(stationId) {
 
@@ -712,6 +766,7 @@ function mobileSettingResults() {
         input.addEventListener("change", () => {
             settings[setting.property] = input.checked;
             updateMap();
+            refreshSearchResults();
         });
 
     });
@@ -900,6 +955,7 @@ document
     .getElementById("year-toggle")
     .addEventListener("change", function () {
         settings.ignoreYear = this.checked;
+        refreshSearchResults();
         toggleYearSelector();
         saveSettings();
         updateMap();
