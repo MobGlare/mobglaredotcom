@@ -290,6 +290,24 @@
             "https://hu.wikipedia.org/wiki/56-os_villamos_(Budapest)"
         ]
     },
+    "Tram 56A (2016-)": {
+        "name": "Tram 56A",
+
+        "startYear": 2016,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 37,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/56A_villamos_(Budapest)"
+        ]
+    },
     "Tram 61 (2008-)": {
         "name": "Tram 61",
 
