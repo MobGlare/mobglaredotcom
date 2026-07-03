@@ -1,6 +1,222 @@
 {
+    "Tram 1 (1984-1986)": {
+        "name": "1",
+
+        "startYear": 1984,
+        "endYear": 1986,
+
+        "operator": "BKV",
+
+        "stationCount": 8,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/1-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 1 (1987-1989)": {
+        "name": "1",
+
+        "startYear": 1987,
+        "endYear": 1989,
+
+        "operator": "BKV",
+
+        "stationCount": 10,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/1-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 1 (1990-1992)": {
+        "name": "1",
+
+        "startYear": 1990,
+        "endYear": 1992,
+
+        "operator": "BKV",
+
+        "stationCount": 13,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/1-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 1 (1993-1994)": {
+        "name": "1",
+
+        "startYear": 1993,
+        "endYear": 1994,
+
+        "operator": "BKV",
+
+        "stationCount": 15,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/1-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 1 (1995-1999)": {
+        "name": "1",
+
+        "startYear": 1995,
+        "endYear": 1999,
+
+        "operator": "BKV",
+
+        "stationCount": 17,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/1-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 1 (2000-2012)": {
+        "name": "1",
+
+        "startYear": 2000,
+        "endYear": 2012,
+
+        "operator": "BKV",
+
+        "stationCount": 24,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/1-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 1 (2013)": {
+        "name": "1",
+
+        "startYear": 2013,
+        "endYear": 2013,
+
+        "operator": "BKV",
+
+        "stationCount": 19,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/1-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 1 (2014)": {
+        "name": "1",
+
+        "startYear": 2014,
+        "endYear": 2014,
+
+        "operator": "BKV",
+
+        "stationCount": 24,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/1-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 1 (2015-2018)": {
+        "name": "1",
+
+        "startYear": 2015,
+        "endYear": 2018,
+
+        "operator": "BKV",
+
+        "stationCount": 29,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/1-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 1 (2019-)": {
+        "name": "1",
+
+        "startYear": 2019,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 32,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/1-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 1A (2023-)": {
+        "name": "1A",
+
+        "startYear": 2023,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 20,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/1A_villamos_(Budapest)"
+        ]
+    },
+    "Tram 1M (2020-2023)": {
+        "name": "1M",
+
+        "startYear": 2020,
+        "endYear": 2023,
+
+        "operator": "BKV",
+
+        "stationCount": 20,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/1A_villamos_(Budapest)"
+        ]
+    },
     "Tram 2 (1911-1941)": {
-        "name": "Tram 2",
+        "name": "2",
 
         "startYear": 1911,
         "endYear": 1941,
@@ -20,7 +236,7 @@
         ]
     },
     "Tram 2 (1973-)": {
-        "name": "Tram 2",
+        "name": "2",
 
         "startYear": 1973,
         "endYear": null,
@@ -38,7 +254,7 @@
         ]
     },
     "Tram 2A (1973-2013)": {
-        "name": "Tram 2A",
+        "name": "2A",
 
         "startYear": 1973,
         "endYear": 2013,
@@ -56,7 +272,7 @@
         ]
     },
     "Tram 2A (2015)": {
-        "name": "Tram 2A",
+        "name": "2A",
 
         "startYear": 2015,
         "endYear": 2015,
@@ -74,7 +290,7 @@
         ]
     },
     "Tram 3 (1981-1982)": {
-        "name": "Tram 3",
+        "name": "3",
 
         "startYear": 1981,
         "endYear": 1982,
@@ -93,7 +309,7 @@
         ]
     },
     "Tram 4A (1971-1972)": {
-        "name": "Tram 4A",
+        "name": "4A",
 
         "startYear": 1971,
         "endYear": 1972,
@@ -111,7 +327,7 @@
         ]
     },
     "Tram 4 (1972-)": {
-        "name": "Tram 4",
+        "name": "4",
 
         "startYear": 1972,
         "endYear": null,
@@ -129,7 +345,7 @@
         ]
     },
     "Tram 6 (1959-)": {
-        "name": "Tram 6",
+        "name": "6",
 
         "startYear": 1959,
         "endYear": null,
@@ -147,7 +363,7 @@
         ]
     },
     "Tram 9 (1946-1986)": {
-        "name": "Tram 9",
+        "name": "9",
 
         "startYear": 1946,
         "endYear": 1986,
@@ -165,7 +381,7 @@
         ]
     },
     "Tram 17 (2016-)": {
-        "name": "Tram 17",
+        "name": "17",
 
         "startYear": 2016,
         "endYear": null,
@@ -183,7 +399,7 @@
         ]
     },
     "Tram 18 (2008-2016)": {
-        "name": "Tram 18",
+        "name": "18",
 
         "startYear": 2008,
         "endYear": 2016,
@@ -201,7 +417,7 @@
         ]
     },
     "Tram 18A (2002)": {
-        "name": "Tram 18A",
+        "name": "18A",
 
         "startYear": 2002,
         "endYear": 2002,
@@ -219,7 +435,7 @@
         ]
     },
     "Tram 43 (1963-1983)": {
-        "name": "Tram 43",
+        "name": "43",
 
         "startYear": 1963,
         "endYear": 1983,
@@ -237,7 +453,7 @@
         ]
     },
     "Tram 47 (1960-)": {
-        "name": "Tram 47",
+        "name": "47",
 
         "startYear": 1960,
         "endYear": null,
@@ -255,7 +471,7 @@
         ]
     },
     "Tram 48 (2014-)": {
-        "name": "Tram 48",
+        "name": "48",
 
         "startYear": 2014,
         "endYear": null,
@@ -273,7 +489,7 @@
         ]
     },
     "Tram 56 (2016-)": {
-        "name": "Tram 56",
+        "name": "56",
 
         "startYear": 2016,
         "endYear": null,
@@ -291,7 +507,7 @@
         ]
     },
     "Tram 56A (2016-)": {
-        "name": "Tram 56A",
+        "name": "56A",
 
         "startYear": 2016,
         "endYear": null,
@@ -309,7 +525,7 @@
         ]
     },
     "Tram 61 (2008-)": {
-        "name": "Tram 61",
+        "name": "61",
 
         "startYear": 2008,
         "endYear": null,
@@ -327,7 +543,7 @@
         ]
     },
     "Tram 118 (2003-2007)": {
-        "name": "Tram 118",
+        "name": "118",
 
         "startYear": 2003,
         "endYear": 2007,

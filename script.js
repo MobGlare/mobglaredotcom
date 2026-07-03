@@ -229,6 +229,11 @@ function runClockFeature() {
     if (currentHour === 3 && currentMinute === 57) {
         equationMode();
     }
+
+    if (currentHour === 6 && currentMinute === 41) {
+        window.location.href = "/transit-map";
+    }
+
     console.log(currentHour, currentMinute)
 
 }

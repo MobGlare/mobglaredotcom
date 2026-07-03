@@ -437,7 +437,14 @@ function getStationGroupName(group) {
 
 function showStationGroup(group) {
 
-    const lines = getLinesAtGroup(group);
+    let lines = getLinesAtGroup(group);
+    if (settings.ignoreYear) {
+        lines = resolveLineGroups(lines, transitData.line_groups);
+    }
+    else {
+        lines = lines.filter(lineExists);
+    }
+    
 
     let html = `
         <h2>${getStationGroupName(group)}</h2>
@@ -450,7 +457,7 @@ function showStationGroup(group) {
 
         const button = document.createElement("button");
 
-        button.textContent = line.name;
+        button.textContent = `🚊${infoboxData[line.name].name}`;    //Can't wait for the day when I add buses or metros and I have to redo the entire line button thing
 
         button.classList.add("group-line-button");
 
@@ -776,6 +783,8 @@ function mobileSettingResults() {
 
 function updateInfoBox(line) {
 
+    const lineColor = line.color;
+
     const info =
         infoboxData[line.name];
 
@@ -799,11 +808,23 @@ function updateInfoBox(line) {
 
     const years = 
         info.endYear === null
-        ? `${info.startYear}–Present`
-        : `${info.startYear}–${info.endYear}`;
+        ? `${info.startYear}-Present`
+        : `${info.startYear}-${info.endYear}`;
+
+    const firstStation = stationMap[line.stations[0]];
+    const lastStation = stationMap[line.stations[line.stations.length - 1]];
+    const firstStationName = firstStation
+        ? getStationName(firstStation, selectedYear)
+        : "Unknown";
+    const lastStationName = lastStation
+        ? getStationName(lastStation, selectedYear)
+        : "Unknown";
 
     const html = `
-        <h2>${info.name}</h2>
+        <div class="infobox-display">
+            <h2 class="line-num">${info.name}</h2>
+            <h2 class="terminus">${firstStationName}◁▷${lastStationName}</h2>
+        </div>
 
         <p>
             <strong>Operator:</strong>
@@ -826,8 +847,13 @@ function updateInfoBox(line) {
         </details>
 
     `;
+
     lineInfo.innerHTML = html;
     mobileInfo.innerHTML = html;
+
+    document.querySelectorAll(".line-num").forEach(el => {
+        el.style.backgroundColor = lineColor;
+    });
 }
 
 // Select a line
@@ -867,6 +893,9 @@ function selectLine(line) {
 function deselectLine() {
 
     selectedLine = null;
+    selectedYear = yearSlider.value;
+
+    updateStationMarkers();
 
     showStationGroups();
 
