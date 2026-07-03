@@ -331,7 +331,9 @@ html, body {
         bottom: 0;
         left: 0;
         right: 0;
-        min-height: 120px;
+        /* min-height: 120px; */
+        max-height: 70vh;
+        overflow-y: auto;
         background-image: linear-gradient(to bottom, #0b3d1a, #146c2e);
         border: 4px solid black;
         color: white;
@@ -340,6 +342,10 @@ html, body {
         padding: 15px;
         box-shadow: 0 -2px 12px rgba(0,0,0,.2);
 
+    }
+
+    #mobile-infocontent {
+        max-height: 25vh;
     }
     
     #mobile-handle {
@@ -351,6 +357,7 @@ html, body {
     }
 
     #year-slider-container {
+        position: fixed;
         width: calc(100% - 55px);
         top: 70px;
         bottom: auto;
