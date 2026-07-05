@@ -289,6 +289,24 @@
             "https://hu.wikipedia.org/wiki/2A_villamos_(Budapest)"
         ]
     },
+    "Tram 3 (2001-)": {
+        "name": "3",
+
+        "startYear": 2001,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 32,
+
+        "notes": [
+
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/3-as_villamos_(Budapest)"
+        ]
+    },
     "Tram 3 (1981-1982)": {
         "name": "3",
 
@@ -380,6 +398,24 @@
             "https://hu.wikipedia.org/wiki/9-es_villamos_(Budapest)"
         ]
     },
+    "Tram 13 (1983-2001)": {
+        "name": "13",
+
+        "startYear": 1983,
+        "endYear": 2001,
+
+        "operator": "BKV",
+
+        "stationCount": 21,
+
+        "notes": [
+            "Several station names have changed since the line operated."
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/13-as_villamos_(Budapest)"
+        ]
+    },
     "Tram 17 (2016-)": {
         "name": "17",
 
@@ -432,6 +468,60 @@
 
         "sources": [
             "https://hu.wikipedia.org/wiki/18A_villamos_(Budapest)"
+        ]
+    },
+    "Tram 23 (2023-)": {
+        "name": "23",
+
+        "startYear": 2023,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 20,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/23-as_villamos_(Budapest)"
+        ]
+    },
+    "Tram 2M (2020-2023)": {
+        "name": "2M",
+
+        "startYear": 2020,
+        "endYear": 2023,
+
+        "operator": "BKV",
+
+        "stationCount": 20,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/23-as_villamos_(Budapest)"
+        ]
+    },
+    "Tram 24 (1968-)": {
+        "name": "24",
+
+        "startYear": 1968,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 12,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/24-es_villamos_(Budapest)"
         ]
     },
     "Tram 43 (1963-1983)": {
@@ -540,6 +630,24 @@
 
         "sources": [
             "https://hu.wikipedia.org/wiki/61-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 63 (2000-2001)": {
+        "name": "63",
+
+        "startYear": 2000,
+        "endYear": 2001,
+
+        "operator": "BKV",
+
+        "stationCount": 13,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/63-as_villamos_(Budapest)"
         ]
     },
     "Tram 118 (2003-2007)": {
