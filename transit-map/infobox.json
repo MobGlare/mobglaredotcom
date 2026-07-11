@@ -578,6 +578,42 @@
             "https://hu.wikipedia.org/wiki/48-as_villamos_(Budapest)"
         ]
     },
+    "Tram 51 (2011-)": {
+        "name": "51",
+
+        "startYear": 2011,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 25,
+
+        "notes": [
+            "The line's 2 termini are Mester utca/Ferenc körút and Nagysándor József utca however due to techincal limitations only Mester utca/Ferenc körút is displayed and the line is treated as a complete loop"
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/51-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 51A (2023-)": {
+        "name": "51A",
+
+        "startYear": 2023,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 7,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/51A_villamos_(Budapest)"
+        ]
+    },
     "Tram 56 (2016-)": {
         "name": "56",
 
@@ -612,6 +648,24 @@
 
         "sources": [
             "https://hu.wikipedia.org/wiki/56A_villamos_(Budapest)"
+        ]
+    },
+    "Tram 58 (1955-1975)": {
+        "name": "58",
+
+        "startYear": 1955,
+        "endYear": 1975,
+
+        "operator": "BKV",
+
+        "stationCount": 11,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/58-as_villamos_(Budapest)"
         ]
     },
     "Tram 61 (2008-)": {
