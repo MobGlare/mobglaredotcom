@@ -524,6 +524,60 @@
             "https://hu.wikipedia.org/wiki/24-es_villamos_(Budapest)"
         ]
     },
+    "Tram 37 (2011-)": {
+        "name": "37",
+
+        "startYear": 2011,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 23,
+
+        "notes": [
+            "Start year not certain"
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/37-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 37A (2011-)": {
+        "name": "37A",
+
+        "startYear": 2011,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 14,
+
+        "notes": [
+            "Start year not certain"
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/37A_villamos_(Budapest)"
+        ]
+    },
+    "Tram 37B (2023)": {
+        "name": "37B",
+
+        "startYear": 2023,
+        "endYear": 2023,
+
+        "operator": "BKV",
+
+        "stationCount": 24,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/37B_villamos_(Budapest)"
+        ]
+    },
     "Tram 43 (1963-1983)": {
         "name": "43",
 
