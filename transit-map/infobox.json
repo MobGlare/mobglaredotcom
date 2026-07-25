@@ -632,6 +632,24 @@
             "https://hu.wikipedia.org/wiki/48-as_villamos_(Budapest)"
         ]
     },
+    "Tram 49 (1980-)": {
+        "name": "49",
+
+        "startYear": 1980,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 12,
+
+        "notes": [
+            "Start year not certain"
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/49-es_villamos_(Budapest)"
+        ]
+    },
     "Tram 51 (2011-)": {
         "name": "51",
 

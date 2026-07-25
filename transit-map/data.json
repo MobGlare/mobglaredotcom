@@ -176,6 +176,24 @@
             ]
         },
         {
+            "id": "moricz_zsigmond_korter_v19-49",
+            "lat": 47.47745067334288, 
+            "lng": 19.046463541179715,
+
+            "names": [
+                {
+                    "name": "Móricz Zsigmond körtér M",
+                    "startYear": 2014,
+                    "endYear": null
+                },
+                {
+                    "name": "Móricz Zsigmond körtér",
+                    "startYear": null,
+                    "endYear": 2013
+                }
+            ]
+        },
+        {
             "id": "keleti_palyaudvar_v",
             "lat": 47.49924375861616,
             "lng": 19.08255340470799,
@@ -722,6 +740,24 @@
             "id": "kelenfold_vasutallomas_v1",
             "lat": 47.463933666694494, 
             "lng": 19.023169285689473,
+
+            "names": [
+                {
+                    "name": "Kelenföld vasútállomás M",
+                    "startYear": 2014,
+                    "endYear": null
+                },
+                {
+                    "name": "Kelenföldi pályaudvar",
+                    "startYear": null,
+                    "endYear": 2013
+                }
+            ]
+        },
+        {
+            "id": "kelenfold_vasutallomas_v19-49",
+            "lat": 47.465956811936564, 
+            "lng": 19.02196489111645,
 
             "names": [
                 {
@@ -3975,6 +4011,58 @@
                     "endYear": null
                 }
             ]
+        },
+        {
+            "id": "kosztolanyi_dezso_ter_v",
+            "lat": 47.475154448832825, 
+            "lng": 19.039945183379157,
+            
+            "names": [
+                {
+                    "name": "Kosztolányi Dezső tér",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "karolina_ut_v",
+            "lat": 47.472759548546954, 
+            "lng": 19.03340805091214,
+            
+            "names": [
+                {
+                    "name": "Karolina út",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "csoka_utca_v",
+            "lat": 47.470809848692994, 
+            "lng": 19.02890145973999,
+            
+            "names": [
+                {
+                    "name": "Csóka utca(Karinthy Színház)",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "szent_gellert_templom_v",
+            "lat": 47.468536300358586, 
+            "lng": 19.02370856920191,
+            
+            "names": [
+                {
+                    "name": "Szent Gellért-templom",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
         }
     ],
 
@@ -4059,7 +4147,8 @@
             "stations": [
                 "moricz_zsigmond_korter_v17-41-47-48-56",
                 "moricz_zsigmond_korter_v17-61",
-                "moricz_zsigmond_korter_v6"
+                "moricz_zsigmond_korter_v6",
+                "moricz_zsigmond_korter_v19-49"
             ],
             "names": [
                 {
@@ -4379,7 +4468,8 @@
         {
             "id": "kelenfold_vasutallomas",
             "stations": [
-                "kelenfold_vasutallomas_v1"
+                "kelenfold_vasutallomas_v1",
+                "kelenfold_vasutallomas_v19-49"
             ],
             "names": [
                 {
@@ -7017,6 +7107,59 @@
             "budafok_kocsiszin_v",
             "savoya_park_v"
         ]
+        },
+        {
+            "name": "Tram 49 (1980-)",
+            "color": "#f2cd00",
+            "type": "tram",
+
+            "route": [
+                [47.49742957412341, 19.05532598539334],
+                [47.49575209312277, 19.058890216221382],
+                [47.494683709303, 19.059727466500107],
+                [47.49151924678007, 19.061493308565048],
+                [47.49004126437601, 19.061754598547985],
+                [47.48952447656083, 19.061485206021523],
+                [47.48878476444036, 19.060801806165923],
+                [47.48700455658901, 19.05738040597933],
+                [47.4848176752206, 19.053132897200857],
+                [47.484625624761385, 19.052959226789394],
+                [47.48449759071983, 19.05300659144238],
+                [47.484115010986415, 19.05350730353777],
+                [47.48389247328605, 19.053638120211346],
+                [47.48372247457515, 19.053545231584394],
+                [47.48351129016306, 19.05331212245634],
+                [47.48299983665287, 19.05296982783684],
+                [47.4810018328653, 19.052157347675458],
+                [47.48028830474468, 19.051703602970854],
+                [47.479414592703584, 19.050898557282686],
+                [47.478638784076736, 19.04960230782735],
+                [47.477751733987276, 19.047392007005698],
+                [47.47745067334288, 19.046463541179715],
+                [47.475154448832825, 19.039945183379157],
+                [47.472759548546954, 19.03340805091214],
+                [47.470809848692994, 19.02890145973999],
+                [47.468536300358586, 19.02370856920191],
+                [47.46809645228671, 19.02269660829592],
+                [47.467921449460945, 19.02241574714109],
+                [47.46767400115053, 19.02227919135533],
+                [47.465956811936564, 19.02196489111645]
+            ],
+
+            "stations": [
+                "deak_ferenc_ter_v",
+                "astoria_v",
+                "kalvin_ter_v",
+                "fovam_ter_v47-48-49",
+                "szent_gellert_ter_muegyetem_v",
+                "gardonyi_ter_v",
+                "moricz_zsigmond_korter_v19-49",
+                "kosztolanyi_dezso_ter_v",
+                "karolina_ut_v",
+                "csoka_utca_v",
+                "szent_gellert_templom_v",
+                "kelenfold_vasutallomas_v19-49"
+            ]
         },
         {
             "name": "Tram 51 (2011-)",
