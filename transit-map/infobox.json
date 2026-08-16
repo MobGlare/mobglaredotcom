@@ -578,6 +578,24 @@
             "https://hu.wikipedia.org/wiki/37B_villamos_(Budapest)"
         ]
     },
+    "Tram 41 (2016-)": {
+        "name": "41",
+
+        "startYear": 2016,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 39,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/41-es_villamos_(Budapest)"
+        ]
+    },
     "Tram 43 (1963-1983)": {
         "name": "43",
 
