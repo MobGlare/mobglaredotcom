@@ -8,29 +8,35 @@
 </head>
 <body>
     <header>
-        <center><h1 class="text title">MobGlare.com</h1></center>
+        <center><h1 class="title">MobGlare.com</h1></center>
     </header>
-    <nav>
+    <nav id="navbar">
         <div class="nav-links">
             <a href="/projects">Projects</a>
+            <!-- <a href="/settings">Settings</a> -->
         </div>
     </nav>
     <main>
-        
-        <div id="clock">
-            <div id="clock-button"><button>Clock it</button></div>
-            <div class="hand hour"></div>
-            <div class="hand minute"></div>
-            <div class="hand second"></div>
-
-            <div class="center-dot"></div>
-        </div>
+        <section id="about">
+            <p class="text">Personal website of MobGlare, where I put random stuff I make like the clock below</p>
+        </section>
+        <section id="clock-box">
+            <div id="clock-content">
+                <div id="clock">
+                    <div id="clock-button"><button>Clock it</button></div>
+                    <div class="hand hour"></div>
+                    <div class="hand minute"></div>
+                    <div class="hand second"></div>
+                    <div class="center-dot"></div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="script.js"></script>
-    <footer>
+    <footer id="footer">
         <div class="footer-links">
             <a href="https://github.com/MobGlare/mobglaredotcom" class="footertext">Source</a>
-            <a href="/contacts">Contact Me</a>
+            <!-- <a href="/contacts">Contact Me</a> -->
         </div>
     </footer>
       

@@ -25,10 +25,9 @@ function displayNumerals(labels = defaultNumerals) {
         number.textContent = text;
 
         const angle = (i * 30 - 90) * Math.PI / 180;
-        const rect = clock.getBoundingClientRect();
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-        const size = clock.getBoundingClientRect().width;
+        const centerX = clock.clientWidth / 2;
+        const centerY = clock.clientHeight / 2;
+        const size = clock.clientWidth;
         const radius = size * 0.42;
 
         number.style.left = `${centerX + Math.cos(angle) * radius}px`;
@@ -41,7 +40,7 @@ function displayNumerals(labels = defaultNumerals) {
 displayNumerals();
 
 function getClockSize() {
-    return clock.getBoundingClientRect().width;
+    return clock.clientWidth;
 }
 function updateHandSizes() {
     const size = getClockSize();
@@ -62,14 +61,14 @@ function renderClock() {
         `translateX(-50%) rotate(${currentMinute * 6 + currentSecond * 0.1}deg)`;
 
     hour.style.transform =
-        `translateX(-50%) rotate(${(currentHour % 12) * 30 + currentMinute * 0.5}deg)`;
+        `translateX(-50%) rotate(${(currentHour % 12) * 30 + currentMinute * 0.5 + currentSecond / 120}deg)`;
 }
 
 function updateClock() {
     if (clockMode === "real") {
         const now = new Date();
 
-        currentSecond = now.getSeconds();
+        currentSecond = now.getSeconds() + now.getMilliseconds() / 1000;
         currentMinute = now.getMinutes();
         currentHour = now.getHours() % 12;
     }
@@ -241,4 +240,11 @@ function runClockFeature() {
 clockItButton.addEventListener("click", () => {
     animateClock(runClockFeature);
     clockMode = "real";
+    document.getElementById("clock-box").classList.toggle("expanded");
 })
+
+document.getElementById("clock-box").addEventListener("click", () => {
+    if (clockMode !== "edit") {
+        document.getElementById("clock-box").classList.toggle("expanded");
+    } 
+});
