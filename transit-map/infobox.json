@@ -614,6 +614,24 @@
             "https://hampage.hu/trams/43-as"
         ]
     },
+    "Tram 44 (1972-1995)": {
+        "name": "44",
+
+        "startYear": 1972,
+        "endYear": 1995,
+
+        "operator": "BKV",
+
+        "stationCount": 9,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/44-es_villamos_(Budapest)"
+        ]
+    },
     "Tram 47 (1960-)": {
         "name": "47",
 

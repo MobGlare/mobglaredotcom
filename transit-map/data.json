@@ -213,6 +213,20 @@
             
         },
         {
+            "id": "keleti_baross_ter_old_v",
+            "lat": 47.50038933471385, 
+            "lng": 19.082522203881478,
+
+            "names": [
+                {
+                    "name": "Baross tér, Keleti pályaudvar",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+            
+        },
+        {
             "id": "nyugati_palyaudvar_v",
             "lat": 47.51023453510085, 
             "lng": 19.056147673208937,
@@ -4237,6 +4251,110 @@
                     "endYear": null
                 }
             ]
+        },
+        {
+            "id": "dozsa_gyorgy_ut_44_v",
+            "lat": 47.50421689772601, 
+            "lng": 19.089352236795897,
+            
+            "names": [
+                {
+                    "name": "Dózsa György út",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "stefania_ut_old_v",
+            "lat": 47.50875754902727, 
+            "lng": 19.09524106022684,
+            
+            "names": [
+                {
+                    "name": "Stefánia út",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "zuglo_vasutallomas_44_v",
+            "lat": 47.51183262889903, 
+            "lng": 19.099284100843953,
+            
+            "names": [
+                {
+                    "name": "Hungária körút",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "amerikai_ut_old_v",
+            "lat": 47.514199159658745, 
+            "lng": 19.103372619971545,
+            
+            "names": [
+                {
+                    "name": "Amerikai út",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "rona_utca_old_v",
+            "lat": 47.51659545868842, 
+            "lng": 19.107632592912065,
+            
+            "names": [
+                {
+                    "name": "Róna utca",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "bosnyak_ter_44_v",
+            "lat": 47.51974277179873, 
+            "lng": 19.112518507258986,
+            
+            "names": [
+                {
+                    "name": "Bosnyák tér",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "locsei_utca_old_v",
+            "lat": 47.52137730376434, 
+            "lng": 19.11465843817938,
+            
+            "names": [
+                {
+                    "name": "Lőcsei utca/Fűrész utca",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {
+            "id": "rakospatak_old_v",
+            "lat": 47.52341976489844, 
+            "lng": 19.11792915410458,
+            
+            "names": [
+                {
+                    "name": "Zugló, Rákos-patak",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
         }
     ],
 
@@ -4340,7 +4458,8 @@
         {
             "id": "keleti_palyaudvar",
             "stations": [
-                "keleti_palyaudvar_v"
+                "keleti_palyaudvar_v",
+                "keleti_baross_ter_old_v"
             ],
             "names": [
                 {
@@ -7299,6 +7418,48 @@
             "nagyteteny_dozsa_gyorgy_ut_old_v",
             "bartok_bela_ut_old_v",
             "nagyteteny_old_v"
+        ]
+        },
+        {
+        "name": "Tram 44 (1972-1995)",
+        "color": "#f2cd00",
+        "type": "tram",
+
+        "route": [
+            [47.500987687662615, 19.08264055248025],
+            [47.500735479661515, 19.0821396217534],
+            [47.50038933471385, 19.082522203881478],
+            [47.500765221440666, 19.08254582316545],
+            [47.500987687662615, 19.08264055248025],
+            [47.501817395794106, 19.084411285987066],
+            [47.50383812519222, 19.088675442307373],
+            [47.50421689772601, 19.089352236795897],
+            [47.50875754902727, 19.09524106022684],
+            [47.51046683002687, 19.097599178261373],
+            [47.51183262889903, 19.099284100843953],
+            [47.514199159658745, 19.103372619971545],
+            [47.51659545868842, 19.107632592912065],
+            [47.51909512436193, 19.111628755362396],
+            [47.51974277179873, 19.112518507258986],
+            [47.52137730376434, 19.11465843817938],
+            [47.52311296640751, 19.11683926997068],
+            [47.52323699416615, 19.117617900627927],
+            [47.52341976489844, 19.11792915410458],
+            [47.52368782748727, 19.117834424785602],
+            [47.52370915058894, 19.117635944307732],
+            [47.52311296640751, 19.11683926997068]
+        ],
+
+        "stations": [
+            "keleti_baross_ter_old_v",
+            "dozsa_gyorgy_ut_44_v",
+            "stefania_ut_old_v",
+            "zuglo_vasutallomas_44_v",
+            "amerikai_ut_old_v",
+            "rona_utca_old_v",
+            "bosnyak_ter_44_v",
+            "locsei_utca_old_v",
+            "rakospatak_old_v"
         ]
         },
         {
