@@ -297,10 +297,10 @@
 
         "operator": "BKV",
 
-        "stationCount": 32,
+        "stationCount": 33,
 
         "notes": [
-
+            "Kincsem lakópark station didnt exist before 2026"
         ],
 
         "sources": [
@@ -697,7 +697,7 @@
         "stationCount": 25,
 
         "notes": [
-            "The line's 2 termini are Mester utca/Ferenc körút and Nagysándor József utca however due to techincal limitations only Mester utca/Ferenc körút is displayed and the line is treated as a complete loop"
+            ""
         ],
 
         "sources": [
@@ -810,6 +810,60 @@
 
         "sources": [
             "https://hu.wikipedia.org/wiki/63-as_villamos_(Budapest)"
+        ]
+    },
+    "Tram 67 (1972-1997)": {
+        "name": "67",
+
+        "startYear": 1972,
+        "endYear": 1997,
+
+        "operator": "BKV",
+
+        "stationCount": 14,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/67-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 69 (1973-)": {
+        "name": "69",
+
+        "startYear": 1972,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 15,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/69-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 69A (1997)": {
+        "name": "69A",
+
+        "startYear": 1997,
+        "endYear": 1997,
+
+        "operator": "BKV",
+
+        "stationCount": 10,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/69-es_villamos_(Budapest)"
         ]
     },
     "Tram 118 (2003-2007)": {

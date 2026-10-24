@@ -1,3 +1,5 @@
+import { parse } from "https://esm.sh/jsonc-parser@3.3.1";
+
 // Create map
 const map = L.map("map").setView([47.4983610112664, 19.04045507237725], 12);
 
@@ -539,13 +541,19 @@ map.on("zoomend", () => {
 
 // Load JSON
 
-Promise.all([
-    fetch("data.json").then(r => r.json()),
-    fetch("infobox.json").then(r => r.json())
-    ])
-    //.then(response => response.json())
-    .then(([data, loadedInfoboxData]) => {
+async function fetchJsonc(url) {
+    const response = await fetch(url);
+    if (!response.ok) {
+        throw new Error(`Failed to load ${url}: ${response.status}`);
+    }
+    const text = await response.text();
+    return parse(text);
+}
 
+Promise.all([
+    fetchJsonc("data.jsonc"),
+    fetchJsonc("infobox.jsonc")
+]).then(([data, loadedInfoboxData]) => {
         infoboxData = loadedInfoboxData;
         transitData = data;
 
