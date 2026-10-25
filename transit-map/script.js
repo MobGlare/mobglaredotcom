@@ -65,6 +65,7 @@ const groupedStations = {};
 
 let infoboxData = {};
 let selectedLine = null;
+let selectedLineGroup = null;
 let selectedYear = new Date().getFullYear();
 
 let transitData = null;
@@ -98,6 +99,7 @@ yearSlider.addEventListener("input", () => {
     selectedYear = Number(yearSlider.value);
     yearLabel.value = selectedYear;
     refreshSearchResults();
+    updateSelectedLineForYear();
     updateStationMarkers();
     updateMap();
 });
@@ -105,6 +107,7 @@ yearLabel.addEventListener("change", () => {
     selectedYear = Number(yearLabel.value);
     yearSlider.value = selectedYear;
     refreshSearchResults();
+    updateSelectedLineForYear();
     updateStationMarkers();
     updateMap();
 });
@@ -242,7 +245,7 @@ function updateMap() {
             else {
                 map.removeLayer(marker);
             }
-});
+        });
     }
     else if (!selectedLine) {
         Object.values(stationMarkers).forEach(marker => {
@@ -489,38 +492,30 @@ function updateStationMarkers(line) {
     const firstStation = line ? line.stations[0] : null;
     const lastStation = line ? line.stations[line.stations.length-1] : null;
 
-    Object.entries(stationMarkers).forEach(
-        ([id, marker]) => {
-
-            const isTerminus =
-                id === firstStation ||
-                id === lastStation;
+    Object.entries(stationMarkers).forEach(([id, marker]) => {
 
             const station = stationMap[id];
-            marker.setPopupContent(getStationName(station));
+            if (!station) return;
 
-            if (line) {
-                if (
-                    visibleIds.has(id) &&
-                    (
-                        isTerminus ||
-                        map.getZoom() >= 15
-                    )
-                ) {
-
-                    map.addLayer(marker);
-
-                } else {
-
-                    map.removeLayer(marker);
-                }
-            }
+            const isTerminus = id === firstStation || id === lastStation;
             
+            marker.setPopupContent(getStationName(station, selectedYear));
+            
+            if (!line) {
+                return;
+            }
+            const shouldShow = visibleIds.has(id) && (isTerminus || map.getZoom() > 15);
+            if (shouldShow) {
+                map.addLayer(marker);
+            } else {
+                map.removeLayer(marker);
+            }
 
         }
     );
     Object.entries(stationGroupMarkers).forEach(([id, marker]) => {
         const group = stationGroupMap[id];
+        if (!group) return;
         marker.setPopupContent(
             getStationGroupName(group)
         );
@@ -868,6 +863,7 @@ function updateInfoBox(line) {
 function selectLine(line) {
 
     selectedLine = line;
+    selectedLineGroup = transitData.line_groups.find(group => group.lines.includes(line.name)) ?? null;
 
     const lineInfo = infoboxData?.[line.name];
     selectedYear = lineInfo?.endYear ?? selectedYear;
@@ -901,6 +897,7 @@ function selectLine(line) {
 function deselectLine() {
 
     selectedLine = null;
+    selectedLineGroup = null;
     selectedYear = yearSlider.value;
 
     updateStationMarkers();
@@ -955,6 +952,32 @@ function toggleYearSelector() {
         yearSelector.style.display = "block"
     }
 
+}
+
+function getLineVersionForYear(group, year) {
+    return group.lines
+        .map(name => transitData.lines.find(line => line.name === name))
+        .filter(line => lineExists(line))
+        .find(line => {
+            const info = infoboxData?.[line.name];
+            return info && info.startYear <= year && (info.endYear == null || year <= info.endYear);
+        }) ?? null;
+}
+
+function updateSelectedLineForYear() {
+    if (!selectedLineGroup) return;
+
+    const version = getLineVersionForYear(selectedLineGroup, selectedYear);
+    if (!version) {
+        showOnlyLine(null);
+        return;
+    }
+    selectedLine = version;
+
+    showOnlyLine(version.name);
+    showStations(version);
+    updateInfoBox(version);
+    updateStationMarkers(version);
 }
 
 mobileHandle.addEventListener(

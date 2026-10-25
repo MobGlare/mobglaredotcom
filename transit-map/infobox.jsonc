@@ -524,6 +524,60 @@
             "https://hu.wikipedia.org/wiki/24-es_villamos_(Budapest)"
         ]
     },
+    "Tram 28 (1949-)": {
+        "name": "28",
+
+        "startYear": 1949,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 26,
+
+        "notes": [
+            "Start year not certain"
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/28-as_villamos_(Budapest)"
+        ]
+    },
+    "Tram 28A (2016-)": {
+        "name": "28A",
+
+        "startYear": 2016,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 25,
+
+        "notes": [
+            "Start year not certain"
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/28A_villamos_(Budapest)"
+        ]
+    },
+    "Tram 36 (1958-1994)": {
+        "name": "36",
+
+        "startYear": 1958,
+        "endYear": 1994,
+
+        "operator": "BKV",
+
+        "stationCount": 14,
+
+        "notes": [
+            "Start year not certain"
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/36-os_villamos_(Budapest)"
+        ]
+    },
     "Tram 37 (2011-)": {
         "name": "37",
 
@@ -792,6 +846,42 @@
 
         "sources": [
             "https://hu.wikipedia.org/wiki/61-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 62 (2008-)": {
+        "name": "62",
+
+        "startYear": 2008,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 33,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/62-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 62A (2008-)": {
+        "name": "62A",
+
+        "startYear": 2008,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 23,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/62A_villamos_(Budapest)"
         ]
     },
     "Tram 63 (2000-2001)": {
