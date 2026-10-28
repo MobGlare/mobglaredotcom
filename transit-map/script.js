@@ -462,7 +462,7 @@ function showStationGroup(group) {
 
         const button = document.createElement("button");
 
-        button.textContent = `🚊${infoboxData[line.name].name}`;    //Can't wait for the day when I add buses or metros and I have to redo the entire line button thing
+        button.textContent = `${getLineTypeIcon(line)}${infoboxData[line.name].name}`;
 
         button.classList.add("group-line-button");
 
@@ -581,6 +581,7 @@ Promise.all([
                     popup.setContent(getStationName(station));
                 }
             });
+            
 
             stationMarkers[station.id] = marker;
 
@@ -878,6 +879,8 @@ function selectLine(line) {
 
     updateStationMarkers(line);
 
+    console.log(getLineTypeIcon(line));
+
     stationList.style.display = "block";
     mapSettings.style.display = "none";
     lineList.style.display = "none";
@@ -978,6 +981,22 @@ function updateSelectedLineForYear() {
     showStations(version);
     updateInfoBox(version);
     updateStationMarkers(version);
+}
+
+function getLineTypeIcon(line) {
+    if (line.type === "tram") {
+        return "🚊";
+    } else if (line.type === "bus") {
+        return "🚌";
+    } else if (line.type === "metro") {
+        return "Ⓜ️";
+    } else if (line.type === "trolleybus") {
+        return "🚎";
+    } else if (line.type === "hev") {
+        return "🇭";
+    } else {
+        return null;
+    }
 }
 
 mobileHandle.addEventListener(
