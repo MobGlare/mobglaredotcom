@@ -416,6 +416,96 @@
             "https://hu.wikipedia.org/wiki/9-es_villamos_(Budapest)"
         ]
     },
+    "Tram 12 (2026-)": {
+        "name": "12",
+
+        "startYear": 2026,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 22,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/12-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 12 (1995-2025)": {
+        "name": "12",
+
+        "startYear": 1995,
+        "endYear": 2025,
+
+        "operator": "BKV",
+
+        "stationCount": 11,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/12-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 12 (1981-1994)": {
+        "name": "12",
+
+        "startYear": 1981,
+        "endYear": 1994,
+
+        "operator": "BKV",
+
+        "stationCount": 22,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/12-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 12A (2026-)": {
+        "name": "12A",
+
+        "startYear": 2026,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 11,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/12A_villamos_(Budapest)"
+        ]
+    },
+    "Tram 12M (2017-2019)": {
+        "name": "12M",
+
+        "startYear": 2017,
+        "endYear": 2019,
+
+        "operator": "BKV",
+
+        "stationCount": 22,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/12M_villamos_(Budapest)"
+        ]
+    },
     "Tram 13 (1983-2001)": {
         "name": "13",
 
@@ -432,6 +522,60 @@
 
         "sources": [
             "https://hu.wikipedia.org/wiki/13-as_villamos_(Budapest)"
+        ]
+    },
+    "Tram 14 (1998-2017)": {
+        "name": "14",
+
+        "startYear": 1998,
+        "endYear": 2017,
+
+        "operator": "BKV",
+
+        "stationCount": 25,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/14-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 14 (2019-)": {
+        "name": "14",
+
+        "startYear": 2019,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 25,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/14-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 14M (2017-2019)": {
+        "name": "14M",
+
+        "startYear": 2017,
+        "endYear": 2019,
+
+        "operator": "BKV",
+
+        "stationCount": 25,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/14-es_villamos_(Budapest)"
         ]
     },
     "Tram 17 (2016-)": {
@@ -990,6 +1134,78 @@
 
         "sources": [
             "https://hu.wikipedia.org/wiki/58-as_villamos_(Budapest)"
+        ]
+    },
+    "Tram 59 (2007-)": {
+        "name": "59",
+
+        "startYear": 2007,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 15,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/59-es_villamos_(Budapest)"
+        ]
+    },
+    "Tram 59A (2008-)": {
+        "name": "59A",
+
+        "startYear": 2008,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 12,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/59A_villamos_(Budapest)"
+        ]
+    },
+    "Tram 59B (2016-)": {
+        "name": "59B",
+
+        "startYear": 2016,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 25,
+
+        "notes": [
+            ""
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/59B_villamos_(Budapest)"
+        ]
+    },
+    "Tram 60 (2008-)": {
+        "name": "60",
+
+        "startYear": 2008,
+        "endYear": null,
+
+        "operator": "BKV",
+
+        "stationCount": 10,
+
+        "notes": [
+            "Cogwheel railway"
+        ],
+
+        "sources": [
+            "https://hu.wikipedia.org/wiki/Budapesti_fogaskerek%C5%B1_vas%C3%BAt"
         ]
     },
     "Tram 61 (2008-)": {
