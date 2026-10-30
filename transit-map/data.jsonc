@@ -681,8 +681,8 @@
                 },
                 {
                     "name": "Puskás Ferenc Stadion",
-                    "startYear": 2012,
-                    "endYear": 2011
+                    "startYear": 2011,
+                    "endYear": 2012
                 },
                 {
                     "name": "Stadionok",
@@ -5899,6 +5899,751 @@
                     "endYear": null
                 }
             ]
+        },
+
+        {   //Vörösmarty tér M1
+            "id": "vorosmarty_ter_m1",
+            "lat": 47.49676577752695, 
+            "lng": 19.05062024156538,
+            
+            "names": [
+                {
+                    "name": "Vörösmarty tér",
+                    "startYear": 1926,
+                    "endYear": null
+                },
+                {
+                    "name": "Gizella tér",
+                    "startYear": null,
+                    "endYear": 1925
+                }
+            ]
+        },
+        {   //Deák Ferenc tér M1
+            "id": "deak_ferenc_ter_m1",
+            "lat": 47.49765432396767, 
+            "lng": 19.05380175201939,
+            
+            "names": [
+                {
+                    "name": "Deák Ferenc tér",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Bajcsy Zsilinszky út M1
+            "id": "bajcsy_zsilinszky_ut_m1",
+            "lat": 47.49981596475626, 
+            "lng": 19.055409936118217,
+            
+            "names": [
+                {
+                    "name": "Bajcsy-Zsilinszky út",
+                    "startYear": null,
+                    "endYear": null
+                },
+                {
+                    "name": "Váczi körút",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Opera M1
+            "id": "opera_m1",
+            "lat": 47.50218593753838, 
+            "lng": 19.058949026587946,
+            
+            "names": [
+                {
+                    "name": "Opera",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Oktogon M1
+            "id": "oktogon_m1",
+            "lat": 47.504987343419444, 
+            "lng": 19.063140794826765,
+            
+            "names": [
+                {
+                    "name": "Oktogon",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Vörösmarty utca M1
+            "id": "vorosmarty_utca_m1",
+            "lat": 47.50716751312766, 
+            "lng": 19.06639704444891,
+            
+            "names": [
+                {
+                    "name": "Vörösmarty utca",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Kodály körönd M1
+            "id": "kodaly_korond_m1",
+            "lat": 47.509186817708986, 
+            "lng": 19.069409202060637,
+            
+            "names": [
+                {
+                    "name": "Kodály körönd",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Bajza utca M1
+            "id": "bajza_utca_m1",
+            "lat": 47.511239000194706, 
+            "lng": 19.072481389143505,
+            
+            "names": [
+                {
+                    "name": "Bajza utca",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Hősök tere M1
+            "id": "hosok_tere_m1",
+            "lat": 47.51421190028227, 
+            "lng": 19.076923115224897,
+            
+            "names": [
+                {
+                    "name": "Hősök tere",
+                    "startYear": null,
+                    "endYear": null
+                },
+                {
+                    "name": "Aréna út",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Széchenyi fürdő M1
+            "id": "szechenyi_furdo_m1",
+            "lat": 47.51747233228705, 
+            "lng": 19.081134917822865,
+            
+            "names": [
+                {
+                    "name": "Széchenyi fürdő",
+                    "startYear": 1973,
+                    "endYear": null
+                },
+                {
+                    "name": "Artézi fürdő",
+                    "startYear": null,
+                    "endYear": 1972
+                }
+            ]
+        },
+        {   //Mexikói út M1
+            "id": "mexikoi_ut_m1",
+            "lat": 47.51955641720419, 
+            "lng": 19.090556171787746,
+            
+            "names": [
+                {
+                    "name": "Mexikói út",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Állatkert M1
+            "id": "allatkert_old_m1",
+            "lat": 47.51675154340728, 
+            "lng": 19.078134809934685,
+            
+            "names": [
+                {
+                    "name": "Állatkert",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Déli pályaudvar M2
+            "id": "deli_palyaudvar_m2",
+            "lat": 47.50063404579443, 
+            "lng": 19.02458040696945,
+            
+            "names": [
+                {
+                    "name": "Déli pályaudvar",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Széll Kálmán tér M2
+            "id": "szell_kalman_ter_m2",
+            "lat": 47.507052099881044, 
+            "lng": 19.02494567185855,
+            
+            "names": [
+                {
+                    "name": "Széll Kálmán tér",
+                    "startYear": 2012,
+                    "endYear": null
+                },
+                {
+                    "name": "Moszkva tér",
+                    "startYear": null,
+                    "endYear": 2011
+                }
+            ]
+        },
+        {   //Batthyány tér M2
+            "id": "batthyany_ter_m2",
+            "lat": 47.50683790082528, 
+            "lng": 19.03790908055907,
+            
+            "names": [
+                {
+                    "name": "Batthyány tér",
+                    "startYear": 2012,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Kossuth Lajos tér M2
+            "id": "kossuth_lajos_ter_m2",
+            "lat": 47.50555270606402, 
+            "lng": 19.046014859594052,
+            
+            "names": [
+                {
+                    "name": "Kossuth Lajos tér",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Deák Ferenc tér M2
+            "id": "deak_ferenc_ter_m2",
+            "lat": 47.49833494470242, 
+            "lng": 19.053683165499464,
+            
+            "names": [
+                {
+                    "name": "Deák Ferenc tér",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Astoria M2
+            "id": "astoria_m2",
+            "lat": 47.49465049488666, 
+            "lng": 19.061360882294498,
+            
+            "names": [
+                {
+                    "name": "Astoria",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Blaha Lujza tér M2
+            "id": "blaha_lujza_ter_m2",
+            "lat": 47.49680592564256, 
+            "lng": 19.069441072773518,
+            
+            "names": [
+                {
+                    "name": "Blaha Lujza tér",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Keleti pályaudvar M2
+            "id": "keleti_palyaudvar_m2",
+            "lat": 47.49974713608893, 
+            "lng": 19.082396059658087,
+            
+            "names": [
+                {
+                    "name": "Keleti pályaudvar",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Puskás Ferenc Stadion M2
+            "id": "puskas_ferenc_stadion_m2",
+            "lat": 47.5002626262481, 
+            "lng": 19.106025675062895,
+            
+            "names": [
+                {
+                    "name": "Puskás Ferenc Stadion",
+                    "startYear": 2011,
+                    "endYear": null
+                },
+                {
+                    "name": "Stadionok",
+                    "startYear": 2003,
+                    "endYear": 2010
+                },
+                {
+                    "name": "Népstadion",
+                    "startYear": null,
+                    "endYear": 2002
+                }
+            ]
+        },
+        {   //Pillangó utca M2
+            "id": "pillango_utca_m2",
+            "lat": 47.501190878175464, 
+            "lng": 19.119962299434683,
+            
+            "names": [
+                {
+                    "name": "Pillangó utca",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Örs vezér tere M2
+            "id": "ors_vezer_tere_m2",
+            "lat": 47.50294112082642, 
+            "lng": 19.135539758928044,
+            
+            "names": [
+                {
+                    "name": "Örs vezér tere",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Kőbánya-Kispest M3
+            "id": "kobanya_kispest_m3",
+            "lat": 47.46369793072726, 
+            "lng": 19.148208222037958,
+            
+            "names": [
+                {
+                    "name": "Kőbánya-Kispest",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Határ út M3
+            "id": "hatar_ut_m3",
+            "lat": 47.465865148305134,
+            "lng": 19.125874651181206,
+            
+            "names": [
+                {
+                    "name": "Határ út",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Pöttyös utca M3
+            "id": "pottyos_utca_m3",
+            "lat": 47.46834881686281, 
+            "lng": 19.117528926187276,
+            
+            "names": [
+                {
+                    "name": "Pöttyös utca",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Ecseri út M3
+            "id": "ecseri_ut_m3",
+            "lat": 47.47097853785477, 
+            "lng": 19.110428634066345,
+            
+            "names": [
+                {
+                    "name": "Ecseri út",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Népliget M3
+            "id": "nepliget_m3",
+            "lat": 47.475413831756576, 
+            "lng": 19.099095977618862,
+            
+            "names": [
+                {
+                    "name": "Népliget",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Nagyvárad tér M3
+            "id": "nagyvarad_ter_m3",
+            "lat": 47.478899815304395, 
+            "lng": 19.08988873331288,
+            
+            "names": [
+                {
+                    "name": "Nagyvárad tér",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Semmelweis Klinikák M3
+            "id": "semmelweis_klinikak_m3",
+            "lat": 47.48317922313691, 
+            "lng": 19.078197226444523,
+            
+            "names": [
+                {
+                    "name": "Semmelweis Klinikák",
+                    "startYear": 2019,
+                    "endYear": null
+                },
+                {
+                    "name": "Klinikák",
+                    "startYear": null,
+                    "endYear": 2018
+                }
+            ]
+        },
+        {   //Corvin negyed M3
+            "id": "corvin_negyed_m3",
+            "lat": 47.48557864353142, 
+            "lng": 19.07093687255423,
+            
+            "names": [
+                {
+                    "name": "Corvin negyed",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Kálvin tér M3
+            "id": "kalvin_ter_m3",
+            "lat": 47.48996510505111, 
+            "lng": 19.061349855568107,
+            
+            "names": [
+                {
+                    "name": "Kálvin tér",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Ferenciek tere M3
+            "id": "ferenciek_tere_m3",
+            "lat": 47.49262542504499, 
+            "lng": 19.056460030429346,
+            
+            "names": [
+                {
+                    "name": "Ferenciek tere",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Deák Ferenc tér M3
+            "id": "deak_ferenc_ter_m3",
+            "lat": 47.4984678930514, 
+            "lng": 19.054184075538863,
+            
+            "names": [
+                {
+                    "name": "Deák Ferenc tér",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Arany János utca M3
+            "id": "arany_janos_utca_m3",
+            "lat": 47.504117254925134, 
+            "lng": 19.054578842637234,
+            
+            "names": [
+                {
+                    "name": "Arany János utca",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Nyugati pályaudvar M3
+            "id": "nyugati_palyaudvar_m3",
+            "lat": 47.51123573301396, 
+            "lng": 19.056332645315976,
+            
+            "names": [
+                {
+                    "name": "Nyugati pályaudvar",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Lehel tér M3
+            "id": "lehel_ter_m3",
+            "lat": 47.51841022771198, 
+            "lng": 19.06061872588986,
+            
+            "names": [
+                {
+                    "name": "Lehel tér",
+                    "startYear": 1990,
+                    "endYear": null
+                },
+                {
+                    "name": "Élmunkás tér",
+                    "startYear": null,
+                    "endYear": 1989
+                }
+            ]
+        },
+        {   //Dózsa György út M3
+            "id": "dozsa_gyorgy_ut_m3",
+            "lat": 47.524896733471216, 
+            "lng": 19.063393046222544,
+            
+            "names": [
+                {
+                    "name": "Dózsa György út",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Göncz Árpád városközpont M3
+            "id": "goncz_arpad_varoskozpont_m3",
+            "lat": 47.53300769875533, 
+            "lng": 19.06688945082993,
+            
+            "names": [
+                {
+                    "name": "Göncz Árpád városközpont",
+                    "startYear": 2020,
+                    "endYear": null
+                },
+                {
+                    "name": "Árpád híd",
+                    "startYear": null,
+                    "endYear": 2019
+                }
+            ]
+        },
+        {   //Forgách utca M3
+            "id": "forgach_utca_m3",
+            "lat": 47.53907049328215, 
+            "lng": 19.06948839951767,
+            
+            "names": [
+                {
+                    "name": "Forgách utca",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Gyöngyösi utca M3
+            "id": "gyongyosi_utca_m3",
+            "lat": 47.54937180773364, 
+            "lng": 19.073520790576357,
+            
+            "names": [
+                {
+                    "name": "Gyöngyösi utca",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Újpest-városkapu M3
+            "id": "ujpest_varoskapu_m3",
+            "lat": 47.559478139130505, 
+            "lng": 19.080821027323786,
+            
+            "names": [
+                {
+                    "name": "Újpest-városkapu",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Újpest-központ M3
+            "id": "ujpest_kozpont_m3",
+            "lat": 47.560398212224406, 
+            "lng": 19.089790616720343,
+            
+            "names": [
+                {
+                    "name": "Újpest-központ",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Kelenföld vasútállomás M4
+            "id": "kelenfold_vasutallomas_m4",
+            "lat": 47.464321971238306, 
+            "lng": 19.020624348041295,
+            
+            "names": [
+                {
+                    "name": "Kelenföld vasútállomás",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Bikás Park M4
+            "id": "bikas_park_m4",
+            "lat": 47.46490785793169, 
+            "lng": 19.032345648762384,
+            
+            "names": [
+                {
+                    "name": "Bikás Park",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Újbuda központ M4
+            "id": "ujbuda_kozpont_m4",
+            "lat": 47.47377285462837, 
+            "lng": 19.04630808133898,
+            
+            "names": [
+                {
+                    "name": "Újbuda Központ",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Móricz Zsigmond körter M4
+            "id": "moricz_zsigmond_korter_m4",
+            "lat": 47.47683976807245, 
+            "lng": 19.047291863537886,
+            
+            "names": [
+                {
+                    "name": "Móricz Zsigmond körtér",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Szent Gellért tér - Műegyetem M4
+            "id": "szent_gellert_ter_muegyetem_m4",
+            "lat": 47.483097812120164, 
+            "lng": 19.054783362949827,
+            
+            "names": [
+                {
+                    "name": "Szent Gellért tér - Műegyetem",
+                    "startYear": 2020,
+                    "endYear": null
+                },
+                {
+                    "name": "Szent Gellért tér",
+                    "startYear": null,
+                    "endYear": 2019
+                }
+            ]
+        },
+        {   //Fővám tér M4
+            "id": "fovam_ter_m4",
+            "lat": 47.486106173982236, 
+            "lng": 19.057458036702194,
+            
+            "names": [
+                {
+                    "name": "Fővám tér",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Kálvin tér M4
+            "id": "kalvin_ter_m4",
+            "lat": 47.48905168083143, 
+            "lng": 19.061290257446593,
+            
+            "names": [
+                {
+                    "name": "Kálvin tér",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Rákóczi tér M4
+            "id": "rakoczi_ter_m4",
+            "lat": 47.49281324823392, 
+            "lng": 19.072077616854266,
+            
+            "names": [
+                {
+                    "name": "Rákóczi tér",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //II. János Pál pápa tér M4
+            "id": "masodik_janos_pal_papa_ter_m4",
+            "lat": 47.49566989650653, 
+            "lng": 19.077471281478076,
+            
+            "names": [
+                {
+                    "name": "II. János Pál pápa tér",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
+        },
+        {   //Keleti pályaudvar M4
+            "id": "keleti_palyaudvar_m4",
+            "lat": 47.500344971129174, 
+            "lng": 19.081462948517743,
+            
+            "names": [
+                {
+                    "name": "Keleti pályaudvar",
+                    "startYear": null,
+                    "endYear": null
+                }
+            ]
         }
     ],
 
@@ -5940,6 +6685,7 @@
         {   //Batthyány tér
             "id": "batthyany_ter",
             "stations": [
+                "batthyany_ter_m2",
                 "batthyany_ter_v"
             ],
             "names": [
@@ -5958,6 +6704,7 @@
         {   //Szent Gellért tér, Műegyetem
             "id": "szent_gellert_ter_muegyetem",
             "stations": [
+                "szent_gellert_ter_muegyetem_m4",
                 "szent_gellert_ter_muegyetem_v"
             ],
             "names": [
@@ -5981,6 +6728,7 @@
         {   //Móricz Zsigmond körtér
             "id": "moricz_zsigmond_korter",
             "stations": [
+                "moricz_zsigmond_korter_m4",
                 "moricz_zsigmond_korter_v17-41-47-48-56",
                 "moricz_zsigmond_korter_v17-61",
                 "moricz_zsigmond_korter_v6",
@@ -6002,6 +6750,8 @@
         {   //Keleti pályaudvar
             "id": "keleti_palyaudvar",
             "stations": [
+                "keleti_palyaudvar_m2",
+                "keleti_palyaudvar_m4",
                 "keleti_palyaudvar_v",
                 "keleti_baross_ter_old_v"
             ],
@@ -6021,6 +6771,7 @@
         {   //Kossuth Lajos tér
             "id": "kossuth_lajos_ter",
             "stations":  [
+                "kossuth_lajos_ter_m2",
                 "kossuth_ter_v"         
             ],
             "names": [
@@ -6045,6 +6796,7 @@
         {   //Újbuda központ
             "id": "ujbuda_kozpont",
             "stations": [
+                "ujbuda_kozpont_m4",
                 "ujbuda_kozpont_v17-41-47-48-56",
                 "ujbuda_kozpont_v4"
             ],
@@ -6069,6 +6821,7 @@
         {   //Fővám tér
             "id": "fovam_ter",
             "stations": [
+                "fovam_ter_m4",
                 "fovam_ter_v47-48-49",
                 "fovam_ter_v2-23"
             ],
@@ -6093,7 +6846,10 @@
         {   //Deák Ferenc tér
             "id": "deak_ferenc_ter",
             "stations": [
-                "deak_ferenc_ter_v"
+                "deak_ferenc_ter_m3",
+                "deak_ferenc_ter_m2",
+                "deak_ferenc_ter_v",
+                "deak_ferenc_ter_m1"
             ],
             "names": [
                 {
@@ -6111,6 +6867,7 @@
         {   //Széll Kálmán tér
             "id": "szell_kalman_ter",
             "stations": [
+                "szell_kalman_ter_m2",
                 "szell_kalman_ter_v56-59-61",
                 "szell_kalman_ter_v4-6",
                 "szell_kalman_ter_v17"
@@ -6136,6 +6893,7 @@
         {   //Déli pályaudvar
             "id": "deli_palyaudvar",
             "stations": [
+                "deli_palyaudvar_m2",
                 "deli_palyaudvar_v17-59-61",
                 "deli_palyaudvar_v56"
             ],
@@ -6263,6 +7021,7 @@
         {   //Göncz Árpád városközpont
             "id": "goncz_arpad_varoskozpont",
             "stations": [
+                "goncz_arpad_varoskozpont_m3",
                 "goncz_arpad_varoskozpont_v",
                 "arpad_hid_old_v"
             ],
@@ -6306,6 +7065,7 @@
         {   //Kelenföld vasútállomás
             "id": "kelenfold_vasutallomas",
             "stations": [
+                "kelenfold_vasutallomas_m4",
                 "kelenfold_vasutallomas_v1",
                 "kelenfold_vasutallomas_v19-49"
             ],
@@ -6325,6 +7085,7 @@
         {   //Örs vezér tere
             "id": "ors_vezer_tere",
             "stations": [
+                "ors_vezer_tere_m2",
                 "ors_vezer_tere_kobanya_v",
                 "ors_vezer_tere_zuglo_v"
             ],
@@ -6344,6 +7105,7 @@
         {   //Mexikói út
             "id": "mexikoi_ut",
             "stations": [
+                "mexikoi_ut_m1",
                 "mexikoi_ut_v"
             ],
             "names": [
@@ -6381,6 +7143,7 @@
         {   //Blaha Lujza tér
             "id": "blaha_lujza_ter",
             "stations": [
+                "blaha_lujza_ter_m2",
                 "blaha_lujza_ter_v4-6",
                 "blaha_lujza_ter_v28-37-62"
             ],
@@ -6444,6 +7207,7 @@
         {   //Határ út
             "id": "hatar_ut",
             "stations": [
+                "hatar_ut_m3",
                 "hatar_ut_v42-52",
                 "hatar_ut_v50"
             ],
@@ -6463,6 +7227,7 @@
         {   //Lehel tér
             "id": "lehel_ter",
             "stations": [
+                "lehel_ter_m3",
                 "lehel_ter_v"
             ],
             "names": [
@@ -6486,6 +7251,274 @@
                     "startYear": null,
                     "endYear": 1950
                 }
+            ]
+        },
+        {   //Oktogon
+            "id": "oktogon",
+            "stations": [
+                "oktogon_m1",
+                "oktogon_v"
+            ],
+            "names": [
+                {
+                    "name": "Oktogon M",
+                    "startYear": 2013,
+                    "endYear": null
+                },
+                {
+                    "name": "Oktogon",
+                    "startYear": null,
+                    "endYear": 2012
+                }
+            ]
+        },
+        {   //Astoria
+            "id": "astoria",
+            "stations": [
+                "astoria_m2",
+                "astoria_v"
+            ],
+            "names": [
+                {
+                    "name": "Astoria M",
+                    "startYear": 2013,
+                    "endYear": null
+                },
+                {
+                    "name": "Astoria",
+                    "startYear": null,
+                    "endYear": 2012
+                }
+            ]
+        },
+        {   //Puskás Ferenc Stadion
+            "id": "puskas_ferenc_stadion",
+            "stations": [
+                "puskas_ferenc_stadion_m2",
+                "puskas_ferenc_stadion_v"
+            ],
+            "names": [
+                {
+                    "name": "Puskás Ferenc Stadion M",
+                    "startYear": 2013,
+                    "endYear": null
+                },
+                {
+                    "name": "Puskás Ferenc Stadion",
+                    "startYear": 2011,
+                    "endYear": 2012
+                },
+                {
+                    "name": "Stadionok",
+                    "startYear": 2003,
+                    "endYear": 2010
+                },
+                {
+                    "name": "Népstadion",
+                    "startYear": null,
+                    "endYear": 2002
+                }
+            ]
+        },
+        {   //Ecseri út
+            "id": "ecseri_ut",
+            "stations": [
+                "ecseri_ut_m3",
+                "ecseri_ut_v"
+            ],
+            "names": [
+                {
+                    "name": "Ecseri út M",
+                    "startYear": 2013,
+                    "endYear": null
+                },
+                {
+                    "name": "Ecseri út",
+                    "startYear": null,
+                    "endYear": 2012
+                }
+            ]
+        },
+        {   //Népliget
+            "id": "nepliget",
+            "stations": [
+                "nepliget_m3",
+                "nepliget_v"
+            ],
+            "names": [
+                {
+                    "name": "Népliget M",
+                    "startYear": 2013,
+                    "endYear": null
+                },
+                {
+                    "name": "Népliget",
+                    "startYear": null,
+                    "endYear": 2012
+                }
+            ]
+        },
+        {   //Nagyvárad tér
+            "id": "nagyvarad_ter",
+            "stations": [
+                "nagyvarad_ter_m3",
+                "nagyvarad_ter_v"
+            ],
+            "names": [
+                {
+                    "name": "Nagyvárad tér M",
+                    "startYear": 2013,
+                    "endYear": null
+                },
+                {
+                    "name": "Nagyvárad tér",
+                    "startYear": null,
+                    "endYear": 2012
+                }
+            ]
+        },
+        {   //Corvin negyed
+            "id": "corvin_negyed",
+            "stations": [
+                "corvin_negyed_m3",
+                "corvin_negyed_v"
+            ],
+            "names": [
+                {
+                    "name": "Corvin negyed M",
+                    "startYear": 2013,
+                    "endYear": null
+                },
+                {
+                    "name": "Corvin negyed",
+                    "startYear": null,
+                    "endYear": 2012
+                }
+            ]
+        },
+        {   //Kálvin tér
+            "id": "kalvin_ter",
+            "stations": [
+                "kalvin_ter_m3",
+                "kalvin_ter_m4",
+                "kalvin_ter_v"
+            ],
+            "names": [
+                {
+                    "name": "Kálvin tér M",
+                    "startYear": 2013,
+                    "endYear": null
+                },
+                {
+                    "name": "Kálvin tér",
+                    "startYear": null,
+                    "endYear": 2012
+                }
+            ]
+        },
+        {   //Nyugati pályaudvar
+            "id": "nyugati_palyaudvar",
+            "stations": [
+                "nyugati_palyaudvar_m3",
+                "nyugati_palyaudvar_v"
+            ],
+            "names": [
+                {
+                    "name": "Nyugati pályaudvar M",
+                    "startYear": 2013,
+                    "endYear": null
+                },
+                {
+                    "name": "Nyugati pályaudvar",
+                    "startYear": null,
+                    "endYear": 2012
+                }
+            ]
+        },
+        {   //Újpest-központ
+            "id": "ujpest_kozpont",
+            "stations": [
+                "ujpest_kozpont_m3",
+                "ujpest_kozpont_v"
+            ],
+            "names": [
+                {
+                    "name": "Újpest központ M",
+                    "startYear": 2013,
+                    "endYear": null
+                },
+                {
+                    "name": "Újpest központ",
+                    "startYear": null,
+                    "endYear": 2012
+                }
+            ]
+        },
+        {   //Bikás Park
+            "id": "bikas_park",
+            "stations": [
+                "bikas_park_m4",
+                "bikas_park_v"
+            ],
+            "names": [
+                {
+                    "name": "Bikás Park M",
+                    "startYear": 2014,
+                    "endYear": null
+                },
+                {
+                    "name": "Bikás Park",
+                    "startYear": null,
+                    "endYear": 2013
+                }
+            ]
+        },
+        {   //Rákóczi tér
+            "id": "rakoczi_ter",
+            "stations": [
+                "rakoczi_ter_m4",
+                "rakoczi_ter_v"
+            ],
+            "names": [
+                {
+                    "name": "Rákóczi tér M",
+                    "startYear": 2014,
+                    "endYear": null
+                },
+                {
+                    "name": "Rákóczi tér",
+                    "startYear": null,
+                    "endYear": 2013
+                }
+            ]
+        },
+        {   //II. János Pál pápa tér
+            "id": "masodik_janos_pal_papa_ter",
+            "stations": [
+                "masodik_janos_pal_papa_ter_m4",
+                "masodik_janos_pal_papa_ter_v"
+            ],
+            "names": [
+                {
+                    "name": "II. János Pál pápa tér M",
+                    "startYear": 2014,
+                    "endYear": null
+                },
+                {
+                    "name": "II. János Pál pápa tér",
+                    "startYear": 2011,
+                    "endYear": 2013
+                },
+                {
+                    "name": "Köztársaság tér",
+                    "startYear": 1946,
+                    "endYear": 2010
+                },
+                {
+                    "name": "Tisza Kálmán tér",
+                    "startYear": 1902,
+                    "endYear": 1945
+                }   
             ]
         }
     ],
@@ -9373,7 +10406,8 @@
                 [47.487626162637405, 19.049856250104387],
                 [47.48532938452194, 19.052362177359775],
                 [47.48464242807765, 19.052839143795044],
-                [47.4841041389668, 19.05352735392023],
+                [47.484115010986415, 19.05350730353777],
+                [47.48389247328605, 19.053638120211346],
                 [47.48372247457515, 19.053545231584394],
                 [47.48351129016306, 19.05331212245634],     //szent_gellert_ter_muegyetem_v
                 [47.48299983665287, 19.05296982783684],
@@ -10347,7 +11381,8 @@
                 [47.487626162637405, 19.049856250104387],
                 [47.48532938452194, 19.052362177359775],
                 [47.48464242807765, 19.052839143795044],
-                [47.4841041389668, 19.05352735392023],
+                [47.484115010986415, 19.05350730353777],
+                [47.48389247328605, 19.053638120211346],
                 [47.48372247457515, 19.053545231584394],
                 [47.48351129016306, 19.05331212245634],     //szent_gellert_ter_muegyetem_v
                 [47.48299983665287, 19.05296982783684],
@@ -11226,7 +12261,8 @@
                 [47.487626162637405, 19.049856250104387],
                 [47.48532938452194, 19.052362177359775],
                 [47.48464242807765, 19.052839143795044],
-                [47.4841041389668, 19.05352735392023],
+                [47.484115010986415, 19.05350730353777],
+                [47.48389247328605, 19.053638120211346],
                 [47.48372247457515, 19.053545231584394],
                 [47.48351129016306, 19.05331212245634],     //szent_gellert_ter_muegyetem_v
                 [47.48299983665287, 19.05296982783684],
@@ -11381,7 +12417,8 @@
                 [47.487626162637405, 19.049856250104387],
                 [47.48532938452194, 19.052362177359775],
                 [47.48464242807765, 19.052839143795044],
-                [47.4841041389668, 19.05352735392023],
+                [47.484115010986415, 19.05350730353777],
+                [47.48389247328605, 19.053638120211346],
                 [47.48372247457515, 19.053545231584394],
                 [47.48351129016306, 19.05331212245634],
                 [47.48299983665287, 19.05296982783684],
@@ -12775,6 +13812,852 @@
             "andor_utca_v",
             "albertfalva_kitero_v"
         ]
+        },
+
+        {   //Metro M1 (1973-)
+            "name": "Metro M1 (1973-)",
+            "type": "metro",
+            "color": "#f2cd00",
+
+            "route": [
+                [47.49676577752695, 19.05062024156538],     //vorosmarty_ter_m1
+                [47.49693768941795, 19.050882271996574],
+                [47.49732694168248, 19.05105963795652],
+                [47.49765432396767, 19.05380175201939],     //deak_ferenc_ter_m1
+                [47.49788334641021, 19.054568033587525],
+                [47.49809363037063, 19.054837168872552],
+                [47.499230594814975, 19.054790156979113],
+                [47.49939242781741, 19.05484175021219],
+                [47.49953309763736, 19.05498731683408],
+                [47.49981596475626, 19.055409936118217],    //bajcsy_zsilinszky_ut_m1
+                [47.50218593753838, 19.058949026587946],    //opera_m1
+                [47.504987343419444, 19.063140794826765],   //oktogon_m1
+                [47.50716751312766, 19.06639704444891],     //vorosmarty_utca_m1
+                [47.509186817708986, 19.069409202060637],   //kodaly_korond_m1
+                [47.511239000194706, 19.072481389143505],   //bajza_utca_m1
+                [47.51421190028227, 19.076923115224897],    //hosok_tere_m1
+                [47.514533250512244, 19.07737751075162],
+                [47.51548706529708, 19.078097538488212],
+                [47.51667108713411, 19.078709735979384],
+                [47.51727953242088, 19.07964542418678],
+                [47.51746276938089, 19.080650680302117],
+                [47.51747233228705, 19.081134917822865],    //szechenyi_furdo_m1
+                [47.51747320553968, 19.081862717155968],
+                [47.5175853022869, 19.083024546508625],
+                [47.51922851262926, 19.086813014920597],
+                [47.51961880270056, 19.088505565150353],
+                [47.51955641720419, 19.090556171787746]     //mexikoi_ut_m1
+            ],
+
+            "stations": [
+                "vorosmarty_ter_m1",
+                "deak_ferenc_ter_m1",
+                "bajcsy_zsilinszky_ut_m1",
+                "opera_m1",
+                "oktogon_m1",
+                "vorosmarty_utca_m1",
+                "kodaly_korond_m1",
+                "bajza_utca_m1",
+                "hosok_tere_m1",
+                "szechenyi_furdo_m1",
+                "mexikoi_ut_m1"
+            ]
+        },
+        {   //Metro M1 (1957-1971)
+            "name": "Metro M1 (1957-1971)",
+            "type": "metro",
+            "color": "#f2cd00",
+
+            "route": [
+                [47.49676577752695, 19.05062024156538],     //vorosmarty_ter_m1
+                [47.49693768941795, 19.050882271996574],
+                [47.49732694168248, 19.05105963795652],
+                [47.49765432396767, 19.05380175201939],     //deak_ferenc_ter_m1
+                [47.49788334641021, 19.054568033587525],
+                [47.49809363037063, 19.054837168872552],
+                [47.499230594814975, 19.054790156979113],
+                [47.49939242781741, 19.05484175021219],
+                [47.49953309763736, 19.05498731683408],
+                [47.49981596475626, 19.055409936118217],    //bajcsy_zsilinszky_ut_m1
+                [47.50218593753838, 19.058949026587946],    //opera_m1
+                [47.504987343419444, 19.063140794826765],   //oktogon_m1
+                [47.50716751312766, 19.06639704444891],     //vorosmarty_utca_m1
+                [47.509186817708986, 19.069409202060637],   //kodaly_korond_m1
+                [47.511239000194706, 19.072481389143505],   //bajza_utca_m1
+                [47.51421190028227, 19.076923115224897],    //hosok_tere_m1
+                [47.514533250512244, 19.07737751075162],
+                [47.51548706529708, 19.078097538488212],
+                [47.51675154340728, 19.078134809934685],    //allatkert_old_m1
+                [47.51744366559886, 19.078037416433222],
+                [47.51785211532198, 19.078274071591853],
+                [47.517958666900746, 19.078488814235797],
+                [47.51797050595168, 19.079676472531894],
+                [47.517816598080984, 19.080487235575355],
+                [47.51747233228705, 19.081134917822865]     //szechenyi_furdo_m1
+
+            ],
+
+            "stations": [
+                "vorosmarty_ter_m1",
+                "deak_ferenc_ter_m1",
+                "bajcsy_zsilinszky_ut_m1",
+                "opera_m1",
+                "oktogon_m1",
+                "vorosmarty_utca_m1",
+                "kodaly_korond_m1",
+                "bajza_utca_m1",
+                "hosok_tere_m1",
+                "allatkert_old_m1",
+                "szechenyi_furdo_m1"
+            ]
+        },
+        {   //Metro M1 (1952-1956)
+            "name": "Metro M1 (1952-1956)",
+            "type": "metro",
+            "color": "#f2cd00",
+
+            "route": [
+                [47.49981596475626, 19.055409936118217],    //bajcsy_zsilinszky_ut_m1
+                [47.50218593753838, 19.058949026587946],    //opera_m1
+                [47.504987343419444, 19.063140794826765],   //oktogon_m1
+                [47.50716751312766, 19.06639704444891],     //vorosmarty_utca_m1
+                [47.509186817708986, 19.069409202060637],   //kodaly_korond_m1
+                [47.511239000194706, 19.072481389143505],   //bajza_utca_m1
+                [47.51421190028227, 19.076923115224897],    //hosok_tere_m1
+                [47.514533250512244, 19.07737751075162],
+                [47.51548706529708, 19.078097538488212],
+                [47.51675154340728, 19.078134809934685]    //allatkert_old_m1
+
+            ],
+
+            "stations": [
+                "bajcsy_zsilinszky_ut_m1",
+                "opera_m1",
+                "oktogon_m1",
+                "vorosmarty_utca_m1",
+                "kodaly_korond_m1",
+                "bajza_utca_m1",
+                "hosok_tere_m1",
+                "allatkert_old_m1"
+            ]
+        },
+        {   //Metro M1 (1896-1951)
+            "name": "Metro M1 (1896-1951)",
+            "type": "metro",
+            "color": "#f2cd00",
+
+            "route": [
+                [47.49676577752695, 19.05062024156538],     //vorosmarty_ter_m1
+                [47.49693768941795, 19.050882271996574],
+                [47.49732694168248, 19.05105963795652],
+                [47.49765432396767, 19.05380175201939],     //deak_ferenc_ter_m1
+                [47.49788334641021, 19.054568033587525],
+                [47.49809363037063, 19.054837168872552],
+                [47.499230594814975, 19.054790156979113],
+                [47.49939242781741, 19.05484175021219],
+                [47.49953309763736, 19.05498731683408],
+                [47.49981596475626, 19.055409936118217],    //bajcsy_zsilinszky_ut_m1
+                [47.50218593753838, 19.058949026587946],    //opera_m1
+                [47.504987343419444, 19.063140794826765],   //oktogon_m1
+                [47.50716751312766, 19.06639704444891],     //vorosmarty_utca_m1
+                [47.509186817708986, 19.069409202060637],   //kodaly_korond_m1
+                [47.511239000194706, 19.072481389143505],   //bajza_utca_m1
+                [47.51421190028227, 19.076923115224897],    //hosok_tere_m1
+                [47.514533250512244, 19.07737751075162],
+                [47.51548706529708, 19.078097538488212],
+                [47.51675154340728, 19.078134809934685],    //allatkert_old_m1
+                [47.51744366559886, 19.078037416433222],
+                [47.51785211532198, 19.078274071591853],
+                [47.517958666900746, 19.078488814235797],
+                [47.51797050595168, 19.079676472531894],
+                [47.517816598080984, 19.080487235575355],
+                [47.51747233228705, 19.081134917822865]     //szechenyi_furdo_m1
+
+            ],
+
+            "stations": [
+                "vorosmarty_ter_m1",
+                "deak_ferenc_ter_m1",
+                "bajcsy_zsilinszky_ut_m1",
+                "opera_m1",
+                "oktogon_m1",
+                "vorosmarty_utca_m1",
+                "kodaly_korond_m1",
+                "bajza_utca_m1",
+                "hosok_tere_m1",
+                "allatkert_old_m1",
+                "szechenyi_furdo_m1"
+            ]
+        },
+        {   //Metro M2 (1972-)
+            "name": "Metro M2 (1972-)",
+            "type": "metro",
+            "color": "#e41f18",
+
+            "route": [
+                [47.50063404579443, 19.02458040696945],     //deli_palyaudvar_m2
+                [47.50446182171048, 19.023370484036057],
+                [47.50576017313665, 19.02355066043131],
+                [47.50673129684748, 19.024372541606287],
+                [47.507052099881044, 19.02494567185855],    //szell_kalman_ter_m2
+                [47.508513150426545, 19.028167521322363],
+                [47.508808084507024, 19.030166666685478],
+                [47.50869814795468, 19.031793101194893],
+                [47.50849863019008, 19.033053194714174],
+                [47.50683790082528, 19.03790908055907],     //batthyany_ter_m2
+                [47.506383944607656, 19.03936170773424],
+                [47.50555270606402, 19.046014859594052],    //kossuth_lajos_ter_m2
+                [47.50525095479821, 19.048126431293262],
+                [47.504408595430135, 19.050086537725846],
+                [47.50229739202045, 19.051705003738054],
+                [47.49833494470242, 19.053683165499464],    //deak_ferenc_ter_m2
+                [47.49660269809414, 19.054354879612177],
+                [47.49562273648869, 19.055120804752644],
+                [47.49514732849638, 19.05616149778424],
+                [47.494582102397395, 19.057629571359172],
+                [47.49443758299083, 19.059753568532123],
+                [47.49465049488666, 19.061360882294498],    //astoria_m2
+                [47.49680592564256, 19.069441072773518],    //blaha_lujza_ter_m2
+                [47.49944197561612, 19.079316878377416],
+                [47.499670439341685, 19.080357642443875],
+                [47.49974713608893, 19.082396059658087],    //keleti_palyaudvar_m2
+                [47.49976725327677, 19.101097940682568],
+                [47.49991588530286, 19.103396059071347],
+                [47.5002626262481, 19.106025675062895],     //puskas_ferenc_stadion_m2
+                [47.50059062449178, 19.112677154550077],
+                [47.500436089835695, 19.115316301511402],
+                [47.50053852096492, 19.116405975419347],
+                [47.501190878175464, 19.119962299434683],   //pillango_utca_m2
+                [47.50294112082642, 19.135539758928044]     //ors_vezer_tere_m2
+            ],
+            
+            "stations": [
+                "deli_palyaudvar_m2",
+                "szell_kalman_ter_m2",
+                "batthyany_ter_m2",
+                "kossuth_lajos_ter_m2",
+                "deak_ferenc_ter_m2",
+                "astoria_m2",
+                "blaha_lujza_ter_m2",
+                "keleti_palyaudvar_m2",
+                "puskas_ferenc_stadion_m2",
+                "pillango_utca_m2",
+                "ors_vezer_tere_m2"
+            ]
+        },
+        {   //Metro M2 (1970-1971)
+            "name": "Metro M2 (1970-1971)",
+            "type": "metro",
+            "color": "#e41f18",
+
+            "route": [
+                [47.49833494470242, 19.053683165499464],    //deak_ferenc_ter_m2
+                [47.49660269809414, 19.054354879612177],
+                [47.49562273648869, 19.055120804752644],
+                [47.49514732849638, 19.05616149778424],
+                [47.494582102397395, 19.057629571359172],
+                [47.49443758299083, 19.059753568532123],
+                [47.49465049488666, 19.061360882294498],    //astoria_m2
+                [47.49680592564256, 19.069441072773518],    //blaha_lujza_ter_m2
+                [47.49944197561612, 19.079316878377416],
+                [47.499670439341685, 19.080357642443875],
+                [47.49974713608893, 19.082396059658087],    //keleti_palyaudvar_m2
+                [47.49976725327677, 19.101097940682568],
+                [47.49991588530286, 19.103396059071347],
+                [47.5002626262481, 19.106025675062895],     //puskas_ferenc_stadion_m2
+                [47.50059062449178, 19.112677154550077],
+                [47.500436089835695, 19.115316301511402],
+                [47.50053852096492, 19.116405975419347],
+                [47.501190878175464, 19.119962299434683],   //pillango_utca_m2
+                [47.50294112082642, 19.135539758928044]     //ors_vezer_tere_m2
+            ],
+            
+            "stations": [
+                "deak_ferenc_ter_m2",
+                "astoria_m2",
+                "blaha_lujza_ter_m2",
+                "keleti_palyaudvar_m2",
+                "puskas_ferenc_stadion_m2",
+                "pillango_utca_m2",
+                "ors_vezer_tere_m2"
+            ]
+        },
+        {   //Metro M3 (2023-)
+            "name": "Metro M3 (2023-)",
+            "type": "metro",
+            "color": "#005ca4",
+
+            "route": [
+                [47.46369793072726, 19.148208222037958],    //kobanya_kispest_m3
+                [47.464780020649606, 19.14450523874201],
+                [47.465018238138526, 19.143340141139124],
+                [47.46510276666563, 19.14247058049555],
+                [47.46538702516743, 19.13759801064962],
+                [47.465382456019135, 19.136171915870516],
+                [47.46484184441468, 19.132364476847254],
+                [47.464779324697226, 19.131298862107393],
+                [47.464797601505545, 19.130683816476783],
+                [47.465076322045405, 19.12891302576007],
+                [47.465865148305134, 19.125874651181206],   //hatar_ut_m3
+                [47.467104544752274, 19.12108482762278],
+                [47.46834881686281, 19.117528926187276],    //pottyos_utca_m3
+                [47.47097853785477, 19.110428634066345],    //ecseri_ut_m3
+                [47.475413831756576, 19.099095977618862],   //nepliget_m3
+                [47.478899815304395, 19.08988873331288],    //nagyvarad_ter_m3
+                [47.48102378201259, 19.084677110592562],
+                [47.48317922313691, 19.078197226444523],    //semmelweis_klinikak_m3
+                [47.48557864353142, 19.07093687255423],     //corvin_negyed_m3
+                [47.48714263105659, 19.06718682742879],
+                [47.488590543910036, 19.064949411095775],
+                [47.48996510505111, 19.061349855568107],    //kalvin_ter_m3
+                [47.4911157961019, 19.058218034402483],
+                [47.49262542504499, 19.056460030429346],    //ferenciek_tere_m3
+                [47.49460361434104, 19.054578566067367],
+                [47.49643470336099, 19.05413861059384],
+                [47.4984678930514, 19.054184075538863],     //deak_ferenc_ter_m3
+                [47.504117254925134, 19.054578842637234],   //arany_janos_utca_m3
+                [47.5087880751581, 19.054845324611072],
+                [47.50985566072902, 19.05519110075951],
+                [47.51123573301396, 19.056332645315976],    //nyugati_palyaudvar_m3
+                [47.515251669347705, 19.05941282826663],
+                [47.51841022771198, 19.06061872588986],     //lehel_ter_m3
+                [47.524896733471216, 19.063393046222544],   //dozsa_gyorgy_ut_m3
+                [47.53300769875533, 19.06688945082993],     //goncz_arpad_varoskozpont_m3
+                [47.53907049328215, 19.06948839951767],     //forgach_utca_m3
+                [47.54937180773364, 19.073520790576357],    //gyongyosi_utca_m3
+                [47.55766193670005, 19.07691012951867],
+                [47.558184093755976, 19.077677852392146],
+                [47.558815957768765, 19.079011582721975],
+                [47.559478139130505, 19.080821027323786],   //ujpest_varoskapu_m3
+                [47.56057618773797, 19.0841390148948],
+                [47.56066525586782, 19.086378586961654],
+                [47.560398212224406, 19.089790616720343]    //ujpest_kozpont_m3
+            ],
+
+            "stations":[
+                "kobanya_kispest_m3",
+                "hatar_ut_m3",
+                "pottyos_utca_m3",
+                "ecseri_ut_m3",
+                "nepliget_m3",
+                "nagyvarad_ter_m3",
+                "semmelweis_klinikak_m3",
+                "corvin_negyed_m3",
+                "kalvin_ter_m3",
+                "ferenciek_tere_m3",
+                "deak_ferenc_ter_m3",
+                "arany_janos_utca_m3",
+                "nyugati_palyaudvar_m3",
+                "lehel_ter_m3",
+                "dozsa_gyorgy_ut_m3",
+                "goncz_arpad_varoskozpont_m3",
+                "forgach_utca_m3",
+                "gyongyosi_utca_m3",
+                "ujpest_varoskapu_m3",
+                "ujpest_kozpont_m3"
+            ]
+        },
+        {   //Metro M3 (2020-2022) North
+            "name": "Metro M3 (2020-2022) North",
+            "type": "metro",
+            "color": "#005ca4",
+
+            "route": [
+                [47.51841022771198, 19.06061872588986],     //lehel_ter_m3
+                [47.524896733471216, 19.063393046222544],   //dozsa_gyorgy_ut_m3
+                [47.53300769875533, 19.06688945082993],     //goncz_arpad_varoskozpont_m3
+                [47.53907049328215, 19.06948839951767],     //forgach_utca_m3
+                [47.54937180773364, 19.073520790576357],    //gyongyosi_utca_m3
+                [47.55766193670005, 19.07691012951867],
+                [47.558184093755976, 19.077677852392146],
+                [47.558815957768765, 19.079011582721975],
+                [47.559478139130505, 19.080821027323786],   //ujpest_varoskapu_m3
+                [47.56057618773797, 19.0841390148948],
+                [47.56066525586782, 19.086378586961654],
+                [47.560398212224406, 19.089790616720343]    //ujpest_kozpont_m3
+            ],
+
+            "stations":[
+                "lehel_ter_m3",
+                "dozsa_gyorgy_ut_m3",
+                "goncz_arpad_varoskozpont_m3",
+                "forgach_utca_m3",
+                "gyongyosi_utca_m3",
+                "ujpest_varoskapu_m3",
+                "ujpest_kozpont_m3"
+            ]
+        },
+        {   //Metro M3 (2020-2022) South
+            "name": "Metro M3 (2020-2022) South",
+            "type": "metro",
+            "color": "#005ca4",
+
+            "route": [
+                [47.46369793072726, 19.148208222037958],    //kobanya_kispest_m3
+                [47.464780020649606, 19.14450523874201],
+                [47.465018238138526, 19.143340141139124],
+                [47.46510276666563, 19.14247058049555],
+                [47.46538702516743, 19.13759801064962],
+                [47.465382456019135, 19.136171915870516],
+                [47.46484184441468, 19.132364476847254],
+                [47.464779324697226, 19.131298862107393],
+                [47.464797601505545, 19.130683816476783],
+                [47.465076322045405, 19.12891302576007],
+                [47.465865148305134, 19.125874651181206],   //hatar_ut_m3
+                [47.467104544752274, 19.12108482762278],
+                [47.46834881686281, 19.117528926187276],    //pottyos_utca_m3
+                [47.47097853785477, 19.110428634066345],    //ecseri_ut_m3
+                [47.475413831756576, 19.099095977618862],   //nepliget_m3
+                [47.478899815304395, 19.08988873331288]    //nagyvarad_ter_m3
+            ],
+
+            "stations":[
+                "kobanya_kispest_m3",
+                "hatar_ut_m3",
+                "pottyos_utca_m3",
+                "ecseri_ut_m3",
+                "nepliget_m3",
+                "nagyvarad_ter_m3"
+            ]
+        },
+        {   //Metro M3 (2019-2020)
+            "name": "Metro M3 (2019-2020)",
+            "type": "metro",
+            "color": "#005ca4",
+
+            "route": [
+                [47.478899815304395, 19.08988873331288],    //nagyvarad_ter_m3
+                [47.48102378201259, 19.084677110592562],
+                [47.48317922313691, 19.078197226444523],    //semmelweis_klinikak_m3
+                [47.48557864353142, 19.07093687255423],     //corvin_negyed_m3
+                [47.48714263105659, 19.06718682742879],
+                [47.488590543910036, 19.064949411095775],
+                [47.48996510505111, 19.061349855568107],    //kalvin_ter_m3
+                [47.4911157961019, 19.058218034402483],
+                [47.49262542504499, 19.056460030429346],    //ferenciek_tere_m3
+                [47.49460361434104, 19.054578566067367],
+                [47.49643470336099, 19.05413861059384],
+                [47.4984678930514, 19.054184075538863],     //deak_ferenc_ter_m3
+                [47.504117254925134, 19.054578842637234],   //arany_janos_utca_m3
+                [47.5087880751581, 19.054845324611072],
+                [47.50985566072902, 19.05519110075951],
+                [47.51123573301396, 19.056332645315976],    //nyugati_palyaudvar_m3
+                [47.515251669347705, 19.05941282826663],
+                [47.51841022771198, 19.06061872588986],     //lehel_ter_m3
+                [47.524896733471216, 19.063393046222544],   //dozsa_gyorgy_ut_m3
+                [47.53300769875533, 19.06688945082993],     //goncz_arpad_varoskozpont_m3
+                [47.53907049328215, 19.06948839951767],     //forgach_utca_m3
+                [47.54937180773364, 19.073520790576357],    //gyongyosi_utca_m3
+                [47.55766193670005, 19.07691012951867],
+                [47.558184093755976, 19.077677852392146],
+                [47.558815957768765, 19.079011582721975],
+                [47.559478139130505, 19.080821027323786],   //ujpest_varoskapu_m3
+                [47.56057618773797, 19.0841390148948],
+                [47.56066525586782, 19.086378586961654],
+                [47.560398212224406, 19.089790616720343]    //ujpest_kozpont_m3
+            ],
+
+            "stations":[
+                "nagyvarad_ter_m3",
+                "semmelweis_klinikak_m3",
+                "corvin_negyed_m3",
+                "kalvin_ter_m3",
+                "ferenciek_tere_m3",
+                "deak_ferenc_ter_m3",
+                "arany_janos_utca_m3",
+                "nyugati_palyaudvar_m3",
+                "lehel_ter_m3",
+                "dozsa_gyorgy_ut_m3",
+                "goncz_arpad_varoskozpont_m3",
+                "forgach_utca_m3",
+                "gyongyosi_utca_m3",
+                "ujpest_varoskapu_m3",
+                "ujpest_kozpont_m3"
+            ]
+        },
+        {   //Metro M3 (2017-2018)
+            "name": "Metro M3 (2017-2018)",
+            "type": "metro",
+            "color": "#005ca4",
+
+            "route": [
+                [47.46369793072726, 19.148208222037958],    //kobanya_kispest_m3
+                [47.464780020649606, 19.14450523874201],
+                [47.465018238138526, 19.143340141139124],
+                [47.46510276666563, 19.14247058049555],
+                [47.46538702516743, 19.13759801064962],
+                [47.465382456019135, 19.136171915870516],
+                [47.46484184441468, 19.132364476847254],
+                [47.464779324697226, 19.131298862107393],
+                [47.464797601505545, 19.130683816476783],
+                [47.465076322045405, 19.12891302576007],
+                [47.465865148305134, 19.125874651181206],   //hatar_ut_m3
+                [47.467104544752274, 19.12108482762278],
+                [47.46834881686281, 19.117528926187276],    //pottyos_utca_m3
+                [47.47097853785477, 19.110428634066345],    //ecseri_ut_m3
+                [47.475413831756576, 19.099095977618862],   //nepliget_m3
+                [47.478899815304395, 19.08988873331288],    //nagyvarad_ter_m3
+                [47.48102378201259, 19.084677110592562],
+                [47.48317922313691, 19.078197226444523],    //semmelweis_klinikak_m3
+                [47.48557864353142, 19.07093687255423],     //corvin_negyed_m3
+                [47.48714263105659, 19.06718682742879],
+                [47.488590543910036, 19.064949411095775],
+                [47.48996510505111, 19.061349855568107],    //kalvin_ter_m3
+                [47.4911157961019, 19.058218034402483],
+                [47.49262542504499, 19.056460030429346],    //ferenciek_tere_m3
+                [47.49460361434104, 19.054578566067367],
+                [47.49643470336099, 19.05413861059384],
+                [47.4984678930514, 19.054184075538863],     //deak_ferenc_ter_m3
+                [47.504117254925134, 19.054578842637234],   //arany_janos_utca_m3
+                [47.5087880751581, 19.054845324611072],
+                [47.50985566072902, 19.05519110075951],
+                [47.51123573301396, 19.056332645315976],    //nyugati_palyaudvar_m3
+                [47.515251669347705, 19.05941282826663],
+                [47.51841022771198, 19.06061872588986],     //lehel_ter_m3
+                [47.524896733471216, 19.063393046222544]   //dozsa_gyorgy_ut_m3
+            ],
+
+            "stations":[
+                "kobanya_kispest_m3",
+                "hatar_ut_m3",
+                "pottyos_utca_m3",
+                "ecseri_ut_m3",
+                "nepliget_m3",
+                "nagyvarad_ter_m3",
+                "semmelweis_klinikak_m3",
+                "corvin_negyed_m3",
+                "kalvin_ter_m3",
+                "ferenciek_tere_m3",
+                "deak_ferenc_ter_m3",
+                "arany_janos_utca_m3",
+                "nyugati_palyaudvar_m3",
+                "lehel_ter_m3",
+                "dozsa_gyorgy_ut_m3"
+            ]
+        },
+        {   //Metro M3 (1991-2016)
+            "name": "Metro M3 (1991-2016)",
+            "type": "metro",
+            "color": "#005ca4",
+
+            "route": [
+                [47.46369793072726, 19.148208222037958],    //kobanya_kispest_m3
+                [47.464780020649606, 19.14450523874201],
+                [47.465018238138526, 19.143340141139124],
+                [47.46510276666563, 19.14247058049555],
+                [47.46538702516743, 19.13759801064962],
+                [47.465382456019135, 19.136171915870516],
+                [47.46484184441468, 19.132364476847254],
+                [47.464779324697226, 19.131298862107393],
+                [47.464797601505545, 19.130683816476783],
+                [47.465076322045405, 19.12891302576007],
+                [47.465865148305134, 19.125874651181206],   //hatar_ut_m3
+                [47.467104544752274, 19.12108482762278],
+                [47.46834881686281, 19.117528926187276],    //pottyos_utca_m3
+                [47.47097853785477, 19.110428634066345],    //ecseri_ut_m3
+                [47.475413831756576, 19.099095977618862],   //nepliget_m3
+                [47.478899815304395, 19.08988873331288],    //nagyvarad_ter_m3
+                [47.48102378201259, 19.084677110592562],
+                [47.48317922313691, 19.078197226444523],    //semmelweis_klinikak_m3
+                [47.48557864353142, 19.07093687255423],     //corvin_negyed_m3
+                [47.48714263105659, 19.06718682742879],
+                [47.488590543910036, 19.064949411095775],
+                [47.48996510505111, 19.061349855568107],    //kalvin_ter_m3
+                [47.4911157961019, 19.058218034402483],
+                [47.49262542504499, 19.056460030429346],    //ferenciek_tere_m3
+                [47.49460361434104, 19.054578566067367],
+                [47.49643470336099, 19.05413861059384],
+                [47.4984678930514, 19.054184075538863],     //deak_ferenc_ter_m3
+                [47.504117254925134, 19.054578842637234],   //arany_janos_utca_m3
+                [47.5087880751581, 19.054845324611072],
+                [47.50985566072902, 19.05519110075951],
+                [47.51123573301396, 19.056332645315976],    //nyugati_palyaudvar_m3
+                [47.515251669347705, 19.05941282826663],
+                [47.51841022771198, 19.06061872588986],     //lehel_ter_m3
+                [47.524896733471216, 19.063393046222544],   //dozsa_gyorgy_ut_m3
+                [47.53300769875533, 19.06688945082993],     //goncz_arpad_varoskozpont_m3
+                [47.53907049328215, 19.06948839951767],     //forgach_utca_m3
+                [47.54937180773364, 19.073520790576357],    //gyongyosi_utca_m3
+                [47.55766193670005, 19.07691012951867],
+                [47.558184093755976, 19.077677852392146],
+                [47.558815957768765, 19.079011582721975],
+                [47.559478139130505, 19.080821027323786],   //ujpest_varoskapu_m3
+                [47.56057618773797, 19.0841390148948],
+                [47.56066525586782, 19.086378586961654],
+                [47.560398212224406, 19.089790616720343]    //ujpest_kozpont_m3
+            ],
+
+            "stations":[
+                "kobanya_kispest_m3",
+                "hatar_ut_m3",
+                "pottyos_utca_m3",
+                "ecseri_ut_m3",
+                "nepliget_m3",
+                "nagyvarad_ter_m3",
+                "semmelweis_klinikak_m3",
+                "corvin_negyed_m3",
+                "kalvin_ter_m3",
+                "ferenciek_tere_m3",
+                "deak_ferenc_ter_m3",
+                "arany_janos_utca_m3",
+                "nyugati_palyaudvar_m3",
+                "lehel_ter_m3",
+                "dozsa_gyorgy_ut_m3",
+                "goncz_arpad_varoskozpont_m3",
+                "forgach_utca_m3",
+                "gyongyosi_utca_m3",
+                "ujpest_varoskapu_m3",
+                "ujpest_kozpont_m3"
+            ]
+        },
+        {   //Metro M3 (1985-1990)
+            "name": "Metro M3 (1985-1990)",
+            "type": "metro",
+            "color": "#005ca4",
+
+            "route": [
+                [47.46369793072726, 19.148208222037958],    //kobanya_kispest_m3
+                [47.464780020649606, 19.14450523874201],
+                [47.465018238138526, 19.143340141139124],
+                [47.46510276666563, 19.14247058049555],
+                [47.46538702516743, 19.13759801064962],
+                [47.465382456019135, 19.136171915870516],
+                [47.46484184441468, 19.132364476847254],
+                [47.464779324697226, 19.131298862107393],
+                [47.464797601505545, 19.130683816476783],
+                [47.465076322045405, 19.12891302576007],
+                [47.465865148305134, 19.125874651181206],   //hatar_ut_m3
+                [47.467104544752274, 19.12108482762278],
+                [47.46834881686281, 19.117528926187276],    //pottyos_utca_m3
+                [47.47097853785477, 19.110428634066345],    //ecseri_ut_m3
+                [47.475413831756576, 19.099095977618862],   //nepliget_m3
+                [47.478899815304395, 19.08988873331288],    //nagyvarad_ter_m3
+                [47.48102378201259, 19.084677110592562],
+                [47.48317922313691, 19.078197226444523],    //semmelweis_klinikak_m3
+                [47.48557864353142, 19.07093687255423],     //corvin_negyed_m3
+                [47.48714263105659, 19.06718682742879],
+                [47.488590543910036, 19.064949411095775],
+                [47.48996510505111, 19.061349855568107],    //kalvin_ter_m3
+                [47.4911157961019, 19.058218034402483],
+                [47.49262542504499, 19.056460030429346],    //ferenciek_tere_m3
+                [47.49460361434104, 19.054578566067367],
+                [47.49643470336099, 19.05413861059384],
+                [47.4984678930514, 19.054184075538863],     //deak_ferenc_ter_m3
+                [47.504117254925134, 19.054578842637234],   //arany_janos_utca_m3
+                [47.5087880751581, 19.054845324611072],
+                [47.50985566072902, 19.05519110075951],
+                [47.51123573301396, 19.056332645315976],    //nyugati_palyaudvar_m3
+                [47.515251669347705, 19.05941282826663],
+                [47.51841022771198, 19.06061872588986],     //lehel_ter_m3
+                [47.524896733471216, 19.063393046222544],   //dozsa_gyorgy_ut_m3
+                [47.53300769875533, 19.06688945082993]    //goncz_arpad_varoskozpont_m3
+            ],
+
+            "stations":[
+                "kobanya_kispest_m3",
+                "hatar_ut_m3",
+                "pottyos_utca_m3",
+                "ecseri_ut_m3",
+                "nepliget_m3",
+                "nagyvarad_ter_m3",
+                "semmelweis_klinikak_m3",
+                "corvin_negyed_m3",
+                "kalvin_ter_m3",
+                "ferenciek_tere_m3",
+                "deak_ferenc_ter_m3",
+                "arany_janos_utca_m3",
+                "nyugati_palyaudvar_m3",
+                "lehel_ter_m3",
+                "dozsa_gyorgy_ut_m3",
+                "goncz_arpad_varoskozpont_m3"
+            ]
+        },
+        {   //Metro M3 (1982-1984)
+            "name": "Metro M3 (1982-1984)",
+            "type": "metro",
+            "color": "#005ca4",
+
+            "route": [
+                [47.46369793072726, 19.148208222037958],    //kobanya_kispest_m3
+                [47.464780020649606, 19.14450523874201],
+                [47.465018238138526, 19.143340141139124],
+                [47.46510276666563, 19.14247058049555],
+                [47.46538702516743, 19.13759801064962],
+                [47.465382456019135, 19.136171915870516],
+                [47.46484184441468, 19.132364476847254],
+                [47.464779324697226, 19.131298862107393],
+                [47.464797601505545, 19.130683816476783],
+                [47.465076322045405, 19.12891302576007],
+                [47.465865148305134, 19.125874651181206],   //hatar_ut_m3
+                [47.467104544752274, 19.12108482762278],
+                [47.46834881686281, 19.117528926187276],    //pottyos_utca_m3
+                [47.47097853785477, 19.110428634066345],    //ecseri_ut_m3
+                [47.475413831756576, 19.099095977618862],   //nepliget_m3
+                [47.478899815304395, 19.08988873331288],    //nagyvarad_ter_m3
+                [47.48102378201259, 19.084677110592562],
+                [47.48317922313691, 19.078197226444523],    //semmelweis_klinikak_m3
+                [47.48557864353142, 19.07093687255423],     //corvin_negyed_m3
+                [47.48714263105659, 19.06718682742879],
+                [47.488590543910036, 19.064949411095775],
+                [47.48996510505111, 19.061349855568107],    //kalvin_ter_m3
+                [47.4911157961019, 19.058218034402483],
+                [47.49262542504499, 19.056460030429346],    //ferenciek_tere_m3
+                [47.49460361434104, 19.054578566067367],
+                [47.49643470336099, 19.05413861059384],
+                [47.4984678930514, 19.054184075538863],     //deak_ferenc_ter_m3
+                [47.504117254925134, 19.054578842637234],   //arany_janos_utca_m3
+                [47.5087880751581, 19.054845324611072],
+                [47.50985566072902, 19.05519110075951],
+                [47.51123573301396, 19.056332645315976],    //nyugati_palyaudvar_m3
+                [47.515251669347705, 19.05941282826663],
+                [47.51841022771198, 19.06061872588986]     //lehel_ter_m3
+            ],
+
+            "stations":[
+                "kobanya_kispest_m3",
+                "hatar_ut_m3",
+                "pottyos_utca_m3",
+                "ecseri_ut_m3",
+                "nepliget_m3",
+                "nagyvarad_ter_m3",
+                "semmelweis_klinikak_m3",
+                "corvin_negyed_m3",
+                "kalvin_ter_m3",
+                "ferenciek_tere_m3",
+                "deak_ferenc_ter_m3",
+                "arany_janos_utca_m3",
+                "nyugati_palyaudvar_m3",
+                "lehel_ter_m3"
+            ]
+        },
+        {   //Metro M3 (1980-1981)
+            "name": "Metro M3 (1980-1981)",
+            "type": "metro",
+            "color": "#005ca4",
+
+            "route": [
+                [47.46369793072726, 19.148208222037958],    //kobanya_kispest_m3
+                [47.464780020649606, 19.14450523874201],
+                [47.465018238138526, 19.143340141139124],
+                [47.46510276666563, 19.14247058049555],
+                [47.46538702516743, 19.13759801064962],
+                [47.465382456019135, 19.136171915870516],
+                [47.46484184441468, 19.132364476847254],
+                [47.464779324697226, 19.131298862107393],
+                [47.464797601505545, 19.130683816476783],
+                [47.465076322045405, 19.12891302576007],
+                [47.465865148305134, 19.125874651181206],   //hatar_ut_m3
+                [47.467104544752274, 19.12108482762278],
+                [47.46834881686281, 19.117528926187276],    //pottyos_utca_m3
+                [47.47097853785477, 19.110428634066345],    //ecseri_ut_m3
+                [47.475413831756576, 19.099095977618862],   //nepliget_m3
+                [47.478899815304395, 19.08988873331288],    //nagyvarad_ter_m3
+                [47.48102378201259, 19.084677110592562],
+                [47.48317922313691, 19.078197226444523],    //semmelweis_klinikak_m3
+                [47.48557864353142, 19.07093687255423],     //corvin_negyed_m3
+                [47.48714263105659, 19.06718682742879],
+                [47.488590543910036, 19.064949411095775],
+                [47.48996510505111, 19.061349855568107],    //kalvin_ter_m3
+                [47.4911157961019, 19.058218034402483],
+                [47.49262542504499, 19.056460030429346],    //ferenciek_tere_m3
+                [47.49460361434104, 19.054578566067367],
+                [47.49643470336099, 19.05413861059384],
+                [47.4984678930514, 19.054184075538863]     //deak_ferenc_ter_m3
+            ],
+
+            "stations":[
+                "kobanya_kispest_m3",
+                "hatar_ut_m3",
+                "pottyos_utca_m3",
+                "ecseri_ut_m3",
+                "nepliget_m3",
+                "nagyvarad_ter_m3",
+                "semmelweis_klinikak_m3",
+                "corvin_negyed_m3",
+                "kalvin_ter_m3",
+                "ferenciek_tere_m3",
+                "deak_ferenc_ter_m3"
+            ]
+        },
+        {   //Metro M3 (1976-1979)
+            "name": "Metro M3 (1976-1979)",
+            "type": "metro",
+            "color": "#005ca4",
+
+            "route": [
+                [47.478899815304395, 19.08988873331288],    //nagyvarad_ter_m3
+                [47.48102378201259, 19.084677110592562],
+                [47.48317922313691, 19.078197226444523],    //semmelweis_klinikak_m3
+                [47.48557864353142, 19.07093687255423],     //corvin_negyed_m3
+                [47.48714263105659, 19.06718682742879],
+                [47.488590543910036, 19.064949411095775],
+                [47.48996510505111, 19.061349855568107],    //kalvin_ter_m3
+                [47.4911157961019, 19.058218034402483],
+                [47.49262542504499, 19.056460030429346],    //ferenciek_tere_m3
+                [47.49460361434104, 19.054578566067367],
+                [47.49643470336099, 19.05413861059384],
+                [47.4984678930514, 19.054184075538863]     //deak_ferenc_ter_m3
+            ],
+
+            "stations":[
+                "nagyvarad_ter_m3",
+                "semmelweis_klinikak_m3",
+                "corvin_negyed_m3",
+                "kalvin_ter_m3",
+                "ferenciek_tere_m3",
+                "deak_ferenc_ter_m3"
+            ]
+        },
+        {   //Metro M4 (2014-)
+            "name": "Metro M4 (2014-)",
+            "type": "metro",
+            "color": "#48a842",
+
+            "route": [
+                [47.464321971238306, 19.020624348041295],   //kelenfold_vasutallomas_m4
+                [47.46412181215574, 19.023413135685175],
+                [47.46405436243324, 19.025121048616356],
+                [47.46433408068545, 19.02802701243093],
+                [47.46461947559655, 19.030708373602227],
+                [47.46490785793169, 19.032345648762384],    //bikas_park_m4
+                [47.46748136004112, 19.04207404810299],
+                [47.467890304772276, 19.043085535511203],
+                [47.46864050979519, 19.044243034570783],
+                [47.46977829407377, 19.044839603731226],
+                [47.47377285462837, 19.04630808133898],     //ujbuda_kozpont_m4
+                [47.47683976807245, 19.047291863537886],    //moricz_zsigmond_korter_m4
+                [47.47800963278236, 19.047839385785444],
+                [47.47934855695898, 19.04907719827997],
+                [47.480874419243435, 19.05121296982736],
+                [47.483097812120164, 19.054783362949827],   //szent_gellert_ter_muegyetem_m4
+                [47.48427752543746, 19.056507791013374],
+                [47.486106173982236, 19.057458036702194],   //fovam_ter_m4
+                [47.48734377586118, 19.058726601110777],
+                [47.48905168083143, 19.061290257446593],    //kalvin_ter_m4
+                [47.492332154926046, 19.069713473021977],
+                [47.49281324823392, 19.072077616854266],    //rakoczi_ter_m4
+                [47.493020170169935, 19.073747001327884],
+                [47.49336251666267, 19.074841240855232],
+                [47.49369335358956, 19.07567575814209],
+                [47.494452867663014, 19.07655691126674],
+                [47.49566989650653, 19.077471281478076],    //masodik_janos_pal_papa_ter_m4
+                [47.49886715563505, 19.079317788895917],
+                [47.499486628352216, 19.0799455669155],
+                [47.500344971129174, 19.081462948517743]    //keleti_palyaudvar_m4
+            ],
+
+            "stations": [
+                "kelenfold_vasutallomas_m4",
+                "bikas_park_m4",
+                "ujbuda_kozpont_m4",
+                "moricz_zsigmond_korter_m4",
+                "szent_gellert_ter_muegyetem_m4",
+                "fovam_ter_m4",
+                "kalvin_ter_m4",
+                "rakoczi_ter_m4",
+                "masodik_janos_pal_papa_ter_m4",
+                "keleti_palyaudvar_m4"
+            ]
         }
     ],
 
@@ -12850,6 +14733,37 @@
             "id": "tram_37b",
             "lines": [
                 "Tram 37B (2023)"
+            ]
+        },
+        {   //Metro M1
+            "id": "metro_m1",
+            "lines": [
+                "Metro M1 (1973-)",
+                "Metro M1 (1957-1971)",
+                "Metro M1 (1952-1956)",
+                "Metro M1 (1896-1951)"
+            ]
+        },
+        {   //Metro M2
+            "id": "metro_m2",
+            "lines": [
+                "Metro M2 (1972-)",
+                "Metro M2 (1970-1971)"
+            ]
+        },
+        {   //Metro M3
+            "id": "metro_m3",
+            "lines": [
+                "Metro M3 (2023-)",
+                "Metro M3 (2020-2022) North",
+                "Metro M3 (2020-2022) South", 
+                "Metro M3 (2019-2020)",
+                "Metro M3 (2017-2018)",
+                "Metro M3 (1991-2016)",
+                "Metro M3 (1985-1990)",
+                "Metro M3 (1982-1984)",
+                "Metro M3 (1980-1981)",
+                "Metro M3 (1976-1979)"
             ]
         }
     ]

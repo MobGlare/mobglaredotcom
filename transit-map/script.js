@@ -76,7 +76,7 @@ const tramIcon = L.icon({
         iconAnchor: [12, 12]
     });
 const metroIcon = L.icon({
-        iconUrl: "https://cdn-icons-png.flaticon.com/512/50/50471.png",
+        iconUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/BKV_metro_2014.svg/250px-BKV_metro_2014.svg.png?utm_source=commons.wikimedia.org&utm_campaign=gallery&utm_content=thumbnail",
         iconSize: [24, 24],
         iconAnchor: [12, 12]
     });
@@ -89,6 +89,13 @@ const defaultIcon = L.icon({
         iconUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Circle_-_black_simple.svg?utm_source=hu.wiktionary.org&utm_campaign=index&utm_content=original",
         iconSize: [24, 24],
         iconAnchor: [12, 12]
+    });
+
+const stationGroupIcon = L.divIcon({
+        className: "station-group-icon",
+        html: "",
+        iconSize: [20, 20],
+        iconAnchor: [10, 10]
     });
 
 // Year selector
@@ -594,10 +601,12 @@ Promise.all([
 
             const locationStation = stationMap[group.stations[0]];
             
+            const icon = stationGroupIcon;
+
             const marker = L.marker([
                 locationStation.lat,
                 locationStation.lng
-            ])
+            ], {icon})
             .bindPopup(getStationGroupName(group));
 
             marker.addEventListener("click", () => { showStationGroup(group); })
